@@ -1,0 +1,2410 @@
+[
+  {
+    "jenis": "Buku",
+    "kategori": "Android",
+    "judul": "Android Developers Fundamental Course Concepts and Practicals (Bahasa Indonesia)",
+    "url": "https://yukcoding.id/download-ebook-android-gratis/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Android",
+    "judul": "Tutorial Membuat Aplikasi Galeri Foto Android",
+    "url": "https://www.smashwords.com/books/view/533096",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "C",
+    "judul": "Belajar Pemrograman C untuk Pemula",
+    "url": "https://www.petanikode.com/tutorial/c/",
+    "ket": "Ahmad Muhardian *( :construction: in process)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "C",
+    "judul": "Tutorial Belajar Bahasa Pemrograman C Untuk Pemula",
+    "url": "https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-c-bagi-pemula/",
+    "ket": "Duniailkom"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "C#",
+    "judul": "Menguasai Pemrograman Berorientasi Objek Dengan Bahasa C#",
+    "url": "https://mahirkoding.id/ebook-pemrograman-berorientasi-objek-c-pdf/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "C++",
+    "judul": "Belajar C++ Dasar Bahasa Indonesia",
+    "url": "https://github.com/kelasterbuka/CPP_dasar-dasar-programming",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "C++",
+    "judul": "Buku Pintar C++ untuk Pemula",
+    "url": "https://www.researchgate.net/publication/236687537_Buku_Pintar_C_untuk_Pemula",
+    "ket": "Abdul Kadir"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Game Development",
+    "judul": "AI dan Claude Code untuk Praktik Game Design",
+    "url": "https://github.com/eremes81/game-design-ai-practice-id",
+    "ket": "Minsoo Lee"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Git",
+    "judul": "Belajar Git untuk Pemula",
+    "url": "https://github.com/petanikode/belajar-git",
+    "ket": "Ahmad Muhardian, Petani Kode (HTML)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Git",
+    "judul": "Pro Git 2nd Edition",
+    "url": "https://git-scm.com/book/id/",
+    "ket": "Scott Chacon, Ben Straub (HTML)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Git",
+    "judul": "Tutorial Belajar Git dan GitHub untuk Pemula",
+    "url": "https://tutorial-git.readthedocs.io/_/downloads/id/latest/pdf/",
+    "ket": "Hendy Irawan - (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Go",
+    "judul": "Belajar Dengan Jenius Golang",
+    "url": "https://raw.githubusercontent.com/gungunfebrianza/Belajar-Dengan-Jenius-Golang/master/Belajar%20Dengan%20Jenius%20Golang.pdf",
+    "ket": "Gun Gun Febrianza (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Go",
+    "judul": "Dasar Pemrograman Golang",
+    "url": "https://dasarpemrogramangolang.novalagung.com",
+    "ket": "Noval Agung Prayogo"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Go",
+    "judul": "Mari Belajar Golang",
+    "url": "https://www.smashwords.com/books/view/938003",
+    "ket": "Risal (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "HTML and CSS",
+    "judul": "Cara Cepat dan Mudah Menguasai CSS Rule",
+    "url": "https://gilacoding.com/upload/file/Mahir-menguasai-CSS-Part%201.pdf",
+    "ket": "Rudy Devianto (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "HTML and CSS",
+    "judul": "Ebook Belajar HTML Dan CSS Dasar",
+    "url": "https://www.malasngoding.com/download-ebook-belajar-html-dan-css-dasar-gratis/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "HTML and CSS",
+    "judul": "Ebook HTML CSS Manual Dasar",
+    "url": "https://github.com/LIGMATV/LIGMATV/wiki/Ebook-HTML-CSS-Manual-Dasar",
+    "ket": "Muhammad Danish Naufal (PDF, DOCX)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "HTML and CSS",
+    "judul": "Mahir Menguasai CSS - Tutorial & Praktek",
+    "url": "https://gilacoding.com/upload/file/Mahir-menguasai-CSS-Part%202.pdf",
+    "ket": "Rudy Devianto (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "HTML and CSS",
+    "judul": "Tutorial Dasar CSS untuk Pemula",
+    "url": "https://www.petanikode.com/tutorial/css/",
+    "ket": "Ahmad Muhardian (Petani Kode) *( :construction: dalam proses)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "HTML and CSS",
+    "judul": "Tutorial HTML untuk Pemula",
+    "url": "https://www.petanikode.com/tutorial/html/",
+    "ket": "Ahmad Muhardian (Petani Kode)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Bootstrap",
+    "judul": "Bootstrap",
+    "url": "https://www.malasngoding.com/category/bootstrap/",
+    "ket": "Diki Alfarabi Hadi"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Bootstrap",
+    "judul": "Daftar Tutorial Bootstrap 4 Bahasa Indonesia",
+    "url": "https://www.bewoksatukosong.com/2019/02/tutorial-bootstrap-4-bahasa-indonesia.html",
+    "ket": "Gerald Cahya Prambudi"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Bootstrap",
+    "judul": "Tutorial Belajar Framework Bootstrap 5",
+    "url": "https://www.duniailkom.com/tutorial-belajar-framework-bootstrap/",
+    "ket": "Duniailkom"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "IDE and editors",
+    "judul": "Dokumentasi Emacs Bahasa Indonesia",
+    "url": "https://github.com/kholidfu/emacs_doc",
+    "ket": "Kholid Fuadi"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "IDE and editors",
+    "judul": "Pengantar Vi iMproved: Sebuah panduan praktikal Vim sebagai editor teks sehari-hari",
+    "url": "https://github.com/nauvalazhar/pengantar-vi-improved",
+    "ket": "Muhamad Nauval Azhar"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Java",
+    "judul": "Algoritma dan Struktur Data dengan Java oleh Polinema SIB",
+    "url": "https://polinema.gitbook.io/jti-modul-praktikum-algoritma-dan-struktur-data/",
+    "ket": "Politeknik Negeri Malang"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Java",
+    "judul": "Buku Pertama Belajar Pemrograman Java untuk Pemula",
+    "url": "https://www.researchgate.net/publication/264422101_Buku_Pertama_Belajar_Pemrograman_Java_untuk_Pemula",
+    "ket": "Abdul Kadir"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Java",
+    "judul": "Java Desktop",
+    "url": "https://github.com/ifnu/buku-java-desktop/raw/master/java-desktop-ifnu-bima.pdf",
+    "ket": "Ifnu Bima (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Java",
+    "judul": "Memulai Java Enterprise dengan Spring Boot",
+    "url": "https://raw.githubusercontent.com/teten-nugraha/free-ebook-springboot-basic/master/Memulai%20Java%20Enterprise%20dengan%20Spring%20Boot.pdf",
+    "ket": "Teten Nugraha (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Java",
+    "judul": "Pemrograman Java",
+    "url": "https://blog.rosihanari.net/download-tutorial-java-se-gratis/",
+    "ket": "Rosihan Ari Yuana"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Java",
+    "judul": "Tutorial Belajar Bahasa Pemrograman Java untuk Pemula",
+    "url": "https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-java-untuk-pemula/",
+    "ket": "Duniailkom"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "JavaScript",
+    "judul": "Javascript Guide",
+    "url": "https://gilacoding.com/upload/file/Javascript%20Guide.pdf",
+    "ket": "Desrizal (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "JavaScript",
+    "judul": "Learn JavaScript",
+    "url": "https://javascript.sumankunwar.com.np/id",
+    "ket": "Suman Kumar, Github Contributors (HTML, PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "JavaScript",
+    "judul": "Mengenal JavaScript",
+    "url": "http://masputih.com/2013/01/ebook-gratis-mengenal-javascript",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "JavaScript",
+    "judul": "Otomatisasi dengan gulp.js",
+    "url": "https://kristories.gitbooks.io/otomatisasi-dengan-gulp-js/content/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "JavaScript",
+    "judul": "Tutorial Dasar Javascript untuk Pemula",
+    "url": "https://www.petanikode.com/tutorial/javascript/",
+    "ket": "*( :construction: dalam proses)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "JavaScript",
+    "judul": "Tutorial JavaScript Modern",
+    "url": "https://id.javascript.info",
+    "ket": "Ilya Kantor"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Angular",
+    "judul": "Tutorial Angular Indonesia",
+    "url": "https://degananda.com/tutorial-angular-indonesia-daftar-isi-download-pdf/",
+    "ket": "Degananda Ferdian Priyambada (HTML)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Angular",
+    "judul": "Tutorial Series Belajar Angular 2019",
+    "url": "https://www.bewoksatukosong.com/2019/09/tutorial-series-belajar-angular-2019.html",
+    "ket": "Bewok Satu Kosong (HTML)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Deno",
+    "judul": "Belajar Dengan Jenius Deno",
+    "url": "https://raw.githubusercontent.com/gungunfebrianza/Belajar-Dengan-Jenius-DenoTheWKWKLand/master/Belajar%20Dengan%20Jenius%20Deno.pdf",
+    "ket": "Gun Gun Febrianza (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Next.js",
+    "judul": "Tutorial Next Js",
+    "url": "https://santrikoding.com/kategori/next-js",
+    "ket": "SantriKoding.com"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "React.js",
+    "judul": "Dokumentasi React Bahasa Indonesia",
+    "url": "https://id.reactjs.org",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "React.js",
+    "judul": "React JS Untuk Pemula",
+    "url": "https://masputih.com/2021/05/ebook-gratis-reactjs-untuk-pemula",
+    "ket": "*(Membutuhkan akun Leanpub atau email yang valid)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "React.js",
+    "judul": "React Redux Tutorial Untuk Pemula",
+    "url": "https://medium.com/codeacademia/tutorial-redux-bagian-i-membuat-todo-list-c26a979d0a1f",
+    "ket": "Yudi Krisnandi"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "React.js",
+    "judul": "Tutorial Belajar Library React JS",
+    "url": "https://www.duniailkom.com/tutorial-belajar-library-react-js/",
+    "ket": "Duniailkom"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "React.js",
+    "judul": "Tutorial React JS Untuk Pemula (React Hooks)",
+    "url": "https://mfikri.com/artikel/reactjs-pemula",
+    "ket": "Mfikri"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "TypeScript",
+    "judul": "TypeScript untuk Pemula, Bagian 1: Memulai",
+    "url": "https://code.tutsplus.com/id/tutorials/typescript-for-beginners-getting-started--cms-29329",
+    "ket": "Tutsplus (HTML)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Vue.js",
+    "judul": "Belajar Vue.js",
+    "url": "https://variancode.com/belajar-vue-js/",
+    "ket": "Varian Hermianto"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Vue.js",
+    "judul": "Dokumentasi Vue Bahasa Indonesia",
+    "url": "https://github.com/vuejs-id/docs",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "MySQL",
+    "judul": "3 Days With Mysql For Your Application: Mysql Untuk Pemula",
+    "url": "https://play.google.com/store/books/details/Onesinus_Saut_Parulian_3_Days_With_Mysql_For_Your?id=MbdTDwAAQBAJ",
+    "ket": "Onesinus Saut Parulian *(Membutuhkan akun Google Play Books atau email yang valid)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "MySQL",
+    "judul": "Tutorial MySQL untuk Pemula Hingga Mahir",
+    "url": "https://umardanny.com/tutorial-mysql-untuk-pemula-hingga-mahir-ebook-download-pdf/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Node.js",
+    "judul": "Belajar Dengan Jenius Amazon Web Service & Node.js",
+    "url": "https://github.com/gungunfebrianza/Belajar-Dengan-Jenius-Node.js/releases/download/1.2/Belajar.Dengan.Jenius.Javascript.Node.pdf",
+    "ket": "Gun Gun Febrianza (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Node.js",
+    "judul": "Belajar Node.js",
+    "url": "http://idjs.github.io/belajar-nodejs/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Node.js",
+    "judul": "Node.js Handbook: Berbahasa Indonesia",
+    "url": "https://play.google.com/store/books/details/Bona_Tua_Node_js_Handbook?id=9WhZDwAAQBAJ",
+    "ket": "Bona Tua *(Membutuhkan akun Google Play Books atau email yang valid)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Node.js",
+    "judul": "Tutorial Node js untuk pemula Full Tutorial",
+    "url": "https://mfikri.com/artikel/tutorial-nodejs",
+    "ket": "Mfikri (HTML)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "NoSQL",
+    "judul": "MongoDB Untuk Indonesia: Memahami Konsep dan Implementasi MongoDB",
+    "url": "https://kristories.gumroad.com/l/mongodb-untuk-indonesia",
+    "ket": "Wahyu Kristianto (PDF, email address *requested*, not required)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Pascal",
+    "judul": "Tutorial Belajar Bahasa Pemrograman Python Untuk Pemula",
+    "url": "https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-pascal-bagi-pemula/",
+    "ket": "Duniailkom"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Pemrograman Fungsional",
+    "judul": "Pemrograman Fungsional untuk Rakyat Jelata dengan Scalaz",
+    "url": "https://leanpub.com/fpmortals-id/read",
+    "ket": "(HTML)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Pemrograman Kompetitif",
+    "judul": "Pemrograman Kompetitif Dasar",
+    "url": "https://osn.toki.id/data/pemrograman-kompetitif-dasar.pdf",
+    "ket": "William Gozali, Alham Fikri Aji (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Pemrograman Kompetitif",
+    "judul": "Referensi Pemrograman Bahasa Pascal",
+    "url": "https://toki.id/download/referensi-pemrograman-bahasa-pascal/",
+    "ket": "Tim Pembina Toki (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Belajar PHP Dasar",
+    "url": "https://www.malasngoding.com/belajar-php-dasar-pengenalan-dan-kegunaan-php/",
+    "ket": "Malasngoding"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Membuat Bot Telegram dengan PHP",
+    "url": "https://www.slideshare.net/HasanudinHS/ebook-i-membuat-bot-telegram-dengan-php",
+    "ket": "Hasanudin H Syafaat (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Panduan Lengkap PHP AJAX jQuery",
+    "url": "https://gilacoding.com/upload/file/Panduan%20Lengkap%20PHP%20Ajax%20jQuery.pdf",
+    "ket": "Desrizal (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Pemrograman Berbasis Objek Modern dengan PHP",
+    "url": "https://arsiteknologi.com/wp-content/uploads/Pemrograman_Berbasis_Objek_Modern_dengan_PHP_Google_Play_Book.pdf",
+    "ket": "Muhamad Surya Iksanudin (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Pemrograman Berorientasi Objek Dengan PHP5",
+    "url": "https://endangcahyapermana.files.wordpress.com/2016/03/belajar-singkat-pemrograman-berorientasi-objek-dengan-php5.pdf",
+    "ket": "Gerry Sabar (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Pemrograman Web dengan PHP dan MySQL",
+    "url": "http://achmatim.net/2009/04/15/buku-gratis-pemrograman-web-dengan-php-dan-mysql/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "PHP Dasar Tutorial",
+    "url": "https://gilacoding.com/upload/file/PHP%20Dasar%20Tutorial.pdf",
+    "ket": "Rosihan Ari Yuana (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "PHP: The Right Way Bahasa Indonesia",
+    "url": "http://id.phptherightway.com/#site-header/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Tutorial Belajar PHP Dasar Untuk Pemula",
+    "url": "https://www.duniailkom.com/tutorial-belajar-php-dasar-untuk-pemula/",
+    "ket": "Duniailkom"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Tutorial Ebook PHP",
+    "url": "http://www.ilmuwebsite.com/ebook-php-free-download",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "PHP",
+    "judul": "Tutorial Pemrograman PHP untuk Pemula",
+    "url": "https://www.petanikode.com/tutorial/php",
+    "ket": "Ahmad Muhardian (Petani Kode) *( :construction: dalam proses)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "CodeIgniter",
+    "judul": "Codeigniter - Pendekatan Praktis",
+    "url": "https://leanpub.com/codeigniter-pendekatanpraktis",
+    "ket": "Ibnu Daqiqil Id (HTML, PDF, EPUB, Kindle) *(Membutuhkan akun Leanpub atau email yang valid)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "CodeIgniter",
+    "judul": "Codeigniter Untuk Pemula",
+    "url": "https://repository.bsi.ac.id/index.php/unduh/item/176695/Tutorial-Codeigniter-Untuk-Pemula.pdf",
+    "ket": "M Fikri Setiadi (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "CodeIgniter",
+    "judul": "Framework Codeigniter - Sebuah Panduan dan Best Practice",
+    "url": "https://gilacoding.com/upload/file/Tutorial%20framework%20codeigniter.pdf",
+    "ket": "Gila Coding (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "CodeIgniter",
+    "judul": "Panduan Pengguna CodeIgniter Indonesia",
+    "url": "https://codeigniter-id.github.io/user-guide/",
+    "ket": "CodeIgniter Indonesia"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "CodeIgniter",
+    "judul": "Tutorial CodeIgniter 3 & 4",
+    "url": "https://www.petanikode.com/tutorial/codeigniter/",
+    "ket": "*( :construction: dalam proses)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "CodeIgniter",
+    "judul": "Tutorial CodeIgniter 4",
+    "url": "http://mfikri.com/artikel/tutorial-codeigniter4",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Laravel",
+    "judul": "Belajar Laravel Untuk Pemula",
+    "url": "https://gilacoding.com/upload/file/Belajar%20Laravel%20Untuk%20Pemula.pdf",
+    "ket": "Dadan Hamdani (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Laravel",
+    "judul": "Tutorial Belajar Framework Laravel 10",
+    "url": "https://www.duniailkom.com/tutorial-belajar-framework-laravel/",
+    "ket": "Duniailkom"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Yii",
+    "judul": "Menjelajahi Yii Framework",
+    "url": "https://gilacoding.com/upload/file/menjelajahyiiframework.pdf",
+    "ket": "Sabit Huraira (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Yii",
+    "judul": "Panduan Definitif Untuk Yii 2.0",
+    "url": "https://www.yiiframework.com/doc/download/yii-guide-2.0-id.pdf",
+    "ket": "Yii Software (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Belajar Python",
+    "url": "http://www.belajarpython.com",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Cepat Mahir Python",
+    "url": "https://gilacoding.com/upload/file/Python.pdf",
+    "ket": "Hendri, `edt.:` Romi Satria Wahono (PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Dasar-Dasar Python: Panduan Cepat untuk Memahami Fondasi Pemrograman Python",
+    "url": "https://www.researchgate.net/publication/361459389_Dasar-Dasar_Python_Panduan_Cepat_untuk_Memahami_Fondasi_Pemrograman_Python",
+    "ket": "Abdul Kadir"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Dasar Pemrograman Python",
+    "url": "https://dasarpemrogramanpython.novalagung.com",
+    "ket": "Noval Agung Prayogo"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Dasar Pengenalan Pemrograman Python",
+    "url": "https://play.google.com/store/books/details/Rolly_Maulana_Awangga_Dasar_dasar_Python?id=YpzDDwAAQBAJ",
+    "ket": "Rolly Maulana AwanggaRayhan *(Membutuhkan akun Google Play Books atau email yang valid)*"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Kursus Singkat Machine Learning dengan TensorFlow API",
+    "url": "https://developers.google.com/machine-learning/crash-course?hl=id",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Python Untuk Pemula",
+    "url": "https://santrikoding.com/ebook/python-untuk-pemula",
+    "ket": "Rizqi Maulana"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Tutorial Dasar Pemrograman Python",
+    "url": "https://www.petanikode.com/tutorial/python/",
+    "ket": "Petani Kode, Ahmad Muhardian"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Tutorial Python",
+    "url": "https://docs.python.org/id/3.8/tutorial/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Tutorial Python untuk Pemula",
+    "url": "https://www.kevintekno.com/p/tutorial-python-untuk-pemula.html",
+    "ket": "Kevin Tekno, Kevin Alfito"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Python",
+    "judul": "Workshop Python 101",
+    "url": "http://sakti.github.io/python101/",
+    "ket": ""
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Rust",
+    "judul": "Belajar Rust",
+    "url": "https://belajar-rust.vercel.app",
+    "ket": "evilfactorylabs"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Rust",
+    "judul": "Dasar Pemrograman Rust",
+    "url": "https://dasarpemrogramanrust.novalagung.com",
+    "ket": "Noval Agung Prayogo"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Rust",
+    "judul": "Easy Rust Indonesia",
+    "url": "https://github.com/ariandy/easy-rust-indonesia",
+    "ket": "ariandy"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Solidity",
+    "judul": "Smart Contract Blockchain pada E-Voting",
+    "url": "https://www.researchgate.net/publication/337961765_Smart_Contract_Blockchain_pada_E-Voting",
+    "ket": "Ajib Susanto (HTML, PDF)"
+  },
+  {
+    "jenis": "Buku",
+    "kategori": "Swift",
+    "judul": "Swift Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLH1gH0TmFBBhR8A_Xq7drrxC4OlUvNP7b",
+    "ket": "Ipung DEV Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Belajar Android Studio",
+    "url": "https://www.malasngoding.com/category/android-studio/",
+    "ket": "Muzanni (Malas Ngoding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Belajar Android Untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDOP6M6q981yyEG0PDcVyGq",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Belajar Fundamental Aplikasi Android",
+    "url": "https://www.dicoding.com/academies/14",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Belajar Membuat Aplikasi Android untuk Pemula",
+    "url": "https://www.dicoding.com/academies/51",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Menjadi Android Developer Expert",
+    "url": "https://www.dicoding.com/academies/165",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Tutorial Android (Java)",
+    "url": "https://www.youtube.com/playlist?list=PLKPnl-eD7EA4rAzNeXikfCq5yiMuFI1zo",
+    "ket": "Kopianan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Tutorial Android (Kotlin)",
+    "url": "https://www.youtube.com/playlist?list=PLaoF-xhnnrRUEbF6cvk4-CeBAEOSbp8sS",
+    "ket": "EDMT Dev"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Tutorial Android Dasar (Bahasa Indonesia)",
+    "url": "https://www.youtube.com/watch?v=pUTz5IOkBtE",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Android",
+    "judul": "Tutorial Dasar Android Studio Bahasa Indonesia",
+    "url": "https://www.udemy.com/course/tutorial-dasar-android-studio-bahasa-indonesia-gratis",
+    "ket": "Udemy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Apache Kafka",
+    "judul": "Belajar Apache Kafka untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "AR / VR",
+    "judul": "Belajar Membuat Mixed Reality",
+    "url": "https://www.dicoding.com/academies/155",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Bootstrap",
+    "judul": "Belajar Framework Bootstrap 5",
+    "url": "https://www.youtube.com/playlist?list=PL53uJBBtLf5ChsCZp26yEcDQu5ujfhsM8",
+    "ket": "Ngoding Pintar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Bootstrap",
+    "judul": "Belajar menggunakan bootstrap",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXC5wPjJGj1LvFaVK2cbN2GQ",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Bootstrap",
+    "judul": "Tutorial Bootstrap 4 Lengkap dalam Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLce3Eyp7oY9-o3JavSawkXcazJSYx7KAf",
+    "ket": "Framework Indonesia"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Bootstrap",
+    "judul": "Tutorial Bootstrap 5 untuk Pemula Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLnrs9DcLyeJTxqZ4lWgVHXBwFgZEkwp9r",
+    "ket": "Cara Fajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C / C++",
+    "judul": "Bahasa C dengan Dev-C++",
+    "url": "https://www.youtube.com/playlist?list=PLZNiz_sFO6tdZ_DcLhtbxLboLlpuqpzLC",
+    "ket": "H.I Edukasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C / C++",
+    "judul": "Belajar Bahasa Pemrograman C++ Lengkap dari Awal untuk Pemula",
+    "url": "https://kodedasar.com/belajar-cpp/",
+    "ket": "DAMASDEV"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C / C++",
+    "judul": "Belajar C++",
+    "url": "https://www.youtube.com/playlist?list=PLF82-I80PwDNKmeyYBe4CkEj7excOdy7f",
+    "ket": "Guntur Budi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C / C++",
+    "judul": "Belajar C++ - Object Oriented Programming Bahasa Indonesia (OOP)",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7-RC_-hkL9gu0_ofABw862",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C / C++",
+    "judul": "Belajar C++ Bahasa Indonesia (Dasar)",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C / C++",
+    "judul": "Memulai Pemrograman dengan C",
+    "url": "https://www.dicoding.com/academies/120",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C#",
+    "judul": "Belajar C# C-Sharp Lengkap",
+    "url": "https://www.youtube.com/playlist?list=PLYMJJHENUMwwiL91VnHhqV_Zy1LANgNVc",
+    "ket": "Tech Tawar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C#",
+    "judul": "Belajar Pemrograman C#",
+    "url": "https://www.youtube.com/playlist?list=PLuGFxya63u253zhOzhxanaSBNJ_UiIhUb",
+    "ket": "Galih Pratama"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "C#",
+    "judul": "Tutorial Lengkap - Belajar Coding C# Programming untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PLa6D44cKrtoN9guvynhwiCIdUJ0CJkAMB",
+    "ket": "Bimbingan Belajar Coding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Construct",
+    "judul": "Belajar Membuat Game dengan Construct 2",
+    "url": "https://www.dicoding.com/academies/65",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "Belajar Bahasa Pemgrograman Dart",
+    "url": "https://www.youtube.com/playlist?list=PLsvN_QZnFWRBQRFBo46R9hAYcnmvLSIvF",
+    "ket": "Kenari Studio"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "Dart Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLoNv-2zK-dzEbZSFeGgSnpdp5i_Lwto-8",
+    "ket": "CodeWithIhwan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "Dart Programming Untuk Persiapan Belajar Flutter",
+    "url": "https://buildwithangga.com/kelas/dart-programming-untuk-persiapan-belajar-flutter",
+    "ket": "Rifqi Eka (BuildWithAngga) *(phone number and email address required)*"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "Pemrograman Berorientasi Objek - Dart",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1",
+    "ket": "Erico Darmawan Handoyo"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "Pemrograman Dart Dasar",
+    "url": "https://www.youtube.com/playlist?list=PLbLqbqNn7VYpWt6pC0C1fVNVSYrlJiX9p",
+    "ket": "ID Networkers"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "Tutorial Dart",
+    "url": "https://www.kevintekno.com/p/tutorial-dart.html",
+    "ket": "Kevin Tekno"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "TUTORIAL DART DASAR (BAHASA INDONESIA)",
+    "url": "https://www.youtube.com/watch?v=-mzXdI27tyk",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Dart",
+    "judul": "Tutorial Dart OOP - Bahasa Indonesia",
+    "url": "https://www.youtube.com/watch?v=k0ycD2aqPzU",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Desain dan Arsitektur",
+    "judul": "Belajar Design Patterns untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Desain dan Arsitektur",
+    "judul": "Belajar Microservices untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Desain dan Arsitektur",
+    "judul": "Belajar Prinsip Pemrograman SOLID",
+    "url": "https://www.dicoding.com/academies/169",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Docker",
+    "judul": "Belajar Docker untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL4SGTPmSY0qkxCTe3Gd0wA-bQZChXhsNI",
+    "ket": "Giri Kuncoro"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Docker",
+    "judul": "Mengenal Container dan Docker Sampai Jago Dalam 2 Jam",
+    "url": "https://www.youtube.com/watch?v=26O6Ke03j3Y",
+    "ket": "Imre Nagi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Docker",
+    "judul": "Pengembangan Microservice Dengan Docker Compose",
+    "url": "https://www.youtube.com/watch?v=ALGVV5cGUtc",
+    "ket": "Imre Nagi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Docker",
+    "judul": "Tutorial Docker",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6A7ODX8EWghd0r4HgKjJvy",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Docker",
+    "judul": "Tutorial Docker untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Elasticsearch",
+    "judul": "Belajar Elasticsearch untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_tVTwrxVt0K5LmtVT2u8fh",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Belajar Fundamental Aplikasi Flutter",
+    "url": "https://www.dicoding.com/academies/195",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Belajar Membuat Aplikasi Flutter untuk Pemula",
+    "url": "https://www.dicoding.com/academies/159",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Fast Track Flutter Beginner",
+    "url": "https://www.youtube.com/playlist?list=PL7jdfftn7HKup1bG852c13H6nxpJpmZzP",
+    "ket": "Kuldii Project"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Flutter Developer: Basic State Management",
+    "url": "https://buildwithangga.com/kelas/flutter-developer-basic-state-management",
+    "ket": "Tasya Agnes (BuildWithAngga) *(phone number and email address required)*"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Flutter for Designer",
+    "url": "https://buildwithangga.com/kelas/flutter-for-designer-design-to-code",
+    "ket": "Rifqi Eka (BuildWithAngga) *(phone number and email address required)*"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Flutter Membangun Website",
+    "url": "https://buildwithangga.com/kelas/flutter-membangun-website-sederhana",
+    "ket": "Rifqi Eka (BuildWithAngga) *(phone number and email address required)*"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Flutter Mobile Apps",
+    "url": "https://buildwithangga.com/kelas/flutter-mobile-apps",
+    "ket": "Angga Risky (BuildWithAngga) *(phone number and email address required)*"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Flutter Tutorial (Flutter Fundamentals)",
+    "url": "https://www.youtube.com/playlist?list=PLZQbl9Jhl-VACm40h5t6QMDB92WlopQmV",
+    "ket": "Erico Darmawan Handoyo"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "STUDI KASUS FLUTTER + GETX + FIREBASE [ CHAT APPS 2021 ]",
+    "url": "https://www.youtube.com/playlist?list=PL7jdfftn7HKt6wPnVXoXgserU14d_ACA-",
+    "ket": "Sandikha Rahardi, Kuldii Project"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flutter",
+    "judul": "Tutorial Flutter",
+    "url": "https://www.youtube.com/playlist?list=PL0-7Xi0GB3teRqkuBusUEcVrP6OlYpD9w",
+    "ket": "idr corner"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "ALL Basic Pemul",
+    "url": "https://www.youtube.com/playlist?list=PLc6SEcJkQ6DxurcQDUkY_t8cIgXya5Blj",
+    "ket": "Dea Afrizal"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Apa itu GitHub",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCtwnagWsUzZum1CFZYqrB5",
+    "ket": "Hilman Ramadhan, Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Belajar Git",
+    "url": "https://www.youtube.com/playlist?list=PLuGFxya63u24bmP-ILRaiGeMwZh3PGxW4",
+    "ket": "Galih Pratama"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Belajar GIT (Source Code Management)",
+    "url": "https://www.youtube.com/playlist?list=PL8bBYpHH3RI6BlCzFTMQvt7sGSycUj7S-",
+    "ket": "Eka Putra, UpKoding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "GIT & GITHUB",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf",
+    "ket": "Sandhika Galih, Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Git Tutorial - Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_lYGV8hxqjtKmFA_xeLupq",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Jago Git Dalam 2 Jam",
+    "url": "https://www.youtube.com/watch?v=KGSfUgaiVNI",
+    "ket": "Imre Nagi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Source Code Management untuk Pemula",
+    "url": "https://www.dicoding.com/academies/116",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Tutorial GIT Bahasa Indonesia Lengkap",
+    "url": "https://www.youtube.com/playlist?list=PL1aMeb5UP_PHXTV_Xpt-19x_rVPXrymOM",
+    "ket": "IDStack"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Tutorial Git Dasar",
+    "url": "https://www.youtube.com/watch?v=fQbTeNX1mvM",
+    "ket": "Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Git",
+    "judul": "Upload Code di Github",
+    "url": "https://app.sko.dev/kelas/upload-kode-di-github",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Belajar Go-Lang untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_t5_dtCQZgWJqWF45WRgZw",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Belajar Golang Basic Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDztO-BFc9R5afhP26Dhsgm",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Golang Fundamental",
+    "url": "https://buildwithangga.com/kelas/golang-fundamental?thumbnail=nk4neM2UyG.54&main_leads=browse",
+    "ket": "BuildWithAngga"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Golang Tutorial - Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-0i9dzMzLw6FKVrFWv3QvQ",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Mahir Golang Dari Dasar",
+    "url": "https://youtube.com/playlist?list=PL1aMeb5UP_PHPHEBNrZ3L1V4qpyuC6Aa8",
+    "ket": "IDStack"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Pemograman Go",
+    "url": "https://www.youtube.com/playlist?list=PLlENf46K9qTlOjTZ0cJWcSCb-7gCQXVH5",
+    "ket": "Koding Aja Dulu"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Tutorial Golang Fundamental Bahasa Indonesia",
+    "url": "https://www.youtube.com/watch?v=xzNT4JywW0A",
+    "ket": "Agung Setiawan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Tutorial Golang Web API Bahasa Indonesia - Full Course",
+    "url": "https://www.youtube.com/watch?v=GjI0GSvmcSU",
+    "ket": "Agung Setiawan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Go",
+    "judul": "Tutorial Golang Website Development Bahasa Indonesia",
+    "url": "https://www.youtube.com/watch?v=K76y2_ZQYwY",
+    "ket": "Agung Setiawan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Gradle",
+    "judul": "Belajar Gradle",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8yGJzfU_gners0ybO4MlrV",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "Belajar CSS",
+    "url": "https://alwaysngoding.com/belajar-css/teori",
+    "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "Belajar CSS Layout",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo5iBPtg3ovrj25C1Wsu4O3I",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "Belajar FLEXBOX",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIU1lWlM34j6E9fMlrrSGZ1k",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "Belajar HTML",
+    "url": "https://alwaysngoding.com/belajar-html/teori",
+    "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "Belajar HTML 5",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIX-K5eeHRImnZhPUMhsw9A7",
+    "ket": "Sandhika Galih, Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "Belajar TAILWINDCSS",
+    "url": "https://youtube.com/playlist?list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "CSS Dasar",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUBrbm6Gdh6k7ZUvPIAZm7p",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "CSS Grid",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIXmbwX0dEsoRVX-PC16vmuw",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "CSS Layouting",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVCmrSWbZPKCccCkfFw-Naa",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "CSS Tailwind",
+    "url": "https://buildwithangga.com/kelas/css-tailwind-web-design?thumbnail=nk4neM2UyG.46&main_leads=browse",
+    "ket": "BuildWithAngga"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "CSS Website Design",
+    "url": "https://www.buildwithangga.com/kelas/css-website-design",
+    "ket": "BuildWithAngga"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "CSS3",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVCmrSWbZPKCccCkfFw-Naa",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "HTML Dasar",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "HTML Dasar",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7FTCFuVfsbpllsoAs53xDn",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "HTML5 Canvas",
+    "url": "https://www.youtube.com/playlist?list=PL0-7Xi0GB3teW5TsBQmD2MzLU5ryjXkVE",
+    "ket": "Idr Corner"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "HTML5 Dasar",
+    "url": "https://www.buildwithangga.com/kelas/html5-dasar",
+    "ket": "BuildWithAngga"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "HTML5 Pemula Dasar",
+    "url": "https://www.petanikode.com/html-dasar/",
+    "ket": "petanikode"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "HTML and CSS",
+    "judul": "Mulai Belajar Website dengan HTML",
+    "url": "https://www.udemy.com/course/mulai-belajar-website-dengan-html/",
+    "ket": "Arkademy Tech Academy (Udemy)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Belajar Java - Dasar Java",
+    "url": "https://www.youtube.com/playlist?list=PLFfUPa9IV8LrtXVMBVcqpjxYeya1j-yiq",
+    "ket": "Mastahcode"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Belajar Java - Object Oriented Programming",
+    "url": "https://www.youtube.com/playlist?list=PLFfUPa9IV8LpbRH5-TzphcZj6tpoxdr-p",
+    "ket": "Mastahcode"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Belajar Java - Object Oriented Programming Bahasa Indonesia (Lanjut)",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6V4_vk1s1NcM2HoW5KFG7i",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Belajar Java Bahasa Indonesia (Dasar)",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Belajar Java OOP Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882bBLmmli1ly06MWZY-EOqX8",
+    "ket": "Imam Farisi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Belajar Java Untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDUvrO3Bc_VUvIjWKnYIRJ1",
+    "ket": "Hilman Ramadhan, Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Belajar Pemrograman Java dengan VSCode",
+    "url": "https://www.youtube.com/playlist?list=PL53uJBBtLf5CsXG4Sx77dNMsrTser-ppH",
+    "ket": "Ngoding Pintar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Java Dasar",
+    "url": "https://www.malasngoding.com/category/java/",
+    "ket": "Muzanni (Malas Ngoding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "JAVA TUTORIAL - BAHASA INDONESIA",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-p_Q2GyK4K3ORoAT0Yt7CX",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Java",
+    "judul": "Memulai Pemrograman dengan Java",
+    "url": "https://www.dicoding.com/academies/60",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Spring",
+    "judul": "Belajar Spring Dasar Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882aeiESAgna5eVa_cOpFnxQm",
+    "ket": "Imam Farisi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Spring",
+    "judul": "Spring Framework and Spring Boot Tutorial (Project CRUD)",
+    "url": "https://www.youtube.com/playlist?list=PLFfUPa9IV8Lp-Uognr1ALuqlKyxANO77x",
+    "ket": "Wafiq Subhi, Mastahcode"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Spring",
+    "judul": "SpringBoot",
+    "url": "https://www.youtube.com/playlist?list=PLRjWo99hnirwyafPfaxfu0psMR0hUmdQc",
+    "ket": "Hendro Steven Tampake, Kelas Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Spring",
+    "judul": "Tutorial Spring Framework & Spring Boot Dasar - Bahasa Indonesia",
+    "url": "https://www.youtube.com/watch?v=VM3rwdMBORY",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar Angular JS",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXBD2nko3bXRs-JSDNA8tNvq",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar es6 - javacsript gaya baru",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXBWhs2AwMdPyKtMG2cF4YSR",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar Full-stack JavaScript Dengan Next.js Dalam 6 Jam",
+    "url": "https://www.youtube.com/watch?v=kproo1ezjH0&t=2s",
+    "ket": "Nauval, Array Id"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar Java Bahasa Indonesia (Dasar)",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar JavaScript",
+    "url": "https://alwaysngoding.com/belajar-javascript/teori",
+    "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar JavaScript Async",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-I4CD6km3BcXqrhWAkY4et",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar JavaScript Dasar",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6rAu3mYVNs2_y-fbJaOH5R",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Belajar JavaScript Untuk Website",
+    "url": "https://app.sko.dev/kelas/belajar-javascript-untuk-website",
+    "ket": "sko.dev"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Dasar Pemrograman dengan JavaScriipt",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWXagluzROrA-iBY9eeUt4w",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "ExpressJS Tutorial Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PL9At9z2rvOC-sgzJx7rM_wMDONnEM4E0A",
+    "ket": "Ekky Ridyanto (Balademy)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "JavaScript dan DOM (Document Object Model)",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "JavaScript Dasar",
+    "url": "https://www.malasngoding.com/category/javascript/",
+    "ket": "Diki Alfarabi Hadi (Malas Ngoding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "JavaScript Lanjutan",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "JavaScript Module",
+    "url": "https://devsaurus.com/javascript-module",
+    "ket": "Devsaurus"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "JavaScript Tutorial Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8SS0Gsj9_a0cC0jypFEoSg",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Main Main JavaScript",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCyd70hT8jYl24bLuPpH9iR",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Nest JS Tutorial Indonesia",
+    "url": "https://youtube.com/playlist?list=PL9At9z2rvOC8phs2qV4Fysy8cejzg6pU0",
+    "ket": "Ekky Ridyanto (Balademy)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Tutorial AngularJS Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLohWNsc-n1L-3ffIaGRAjbTQm7bh9F9FG",
+    "ket": "Windu Purnomo"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Tutorial JavaScript Pemrograman Berorientasi Objek",
+    "url": "https://www.youtube.com/watch?v=SDROba_M42g",
+    "ket": "Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Tutorial NextJS Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ3-zouYHHknPq1G5VTB8PRf",
+    "ket": "Prawito Hudoro"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Tutorial programming dari nol (Javascript)",
+    "url": "https://www.youtube.com/playlist?list=PLwF5TtGsdsBdTJdjzZp1Wdog1DNcHZdDu",
+    "ket": "Pintar Programming"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "JavaScript",
+    "judul": "Tutorial Svelte Indonesia",
+    "url": "https://youtube.com/playlist?list=PLH1gH0TmFBBhWp2pn6vRhUVVC1txQuTZE",
+    "ket": "Ipung Purwono, Ipung Dev Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Node",
+    "judul": "Belajar NodeJS",
+    "url": "https://youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Node",
+    "judul": "Node.js Dasar",
+    "url": "https://buildwithangga.com/kelas/node-javascript-dasar?thumbnail=nk4neM2UyG.36&main_leads=browse",
+    "ket": "BuildWithAngga"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Node",
+    "judul": "Pelajaran Node.js Sederhana",
+    "url": "https://easy-to-learn5.teachable.com/p/nodejs",
+    "ket": "Easy To Learn 5"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Node",
+    "judul": "RESTFul API dengan Express.js dan MongoDB",
+    "url": "https://www.youtube.com/watch?v=4X0MFuE8ebs",
+    "ket": "IDStack"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Node",
+    "judul": "Tutorial NodeJS Dasar - Bahasa Indonesia",
+    "url": "https://www.youtube.com/watch?v=b39Xqf5iyjo",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Belajar React JS Dari Awal Buat Yang Nggak Jago JavaScript",
+    "url": "https://www.youtube.com/watch?v=JS5w4rUbjQE",
+    "ket": "array id"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Belajar React untuk PEMULA",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUu3X2zYNqomEWs3sYd-fV1",
+    "ket": "Sandhika Galih"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Belajar ReactJS Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXALZIcEe2t3XVuQ50JYbsbA",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Belajar Testing Pada React Dengan Jest dan RTL",
+    "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ1e5H4bX6rCTwBvSl2cll6a",
+    "ket": "Prawito Hudoro"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Mari Kita Belajar Basic React JS",
+    "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5MwXT8zMPbezhDnTM3cTA5cZ",
+    "ket": "Irsyad A. Panjaitan, Parsinta"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "React JS Dasar Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj0XtJjWW04hN24fWXrCpLkY",
+    "ket": "Wahidev Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "ReactJS-Firebase Tutorial",
+    "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ2CnIvj7tI0zoijDSgR1m9j",
+    "ket": "Prawito Hudoro"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "ReactJS Tutorial",
+    "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ03qEsHn9zV4qdhcWtusBqb",
+    "ket": "Prawito Hudoro"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "ReactJS Untuk Pemula",
+    "url": "https://www.petanikode.com/reactjs-untuk-pemula/",
+    "ket": "Petani Kode"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Tutorial Project React.js 2022",
+    "url": "https://youtube.com/playlist?list=PL1aMeb5UP_PHUa0RxQDYJYZZNc_h-jE67",
+    "ket": "IDStack"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Tutorial React JS Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLp6BJq2fT_g91yCNCWi_bIe-ng7S7rt6V",
+    "ket": "Lampung JS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Tutorial React Native Bahasa Indonesia (Futsal App)",
+    "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj2NeWJew3o86bSptVPXOppa",
+    "ket": "Wahidev Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "React",
+    "judul": "Tutorial React Native Indonesia",
+    "url": "https://youtube.com/playlist?list=PLU4DS8KR-LJ3SP3PpRb870UoT_0_rjLpV",
+    "ket": "Prawito Hudoro"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Vue.js",
+    "judul": "Tutorial Vue JS Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCFeOD_wBc9GrYF9pA8loLQ",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Vue.js",
+    "judul": "Tutorial Vuejs Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PL9At9z2rvOC-Z6Gt8uO1XMp4oyMlE3gml",
+    "ket": "Baledemy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Vue.js",
+    "judul": "Tutorial VueJs dengan API Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu",
+    "ket": "Wahidev Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Vue.js",
+    "judul": "Vue 3 - Pinia",
+    "url": "https://youtube.com/playlist?list=PLnQvfeVegcJYV7uSax0W8z3peCyiOxr6W",
+    "ket": "Nusendra Hanggarawan (Nusendra.com)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Vue.js",
+    "judul": "Vue 3 Advance",
+    "url": "https://youtube.com/playlist?list=PLnQvfeVegcJbbmFmN5ZMnkylQXp6mb7gP",
+    "ket": "Nusendra Hanggarawan (Nusendra.com)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Vue.js",
+    "judul": "Vue 3 Composition API",
+    "url": "https://youtube.com/playlist?list=PLnQvfeVegcJbn7ZDOUNbRN25obY4htSlB",
+    "ket": "Nusendra Hanggarawan (Nusendra.com)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Vue.js",
+    "judul": "Vue 3 Dasar",
+    "url": "https://youtube.com/playlist?list=PLnQvfeVegcJbV2NGXpay7ulU6ybASzAlG",
+    "ket": "Nusendra Hanggarawan (Nusendra.com)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Belajar Kotlin Collection",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-aC-35fw5qrr6DZ-qMzmRr",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Belajar Kotlin Dasar untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_hja5vRJgQOXylCiQud7Qa",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Belajar Kotlin Generic",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8MW630XLcNKsBDWCCdh2mR",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Belajar Kotlin Object Oriented Programming",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8lHOsi7kIDxK57WWLmzVog",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Belajar Kotlin Unit Test",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8HoTBUpYgQ-Q45U54Tn_up",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Fungsi pada Kotlin",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCqFIOudYt5icvdCnkA8FVe",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Kotlin Collection",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCZWnGxjnZwAsnDthoas1O1",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Kotlin Object Oriented Programming Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLe8n__MJ2In54a_2j-Yh_Oz-ZGTauziwf",
+    "ket": "Kelas Coding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kotlin",
+    "judul": "Tutorial Kotlin Android Studio 2020 Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLFVTikutopLZe6N6wHrrNDizfnxwoeg92",
+    "ket": "Lazday Indonesia"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Kubernetes",
+    "judul": "Belajar Kubernetes untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8XrWyQAyRd6d_CKwxD8Ime",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Linux",
+    "judul": "Belajar linux fundamentals",
+    "url": "https://youtube.com/playlist?list=PLbLqbqNn7VYpnd7FggSeq18AgE4gdsy2F",
+    "ket": "ID-Networkers"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Linux",
+    "judul": "Instalasi & Review Linux",
+    "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voEclcVMPqHoS6GSgcVNGIjy",
+    "ket": "Indonesia Belajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Linux",
+    "judul": "Linux Pemula",
+    "url": "https://www.youtube.com/playlist?list=PLACzo3mGgHK_D2wkGu4AvUAQiqLC30PTz",
+    "ket": "LINUXcare"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Linux",
+    "judul": "Tutorial Terminal Linux Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLy1BHEa_Wr-cpjWY5uOqsMxQwiQrRnC8B",
+    "ket": "ArtAway"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Machine Learning",
+    "judul": "Belajar Dasar Visualisasi Data",
+    "url": "https://www.dicoding.com/academies/177",
+    "ket": "Dicoding, membutuhkan registrasi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Machine Learning",
+    "judul": "Belajar Machine Learning Dari Awal Buat Yang Ga Jago Matematika",
+    "url": "https://www.youtube.com/watch?v=WH1SduDRL_Y&t=2s",
+    "ket": "array id"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Machine Learning",
+    "judul": "Classic Time Series Forecasting | Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLGn1wRmlR3Ms7wr2zgtcC4LaE_NHQAEjx",
+    "ket": "Wira DKP, JCOp Untuk Indonesia"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Machine Learning",
+    "judul": "Nusantech Webinar - Introduction to Machine Learning",
+    "url": "https://www.youtube.com/watch?v=SezDD2ULQ1o",
+    "ket": "Nusantech, Galuh Sahid"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Machine Learning",
+    "judul": "Tutorial Belajar Machine Learning Dasar | Python Scikit-Learn",
+    "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E",
+    "ket": "Setia Budi, Indonesia Belajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Microservices",
+    "judul": "Belajar Microservices untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs",
+    "ket": "Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Microservices",
+    "judul": "Microservice Architecture Web Development",
+    "url": "https://buildwithangga.com/kelas/microservice-architecture-web-development?thumbnail=nk4neM2UyG.49&main_leads=browse",
+    "ket": "BuildWithAngga"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Microservices",
+    "judul": "Training Microservices 2020",
+    "url": "https://www.youtube.com/playlist?list=PL9oC_cq7OYbywbzkB_2tSr3DQqNfXiM7R",
+    "ket": "Artivisi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "MongoDB",
+    "judul": "Belajar MongoDB",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-eFFdPeS5e16o3THdmvxvz",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "MongoDB",
+    "judul": "MongoDB Tutorial Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLhzwHCJWMbnu830iJ8xLcXgbnklmXpSK5",
+    "ket": "Pojok Code"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "MySQL",
+    "judul": "Belajar MySQL",
+    "url": "https://alwaysngoding.com/belajar-mysql/teori",
+    "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "MySQL",
+    "judul": "Belajar MySQL",
+    "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voGs6CiEUPXwt1fhLLqu30E_",
+    "ket": "Indonesia Belajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "MySQL",
+    "judul": "Belajar MySQL/MariaDB",
+    "url": "https://www.youtube.com/playlist?list=PLF82-I80PwDN7KSzsJOmd8mwHYe4aAqfF",
+    "ket": "Guntur Budi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "MySQL",
+    "judul": "MYSQL Tutorial Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_P2_2zR6pvDublvpD3fF6W",
+    "ket": "Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "Belajar PHP",
+    "url": "https://alwaysngoding.com/belajar-php/teori",
+    "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "Belajar PHP Dasar",
+    "url": "https://www.youtube.com/playlist?list=PL53uJBBtLf5AiyMU-LMqIx7uz3-ozRTlb",
+    "ket": "Ngoding Pintar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "Belajar PHP untuk PEMULA",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUqXfmEIBE3-uzERZPh3vp6",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "Membuat Aplikasi MVC dengan PHP",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVEh_d-h5wAjsdv2W4SAtkx",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "OOP Dasar pada PHP",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWvxxll-6wLXrC_16h_Bl_p",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "PHP Dasar",
+    "url": "https://www.malasngoding.com/category/php/",
+    "ket": "Diki Alfarabi Hadi, Muzanni (Malas Ngoding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "PHP The Right Way",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVcKOrB2tFKi4eWYXHvS3CU",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "PHP Tutorial Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH9EmZy4zYfW1ATIJ-qMXxGt",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PHP",
+    "judul": "Tutorial CodeIgniter untuk pemula",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCYh65VSFR2yzC7CuPBcAjt",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Codeigniter",
+    "judul": "Tutorial Codeigniter",
+    "url": "https://www.youtube.com/playlist?list=PLce3Eyp7oY9_5lzhkUtrV6ygriYcttMlg",
+    "ket": "Framework Indonesia"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Codeigniter",
+    "judul": "TUTORIAL CODEIGNITER 4",
+    "url": "https://youtube.com/playlist?list=PLFIM0718LjIUkkIq1Ub6B5dYNb6IlMvtc",
+    "ket": "Sandhika Galih (Web Programming UNPAS)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Codeigniter",
+    "judul": "Tutorial Codeigniter 4 Indonesia",
+    "url": "https://youtube.com/playlist?list=PL1aMeb5UP_PFkC4mY3prujavZBehsWAC3",
+    "ket": "IDStack"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Codeigniter",
+    "judul": "Tutorial Membuat CRUD CodeIgniter 4 & Bootstrap",
+    "url": "https://santrikoding.com/tutorial-set/crud-codeigniter-4",
+    "ket": "Fika Ridaul Maulayya (Santri Koding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Codeigniter",
+    "judul": "Tutorial Sistem Informasi Akademik dengan Codeigniter",
+    "url": "https://www.youtube.com/playlist?list=PLce3Eyp7oY9_hXzGACf988F1ojvQlYmB0",
+    "ket": "Framework Indonesia"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Belajar CRUD Laravel 8 + Livewire",
+    "url": "https://www.youtube.com/playlist?list=PLEgI20pG1DqzAa8npy9C_NDUvYwhslUb4",
+    "ket": "Muhammad Amirul Ihsan (Kawan Koding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Belajar Laravel 5",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDlNd0Flz20xksNtJQZWywz",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Belajar Laravel 7 Dari Awal",
+    "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5MxfIKTn_wZ49XlplwHtz1AV",
+    "ket": "Irsyad A. Panjaitan (Parsinta)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Belajar Laravel 8",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWiihbBIq-SWPU6b6x21Q_2",
+    "ket": "Sandhika Galih, Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Belajar Laravel 8 Dari Awal",
+    "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5MwADhthqRaewl-7e7AhjpP8",
+    "ket": "Irsyad A. Panjaitan (Parsinta)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Belajar Laravel Pemula",
+    "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj2c9ZA7Rrnciir2OydWTdbn",
+    "ket": "Wahidev Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Fitur Baru Laravel 8",
+    "url": "https://www.youtube.com/playlist?list=PLEgI20pG1DqyTqCPiHnuWrBZtVFs5z95p",
+    "ket": "Muhammad Amirul Ihsan (Kawan Koding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Membangun Web Profil Band dan Lirik dengan Laravel 8",
+    "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5Mzoti-pT2MGuQERTd1_sm21",
+    "ket": "Irsyad A. Panjaitan (Parsinta)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Membuat Tabel Post Tampilan",
+    "url": "https://youtu.be/sYTin40_Ukw",
+    "ket": "Muhammad Amirul Ihsan (Kawan Koding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Tutorial Laravel",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8AoW8KgbHM9q_gXKsXyyht",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Tutorial Laravel 5.7 Dasar bahasa Indonesia",
+    "url": "https://www.malasngoding.com/category/laravel/",
+    "ket": "Diki Alfarabi Hadi (Malas Ngoding)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Tutorial Laravel 7.x Dasar",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXBucXejxeeqCe_NWZS-67q_",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Tutorial Laravel Bahasa Indonesia",
+    "url": "https://id-laravel.com",
+    "ket": "ID Laravel"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Laravel",
+    "judul": "Tutorial Restful API Laravel 10",
+    "url": "https://santrikoding.com/tutorial-set/tutorial-restful-api-laravel-10",
+    "ket": "Santrikoding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "#LiveSeminggu (Python Dasar)",
+    "url": "https://www.youtube.com/playlist?list=PLl-Zj2iuqlwviXEWkyT08NbK54kpa5cvu",
+    "ket": "NgodingPython"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Belajar Bahasa Pemrograman Python Dasar",
+    "url": "https://www.udemy.com/course/belajar-bahasa-pemrograman-python-dasar/",
+    "ket": "Cahyo Adhi (Udemy)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Belajar Pemrograman Python untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_HY6bL3JER8WJOxz1nb3_H",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Belajar python bahasa Indonesia",
+    "url": "https://sekolahkoding.com/track/belajar-python-bahasa-indonesia",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Belajar Python Bahasa Indonesia [Dasar]",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Belajar Python Bahasa Indonesia [Versi Baru]",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo59lUBwU-XHH7Ymmb04ffOY",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Intro to Python",
+    "url": "https://www.youtube.com/playlist?list=PLM4Qh7PEStOmBHR6Ey0BzPf3XNsPuSXL-",
+    "ket": "Tensaitech Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "OpenCV untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PLl-Zj2iuqlwt4cBsBy_Ej7gNlXdQ7blCB",
+    "ket": "NgodingPython"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Python",
+    "url": "https://codesaya.com/python/",
+    "ket": "CodeSaya"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Python (dasar)",
+    "url": "https://www.youtube.com/playlist?list=PLT2AwM1dOOUe27iCPe68Z0qwwDeNyJawN",
+    "ket": "beecoder id *(Dalam Proses)*"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Tutorial Belajar Machine Learning Dasar | Python Scikit-Learn",
+    "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E",
+    "ket": "Indonesia Belajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Tutorial Belajar Python Pandas",
+    "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voGdD_9xhVCTBoDTDNHpajm5",
+    "ket": "Indonesia Belajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Tutorial Python Beginner Bahasa Indonesia",
+    "url": "https://www.youtube.com/watch?v=rWC2iFlN3TM",
+    "ket": "Agung Setiawan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Tutorial Python GUI dengan TKinter",
+    "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHjX09IpdsiSBNnLRaR-CbJ",
+    "ket": "Indonesia Belajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Tutorial Python OOP Object Oriented Programming Bahasa Indonesia - Full Course",
+    "url": "https://www.youtube.com/watch?v=b6Y5CzFM0Oc",
+    "ket": "Agung Setiawan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Python",
+    "judul": "Visualisasi Data dalam Pemrograman Python (Matplotlib)",
+    "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHrfoMFvkDeblmjarDN8nC8",
+    "ket": "Indonesia Belajar"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Django",
+    "judul": "Belajar Django 2.2",
+    "url": "https://www.youtube.com/playlist?list=PLSCLBARdXrOz4SM3GKyKuqQp7eXWAH1u1",
+    "ket": "Zul Himli"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Django",
+    "judul": "Pengenalan Django Web Framework Python untuk Pemula",
+    "url": "https://www.udemy.com/course/django-web-framework-python/",
+    "ket": "Udemy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Django",
+    "judul": "Tutorial Django 1.11 LTS Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6p_RwsWntxMO5QAqIHHHld",
+    "ket": "Kelas Terbuka"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flask",
+    "judul": "Belajar Membuat Website Dengan Flask Python",
+    "url": "https://www.youtube.com/playlist?list=PL8q4s70ndvwfD1Nbrl5iYsgSWVStCXo5h",
+    "ket": "Riffa Media"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flask",
+    "judul": "Membuat website dengan Flask",
+    "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCZwaY3F4bHikozOBzrFD_R",
+    "ket": "Sekolah Koding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Flask",
+    "judul": "Tutorial web dengan flask sampai mahir",
+    "url": "https://www.youtube.com/playlist?list=PL5vG7_Y90KtxXH4YhDcb5m4n82ShAPnPc",
+    "ket": "Toufan RA"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PyTorch",
+    "judul": "Course 5 | Pengantar Deep Learning | Tutorial Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLGn1wRmlR3Mtz5i4k4qyd5qQjOtm9JSC6",
+    "ket": "JCOp Untuk Indonesia"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "PyTorch",
+    "judul": "PyTorch untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PLl-Zj2iuqlwvMCvaX_4POywGiw4TFuHp1",
+    "ket": "NgodingPython"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Redis",
+    "judul": "Belajar Redis",
+    "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-7hBhz1Q-4rKIQntJoBNX3",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Rust",
+    "judul": "Belajar bahasa pemrograman Rust!",
+    "url": "https://www.youtube.com/watch?v=1gRIAVwDlb4&pp=ygUMYmVsYWphciBydXN0",
+    "ket": "Ngooding"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Rust",
+    "judul": "Belajar Rust",
+    "url": "https://www.youtube.com/playlist?list=PLIfsrcorUur10nUSHVq9Mb4yWu87_5lZn",
+    "ket": "Dev Activity"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "SASS / SCSS",
+    "judul": "Belajar Menggunakan SASS",
+    "url": "https://youtube.com/playlist?list=PLRKMmwY3-5Mxzx31JO3V9JJ8GLdUXYqt0",
+    "ket": "Irsyad A. Panjaitan (Parsinta)"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "SASS / SCSS",
+    "judul": "Belajar Sass Biar Nulis Kode CSS Jadi \"Absurd\"",
+    "url": "https://www.youtube.com/watch?v=kNA_wWbBCLc",
+    "ket": "array id"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "SASS / SCSS",
+    "judul": "Tutorial SASS",
+    "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUqemgG97MAOK0J_berlQM5",
+    "ket": "Web Programming UNPAS"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Solidity",
+    "judul": "Ethereum Blockchain Tutorial Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLNl8QwXqW_lvWSc3n3geFSbBtmJvEl4nz",
+    "ket": "Odoo Indonesia vITraining"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Solidity",
+    "judul": "Tutorial Blockchain Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLH1gH0TmFBBhvZi4kEqU6kCjyv_y8qBae",
+    "ket": "Ipung DEV Academy"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Terraform",
+    "judul": "Belajar Terraform untuk Pemula",
+    "url": "https://www.youtube.com/playlist?list=PL4SGTPmSY0qngs44Ssc0RHO9h4fmZ9JUb",
+    "ket": "Giri Kuncoro"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "Terraform",
+    "judul": "DevOps 101",
+    "url": "https://www.youtube.com/playlist?list=PLvhu7dkzS_I3T1WlDMJjS85L4In-WYLN_",
+    "ket": "Iqbal Syamil"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "TypeScript",
+    "judul": "Belajar Typescript Dasar Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882Z4NSJGNq0eB9Fz6tIx-CgO",
+    "ket": "Imam Farisi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "TypeScript",
+    "judul": "Belajar Typescript OOP Bahasa Indonesia",
+    "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882a-sLbdqZTtraO3cl0Clwg0",
+    "ket": "Imam Farisi"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "TypeScript",
+    "judul": "OOP TypeScript",
+    "url": "https://www.youtube.com/playlist?list=PLnQvfeVegcJZRieebeIp0xj1NeC5L633Y",
+    "ket": "Nusendra Hanggarawan"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "TypeScript",
+    "judul": "Tutorial TypeScript Dasar",
+    "url": "https://www.youtube.com/watch?v=C_C64faSO4c",
+    "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"
+  },
+  {
+    "jenis": "Kursus",
+    "kategori": "TypeScript",
+    "judul": "TypeScript Dasar",
+    "url": "https://www.youtube.com/playlist?list=PLnQvfeVegcJbjCnML6FdusK-rl-oDRMXJ",
+    "ket": "Nusendra Hanggarawan"
+  }
+]

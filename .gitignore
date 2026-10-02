@@ -1,0 +1,5 @@
+# Abaikan file ini — hanya metadata Python
+__pycache__/
+*.pyc
+*.pyo
+.env
