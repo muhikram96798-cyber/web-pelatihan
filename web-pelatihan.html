@@ -157,33 +157,30 @@
     }
 
     /* ============================================================
-       HEADER
+       HERO (HEADER UTAMA)
+       Tanpa navbar terpisah: logo & theme toggle berada di baris atas hero.
     ============================================================ */
-    .hdr {
+    .hero {
       background: var(--surface);
       border-bottom: 3px solid var(--blue);
-      box-shadow: var(--sh-ctrl);
-      position: sticky;
-      top: 0;
-      z-index: 200;
+      padding: 1.75rem 1.5rem 2rem;
     }
 
-    .hdr-in {
+    .hero-container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 0 1.5rem;
-      height: 58px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .hero-topbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
-    }
-
-    .hdr-left {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-shrink: 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
     }
 
     .logo {
@@ -207,7 +204,7 @@
 
     .logo-name {
       font-family: var(--font-head);
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--text);
       letter-spacing: -0.01em;
@@ -215,53 +212,10 @@
 
     .logo-name b { color: var(--blue); font-weight: 700; }
 
-    .logo-badge {
-      display: inline-flex;
-      align-items: center;
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 0.15rem 0.5rem;
-      border-radius: 9999px;
-      background: var(--blue-lt);
-      color: var(--blue);
-      border: 1px solid var(--blue-mid);
-    }
-
-    /* NAVIGASI HEADER DI TENGAH */
-    .hdr-nav {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .hdr-nav-link {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--text-3);
-      text-decoration: none;
-      padding: 0.35rem 0.65rem;
-      border-radius: 6px;
-      transition: color 0.15s, background-color 0.15s;
-    }
-
-    .hdr-nav-link:hover {
-      color: var(--blue);
-      background: var(--blue-lt);
-    }
-
-    .hdr-nav-link:focus-visible {
-      outline: none;
-      box-shadow: var(--focus);
-    }
-
-    /* AKSI HEADER KANAN */
-    .hdr-right {
+    .hero-top-actions {
       display: flex;
       align-items: center;
       gap: 0.625rem;
-      flex-shrink: 0;
     }
 
     .gh-btn {
@@ -314,18 +268,7 @@
     .theme-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor;
                      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
-    /* ============================================================
-       HERO
-    ============================================================ */
-    .hero {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 2.25rem 1.5rem;
-    }
-
-    .hero-in {
-      max-width: 1100px;
-      margin: 0 auto;
+    .hero-main {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 2rem;
@@ -343,7 +286,7 @@
       text-transform: uppercase;
       letter-spacing: 0.09em;
       color: var(--blue);
-      margin-bottom: 0.625rem;
+      margin-bottom: 0.5rem;
     }
 
     .hero-title {
@@ -353,7 +296,7 @@
       line-height: 1.25;
       color: var(--text);
       letter-spacing: -0.02em;
-      margin-bottom: 0.625rem;
+      margin-bottom: 0.5rem;
     }
 
     .hero-title em { font-style: normal; color: var(--blue); }
@@ -361,7 +304,7 @@
     .hero-desc {
       font-size: 0.925rem;
       color: var(--text-3);
-      max-width: 440px;
+      max-width: 480px;
       line-height: 1.6;
     }
 
@@ -401,7 +344,7 @@
     }
 
     @media (max-width: 680px) {
-      .hero-in {
+      .hero-main {
         grid-template-columns: 1fr;
         gap: 1.25rem;
       }
@@ -418,14 +361,14 @@
     }
 
     /* ============================================================
-       KONTROL
+       KONTROL (STICKY DI PALING ATAS SAAT SCROLL)
     ============================================================ */
     .ctrl {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
       padding: 0.875rem 1.5rem;
       position: sticky;
-      top: 58px;
+      top: 0;
       z-index: 150;
       box-shadow: var(--sh-ctrl);
     }
@@ -786,40 +729,25 @@
     /* ============================================================
        RESPONSIVE
     ============================================================ */
-    @media (max-width: 768px) {
-      .hdr-nav {
-        display: none;
-      }
-      .logo-badge {
-        display: none;
-      }
-      .gh-btn .gh-text {
-        display: none;
-      }
-      .gh-btn {
-        padding: 0.42rem;
-      }
-    }
-
     @media (max-width: 480px) {
-      .hdr-in { padding: 0 1rem; }
-      .hero   { padding: 1.75rem 1rem; }
+      .hero   { padding: 1.25rem 1rem 1.5rem; }
       .ctrl   { padding: 0.75rem 1rem; }
       .main   { padding: 1rem 1rem 2.5rem; }
       .ftr    { padding: 1.5rem 1rem; }
       .logo-name { font-size: 1rem; }
       .grid   { grid-template-columns: 1fr; gap: 0.75rem; }
       .cat-sel { min-width: 0; width: 100%; }
-      .ctrl { top: 55px; }
+      .gh-btn .gh-text { display: none; }
+      .gh-btn { padding: 0.35rem 0.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="hdr">
-    <div class="hdr-in">
-      <div class="hdr-left">
+  <!-- HERO DENGAN BRANDING & ACTIONS (TANPA NAVBAR TERPISAH) -->
+  <header class="hero" aria-labelledby="heroH1">
+    <div class="hero-container">
+      <div class="hero-topbar">
         <a href="#" class="logo" aria-label="Pustaka Koding Indonesia, halaman utama">
           <div class="logo-mark" aria-hidden="true">
             <svg viewBox="0 0 20 20">
@@ -828,79 +756,65 @@
           </div>
           <span class="logo-name">Pustaka <b>Koding</b></span>
         </a>
-        <span class="logo-badge">Koleksi Terbuka</span>
-      </div>
 
-      <!-- Navigasi Tautan di Header -->
-      <nav class="hdr-nav" aria-label="Navigasi Utama">
-        <a href="#grid" class="hdr-nav-link" onclick="quickNav('Semua')">Semua Materi</a>
-        <a href="#grid" class="hdr-nav-link" onclick="quickNav('Kursus')">Kursus Video</a>
-        <a href="#grid" class="hdr-nav-link" onclick="quickNav('Buku')">Buku Bacaan</a>
-        <a href="#tentang" class="hdr-nav-link">Tentang</a>
-      </nav>
+        <div class="hero-top-actions">
+          <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer" class="gh-btn" title="Kunjungi repositori sumber EbookFoundation di GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span class="gh-text">GitHub</span>
+          </a>
 
-      <!-- Aksi Kanan: Tombol GitHub & Tema -->
-      <div class="hdr-right">
-        <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer" class="gh-btn" title="Kunjungi repositori sumber EbookFoundation di GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-          <span class="gh-text">GitHub</span>
-        </a>
-
-        <button id="themeBtn" class="theme-btn" type="button" aria-label="Beralih ke tema gelap">
-          <svg id="icoSun" viewBox="0 0 24 24" style="display:none">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-          </svg>
-          <svg id="icoMoon" viewBox="0 0 24 24">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO: teks kiri, stat kanan. Stat dari data riil. -->
-  <section class="hero" aria-labelledby="heroH1">
-    <div class="hero-in">
-      <div class="hero-copy">
-        <p class="eyebrow">Sumber Belajar Terbuka</p>
-        <h1 id="heroH1" class="hero-title">
-          Buku dan Kursus<br>
-          <em>Pemrograman Gratis</em><br>
-          Bahasa Indonesia
-        </h1>
-        <p class="hero-desc">
-          Katalog lengkap materi belajar pemrograman dari sumber terbuka.
-          Cari, filter, dan mulai belajar tanpa biaya.
-        </p>
-      </div>
-
-      <!-- Angka dari data.json -->
-      <div class="stats" aria-label="Statistik koleksi">
-        <div class="stat">
-          <span class="stat-n" id="sTotal">0</span>
-          <span class="stat-l">Total Materi</span>
+          <button id="themeBtn" class="theme-btn" type="button" aria-label="Beralih ke tema gelap">
+            <svg id="icoSun" viewBox="0 0 24 24" style="display:none">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg id="icoMoon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
         </div>
-        <div class="stat">
-          <span class="stat-n" id="sKursus">0</span>
-          <span class="stat-l">Kursus Video</span>
+      </div>
+
+      <div class="hero-main">
+        <div class="hero-copy">
+          <p class="eyebrow">Sumber Belajar Terbuka</p>
+          <h1 id="heroH1" class="hero-title">
+            Buku dan Kursus<br>
+            <em>Pemrograman Gratis</em><br>
+            Bahasa Indonesia
+          </h1>
+          <p class="hero-desc">
+            Katalog lengkap materi belajar pemrograman dari sumber terbuka.
+            Cari, filter, dan mulai belajar tanpa biaya.
+          </p>
         </div>
-        <div class="stat">
-          <span class="stat-n" id="sBuku">0</span>
-          <span class="stat-l">Buku Gratis</span>
+
+        <div class="stats" aria-label="Statistik koleksi">
+          <div class="stat">
+            <span class="stat-n" id="sTotal">0</span>
+            <span class="stat-l">Total Materi</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n" id="sKursus">0</span>
+            <span class="stat-l">Kursus Video</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n" id="sBuku">0</span>
+            <span class="stat-l">Buku Gratis</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- KONTROL: sticky, search + dropdown + tab pills -->
+  <!-- KONTROL (STICKY DI ATAS SAAT SCROLL) -->
   <section class="ctrl" aria-label="Pencarian dan filter">
     <div class="ctrl-in">
       <div class="ctrl-top">
@@ -945,7 +859,7 @@
   </main>
 
   <!-- FOOTER: atribusi CC BY 4.0 wajib -->
-  <footer id="tentang" class="ftr">
+  <footer class="ftr">
     <div class="ftr-in">
       <p>
         <strong>Sumber Data:</strong> Dikurasi dari
@@ -1080,17 +994,6 @@
       });
       render();
       si.focus();
-    }
-
-    // Fungsi navigasi cepat dari header
-    function quickNav(type) {
-      st.jenis = type;
-      tabs.forEach(t => {
-        const on = t.getAttribute('data-t') === type;
-        t.classList.toggle('on', on);
-        t.setAttribute('aria-selected', on ? 'true' : 'false');
-      });
-      render();
     }
 
     si.addEventListener('input', e  => { st.q   = e.target.value; render(); });
