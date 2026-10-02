@@ -3,179 +3,362 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Katalog buku dan kursus pemrograman gratis berbahasa Indonesia, dikurasi dari repositori EbookFoundation." />
-  <title>Pustaka Koding Indonesia</title>
+  <meta name="description" content="Katalog buku dan kursus pemrograman gratis berbahasa Indonesia. Terinspirasi oleh SantriKoding, bersumber dari EbookFoundation." />
+  <title>Pustaka Koding - Katalog Pemrograman Gratis Bahasa Indonesia</title>
   <style>
     /* ============================================================
-       DESIGN TOKENS
-       Aksen: Biru tua #1E40AF (light) / #60A5FA (dark)
-       Heading: Georgia serif, body: system-ui
-       ENERGY 2 / RHYTHM 2 / MOTION 2
+       DESIGN TOKENS - SANTRIKODING STYLE
+       Warna: Hitam pekat, kartu dark elevation, aksen merah/coral (#ef4444)
+       Grid lines background pada Hero, thumbnail preview dengan monogram
     ============================================================ */
     :root {
-      --font-body: system-ui, -apple-system, BlinkMacSystemFont,
-                   'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      --font-head: Georgia, 'Times New Roman', serif;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
-      --blue:        #1E40AF;
-      --blue-h:      #1D3A9B;
-      --blue-lt:     #EFF6FF;
-      --blue-mid:    #BFDBFE;
-      --blue-dim:    #DBEAFE;
+      /* Palette SantriKoding */
+      --red:        #ef4444;
+      --red-hover:  #dc2626;
+      --red-light:  rgba(239, 68, 68, 0.12);
+      --red-border: rgba(239, 68, 68, 0.35);
 
-      --bg:          #F3F4F6;
-      --surface:     #FFFFFF;
-      --surface-2:   #F9FAFB;
-      --border:      #E5E7EB;
-      --border-2:    #D1D5DB;
+      /* Dark Mode (Default ala SantriKoding) */
+      --bg:         #0b0d11;
+      --surface:    #12151c;
+      --surface-2:  #171b24;
+      --card-bg:    #151821;
+      --card-hover: #1c212d;
+      --border:     #212735;
+      --border-2:   #2c3447;
 
-      --text:        #111827;
-      --text-2:      #374151;
-      --text-3:      #6B7280;
-      --text-4:      #9CA3AF;
+      --text:       #f8fafc;
+      --text-muted: #94a3b8;
+      --text-faint: #64748b;
 
-      --badge-c-bg:  #DBEAFE;
-      --badge-c-tx:  #1E40AF;
-      --badge-c-bd:  #BFDBFE;
-      --badge-b-bg:  #FEF3C7;
-      --badge-b-tx:  #92400E;
-      --badge-b-bd:  #FDE68A;
+      --badge-kursus-bg: #1e293b;
+      --badge-kursus-tx: #38bdf8;
+      --badge-buku-bg:   #292524;
+      --badge-buku-tx:   #fbbf24;
 
-      --sh-card:     0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
-      --sh-lift:     0 8px 24px -4px rgba(30,64,175,0.16), 0 4px 10px -2px rgba(0,0,0,0.07);
-      --sh-ctrl:     0 1px 4px rgba(0,0,0,0.08);
-      --focus:       0 0 0 3px rgba(30,64,175,0.22);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --blue:        #60A5FA;
-        --blue-h:      #93C5FD;
-        --blue-lt:     rgba(96,165,250,0.12);
-        --blue-mid:    #1E3A8A;
-        --blue-dim:    #1E3272;
-
-        --bg:          #0F172A;
-        --surface:     #1E293B;
-        --surface-2:   #172033;
-        --border:      #334155;
-        --border-2:    #475569;
-
-        --text:        #F9FAFB;
-        --text-2:      #E5E7EB;
-        --text-3:      #94A3B8;
-        --text-4:      #64748B;
-
-        --badge-c-bg:  #1E3A5F;
-        --badge-c-tx:  #93C5FD;
-        --badge-c-bd:  #1E40AF;
-        --badge-b-bg:  #3B2800;
-        --badge-b-tx:  #FCD34D;
-        --badge-b-bd:  #92400E;
-
-        --sh-card:     0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2);
-        --sh-lift:     0 8px 26px -4px rgba(96,165,250,0.2), 0 4px 12px -2px rgba(0,0,0,0.3);
-        --sh-ctrl:     0 1px 4px rgba(0,0,0,0.35);
-        --focus:       0 0 0 3px rgba(96,165,250,0.28);
-      }
-    }
-
-    [data-theme="dark"] {
-      --blue:        #60A5FA;
-      --blue-h:      #93C5FD;
-      --blue-lt:     rgba(96,165,250,0.12);
-      --blue-mid:    #1E3A8A;
-      --blue-dim:    #1E3272;
-
-      --bg:          #0F172A;
-      --surface:     #1E293B;
-      --surface-2:   #172033;
-      --border:      #334155;
-      --border-2:    #475569;
-
-      --text:        #F9FAFB;
-      --text-2:      #E5E7EB;
-      --text-3:      #94A3B8;
-      --text-4:      #64748B;
-
-      --badge-c-bg:  #1E3A5F;
-      --badge-c-tx:  #93C5FD;
-      --badge-c-bd:  #1E40AF;
-      --badge-b-bg:  #3B2800;
-      --badge-b-tx:  #FCD34D;
-      --badge-b-bd:  #92400E;
-
-      --sh-card:     0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2);
-      --sh-lift:     0 8px 26px -4px rgba(96,165,250,0.2), 0 4px 12px -2px rgba(0,0,0,0.3);
-      --sh-ctrl:     0 1px 4px rgba(0,0,0,0.35);
-      --focus:       0 0 0 3px rgba(96,165,250,0.28);
+      --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      --card-shadow-hover: 0 12px 28px -4px rgba(239, 68, 68, 0.22), 0 6px 16px -2px rgba(0, 0, 0, 0.5);
+      --focus-ring: 0 0 0 3px rgba(239, 68, 68, 0.3);
     }
 
     [data-theme="light"] {
-      --blue:        #1E40AF;
-      --blue-h:      #1D3A9B;
-      --blue-lt:     #EFF6FF;
-      --blue-mid:    #BFDBFE;
-      --blue-dim:    #DBEAFE;
+      --bg:         #f8fafc;
+      --surface:    #ffffff;
+      --surface-2:  #f1f5f9;
+      --card-bg:    #ffffff;
+      --card-hover: #f8fafc;
+      --border:     #e2e8f0;
+      --border-2:   #cbd5e1;
 
-      --bg:          #F3F4F6;
-      --surface:     #FFFFFF;
-      --surface-2:   #F9FAFB;
-      --border:      #E5E7EB;
-      --border-2:    #D1D5DB;
+      --text:       #0f172a;
+      --text-muted: #475569;
+      --text-faint: #94a3b8;
 
-      --text:        #111827;
-      --text-2:      #374151;
-      --text-3:      #6B7280;
-      --text-4:      #9CA3AF;
+      --badge-kursus-bg: #e0f2fe;
+      --badge-kursus-tx: #0284c7;
+      --badge-buku-bg:   #fef3c7;
+      --badge-buku-tx:   #d97706;
 
-      --badge-c-bg:  #DBEAFE;
-      --badge-c-tx:  #1E40AF;
-      --badge-c-bd:  #BFDBFE;
-      --badge-b-bg:  #FEF3C7;
-      --badge-b-tx:  #92400E;
-      --badge-b-bd:  #FDE68A;
-
-      --sh-card:     0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
-      --sh-lift:     0 8px 24px -4px rgba(30,64,175,0.16), 0 4px 10px -2px rgba(0,0,0,0.07);
-      --sh-ctrl:     0 1px 4px rgba(0,0,0,0.08);
-      --focus:       0 0 0 3px rgba(30,64,175,0.22);
+      --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      --card-shadow-hover: 0 12px 24px -4px rgba(239, 68, 68, 0.16), 0 4px 12px rgba(0, 0, 0, 0.05);
+      --focus-ring: 0 0 0 3px rgba(239, 68, 68, 0.25);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: var(--font-body);
-      background: var(--bg);
+      font-family: var(--font-main);
+      background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      transition: background-color 0.25s, color 0.25s;
+      transition: background-color 0.2s, color 0.2s;
     }
 
     /* ============================================================
-       HERO (HEADER UTAMA & SHOWCASE)
+       1. NAVBAR (SANTRIKODING STYLE)
     ============================================================ */
-    .hero {
-      background: var(--surface);
-      border-bottom: 3px solid var(--blue);
-      padding: 1.5rem 1.5rem 2.25rem;
+    .navbar {
+      background-color: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      backdrop-filter: blur(8px);
     }
 
-    .hero-container {
-      max-width: 1100px;
+    .nav-container {
+      max-width: 1200px;
       margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 64px;
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       gap: 1.5rem;
     }
 
-    /* Baris Atas Hero */
-    .hero-topbar {
+    /* Logo SantriKoding Style */
+    .brand-logo {
       display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 0.04em;
+    }
+
+    .brand-avatar {
+      width: 32px;
+      height: 32px;
+      background: var(--text);
+      color: var(--bg);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      text-transform: uppercase;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    .brand-text span {
+      color: var(--red);
+    }
+
+    /* Menu Navigasi Tengah */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-item-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: color 0.15s ease;
+      text-decoration: none;
+      padding: 0.35rem 0;
+    }
+
+    .nav-item-btn:hover {
+      color: var(--text);
+    }
+
+    .nav-item-btn svg {
+      width: 12px;
+      height: 12px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.5;
+    }
+
+    /* Aksi Kanan */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .nav-icon-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      transition: color 0.15s, background-color 0.15s;
+    }
+
+    .nav-icon-btn:hover {
+      color: var(--text);
+      background-color: var(--surface-2);
+    }
+
+    .nav-icon-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .nav-cta-btn {
+      background-color: var(--red);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.825rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.45rem 1.15rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: background-color 0.15s, transform 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .nav-cta-btn:hover {
+      background-color: var(--red-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ============================================================
+       2. HERO SECTION (SANTRIKODING GRID PATTERN & AVATAR)
+    ============================================================ */
+    .hero-banner {
+      background-color: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 3.5rem 1.5rem 3rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    [data-theme="light"] .hero-banner {
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+
+    .hero-content {
+      max-width: 780px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Circle Avatar Tengah ala SantriKoding */
+    .hero-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #0b0d11;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      transition: transform 0.25s ease;
+    }
+
+    .hero-avatar:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-avatar svg {
+      width: 46px;
+      height: 46px;
+      fill: none;
+      stroke: #0f172a;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.025em;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Quick Filter Chips ala SantriKoding */
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      max-width: 680px;
+    }
+
+    .hero-tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .hero-tag:hover {
+      border-color: var(--red);
+      color: var(--text);
+      background: var(--surface-2);
+    }
+
+    .hero-tag.active {
+      background: var(--red);
+      color: #fff;
+      border-color: var(--red);
+    }
+
+    /* ============================================================
+       3. SECTION TITLE & FILTER BAR
+    ============================================================ */
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      width: 100%;
+      flex: 1;
+    }
+
+    /* Section Bar persis SantriKoding: ARTIKEL BERDASARKAN KATEGORI: NEXT JS */
+    .section-header-bar {
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
@@ -183,1213 +366,831 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 0.625rem;
-      text-decoration: none;
-    }
-
-    .logo-mark {
-      width: 32px;
-      height: 32px;
-      background: var(--blue);
-      border-radius: 7px;
-      display: grid;
-      place-items: center;
-      flex-shrink: 0;
-    }
-
-    .logo-mark svg { width: 17px; height: 17px; fill: #fff; }
-
-    .logo-name {
-      font-family: var(--font-head);
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: -0.01em;
-    }
-
-    .logo-name b { color: var(--blue); font-weight: 700; }
-
-    /* Badge Tengah di Topbar: Mengisi ruang kosong secara elegan */
-    .hero-top-center {
-      display: flex;
-      align-items: center;
-    }
-
-    .pill-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      font-size: 0.775rem;
-      font-weight: 600;
-      color: var(--text-2);
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      padding: 0.25rem 0.75rem;
-      border-radius: 9999px;
-    }
-
-    .pill-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #10B981;
-      display: inline-block;
-    }
-
-    .hero-top-actions {
-      display: flex;
-      align-items: center;
-      gap: 0.625rem;
-    }
-
-    .gh-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.825rem;
-      font-weight: 600;
-      color: var(--text-2);
-      text-decoration: none;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      padding: 0.35rem 0.75rem;
-      border-radius: 8px;
-      transition: border-color 0.15s, color 0.15s, background 0.15s;
-    }
-
-    .gh-btn:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-      background: var(--blue-lt);
-    }
-
-    .gh-btn:focus-visible { outline: none; box-shadow: var(--focus); }
-    .gh-btn svg { width: 15px; height: 15px; fill: currentColor; }
-
-    .theme-btn {
-      width: 34px;
-      height: 34px;
-      display: grid;
-      place-items: center;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      cursor: pointer;
-      color: var(--text-3);
-      transition: border-color 0.15s, color 0.15s, background 0.15s;
-    }
-
-    .theme-btn:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-lt); }
-    .theme-btn:focus-visible { outline: none; box-shadow: var(--focus); }
-    .theme-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor;
-                     stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-
-    /* Konten Utama Hero: 2 Kolom Seimbang */
-    .hero-main {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 2rem;
-      align-items: start;
-    }
-
-    .hero-copy {
-      border-left: 4px solid var(--blue);
-      padding-left: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.875rem;
-    }
-
-    .eyebrow {
-      font-size: 0.725rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--blue);
-    }
-
-    .hero-title {
-      font-family: var(--font-head);
-      font-size: clamp(1.6rem, 3.2vw, 2.25rem);
-      font-weight: 700;
-      line-height: 1.22;
-      color: var(--text);
-      letter-spacing: -0.02em;
-    }
-
-    .hero-title em { font-style: normal; color: var(--blue); }
-
-    .hero-desc {
-      font-size: 0.925rem;
-      color: var(--text-3);
-      line-height: 1.65;
-    }
-
-    /* Tombol Aksi Cepat di Hero */
-    .hero-actions-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.25rem;
-    }
-
-    .hero-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-family: var(--font-body);
-      font-size: 0.825rem;
-      font-weight: 600;
-      padding: 0.5rem 0.875rem;
-      border-radius: 8px;
-      cursor: pointer;
-      border: 1px solid transparent;
-      transition: all 0.15s ease;
-    }
-
-    .hero-cta-btn.primary {
-      background: var(--blue);
-      color: #fff;
-    }
-    .hero-cta-btn.primary:hover {
-      background: var(--blue-h);
-      box-shadow: var(--sh-card);
-    }
-
-    .hero-cta-btn.secondary {
-      background: var(--blue-lt);
-      color: var(--blue);
-      border-color: var(--blue-mid);
-    }
-    .hero-cta-btn.secondary:hover {
-      background: var(--blue-dim);
-    }
-
-    .hero-cta-btn.outline {
-      background: var(--surface-2);
-      color: var(--text-2);
-      border-color: var(--border-2);
-    }
-    .hero-cta-btn.outline:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-    }
-
-    .hero-cta-btn:focus-visible { outline: none; box-shadow: var(--focus); }
-
-    /* Baris Topik Populer / Trending Chips */
-    .hero-topics {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.25rem;
-      padding-top: 0.75rem;
-      border-top: 1px dashed var(--border);
-    }
-
-    .topics-title {
-      font-size: 0.775rem;
-      font-weight: 700;
-      color: var(--text-3);
-      margin-right: 0.2rem;
-    }
-
-    .topic-chip {
-      font-family: var(--font-body);
-      font-size: 0.75rem;
-      font-weight: 500;
-      padding: 0.2rem 0.55rem;
-      border-radius: 6px;
-      background: var(--surface-2);
-      color: var(--text-2);
-      border: 1px solid var(--border);
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-
-    .topic-chip:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-      background: var(--blue-lt);
-    }
-
-    .topic-chip:focus-visible { outline: none; box-shadow: var(--focus); }
-
-    /* ============================================================
-       SHOWCASE CARD (KOLOM KANAN HERO)
-    ============================================================ */
-    .hero-showcase {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .showcase-card {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      box-shadow: var(--sh-card);
-      position: relative;
-    }
-
-    .showcase-header {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
-
-    .showcase-title-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .showcase-badge {
-      font-size: 0.68rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--blue);
-    }
-
-    .showcase-status {
-      font-size: 0.725rem;
-      font-weight: 600;
-      color: #10B981;
-    }
-
-    .showcase-sub {
-      font-size: 0.8rem;
-      color: var(--text-3);
-    }
-
-    /* Grid Statistik Interaktif di Dalam Showcase */
-    .showcase-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-    }
-
-    .s-stat-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 0.625rem 0.4rem;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-
-    .s-stat-box:hover {
-      border-color: var(--blue);
-      transform: translateY(-2px);
-      box-shadow: var(--sh-card);
-    }
-
-    .s-stat-n {
-      font-family: var(--font-head);
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--blue);
-      line-height: 1;
-      display: block;
-    }
-
-    .s-stat-l {
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-3);
-      display: block;
-      margin-top: 0.25rem;
-    }
-
-    /* Checklist Manfaat */
-    .showcase-features {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
-      padding: 0;
-      margin: 0;
-      font-size: 0.8rem;
-      color: var(--text-2);
-    }
-
-    .showcase-features li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.45rem;
-      line-height: 1.4;
-    }
-
-    .feat-ico {
-      color: #10B981;
+    .section-title {
+      font-size: 1.05rem;
       font-weight: 800;
-      flex-shrink: 0;
-    }
-
-    /* Rekomendasi Acak / Lucky Pick Banner */
-    .showcase-highlight {
-      background: var(--blue-lt);
-      border: 1px solid var(--blue-mid);
-      border-radius: 8px;
-      padding: 0.625rem 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text);
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-    }
-
-    .hl-content {
-      display: flex;
-      flex-direction: column;
-      gap: 0.15rem;
-      min-width: 0;
-    }
-
-    .hl-label {
-      font-size: 0.68rem;
-      font-weight: 700;
-      color: var(--blue);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .hl-title {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--text);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin: 0;
-    }
-
-    .hl-btn {
-      font-family: var(--font-body);
-      font-size: 0.75rem;
-      font-weight: 700;
-      background: var(--blue);
-      color: #fff;
-      border: none;
-      padding: 0.35rem 0.65rem;
-      border-radius: 6px;
-      cursor: pointer;
-      flex-shrink: 0;
-      transition: background 0.15s ease;
-    }
-
-    .hl-btn:hover { background: var(--blue-h); }
-
-    /* ============================================================
-       KONTROL (STICKY DI ATAS SAAT SCROLL)
-    ============================================================ */
-    .ctrl {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 0.875rem 1.5rem;
-      position: sticky;
-      top: 0;
-      z-index: 150;
-      box-shadow: var(--sh-ctrl);
-    }
-
-    .ctrl-in {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .ctrl-top {
-      display: flex;
-      gap: 0.625rem;
+      gap: 0.4rem;
       flex-wrap: wrap;
     }
 
-    .srch {
+    .section-title span.cat-highlight {
+      color: var(--red);
+    }
+
+    /* Controls: Search & Tabs */
+    .filter-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .search-input-wrap {
       position: relative;
       flex: 1;
-      min-width: 200px;
+      min-width: 240px;
     }
 
-    .srch-ico {
+    .search-icon-svg {
       position: absolute;
-      left: 0.8rem;
+      left: 0.875rem;
       top: 50%;
       transform: translateY(-50%);
-      width: 15px;
-      height: 15px;
-      color: var(--text-4);
+      width: 16px;
+      height: 16px;
+      color: var(--text-faint);
       pointer-events: none;
     }
 
-    .srch-ico svg { width: 15px; height: 15px; fill: none; stroke: currentColor;
-                    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-
-    .srch input {
+    .search-input {
       width: 100%;
-      padding: 0.575rem 2rem 0.575rem 2.25rem;
+      padding: 0.65rem 2.25rem 0.65rem 2.5rem;
       font-size: 0.875rem;
-      font-family: var(--font-body);
-      border: 1px solid var(--border-2);
-      border-radius: 8px;
-      background: var(--bg);
+      font-family: inherit;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
       color: var(--text);
       outline: none;
       transition: border-color 0.15s, box-shadow 0.15s;
     }
 
-    .srch input::placeholder { color: var(--text-4); }
-    .srch input:focus { border-color: var(--blue); box-shadow: var(--focus); }
+    .search-input:focus {
+      border-color: var(--red);
+      box-shadow: var(--focus-ring);
+    }
 
-    .srch-x {
+    .search-clear-btn {
       position: absolute;
-      right: 0.625rem;
+      right: 0.75rem;
       top: 50%;
       transform: translateY(-50%);
       background: none;
       border: none;
-      color: var(--text-4);
+      color: var(--text-faint);
+      font-size: 1.25rem;
       cursor: pointer;
-      font-size: 1.1rem;
-      line-height: 1;
       display: none;
-      transition: color 0.15s;
-      padding: 0.15rem;
     }
 
-    .srch-x:hover { color: var(--text); }
+    .search-clear-btn:hover { color: var(--text); }
 
-    .cat-sel {
-      padding: 0.575rem 1.75rem 0.575rem 0.8rem;
+    .cat-select {
+      padding: 0.65rem 2rem 0.65rem 1rem;
       font-size: 0.875rem;
-      font-family: var(--font-body);
-      border: 1px solid var(--border-2);
-      border-radius: 8px;
-      background: var(--bg);
+      font-family: inherit;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
       color: var(--text);
       cursor: pointer;
       outline: none;
       appearance: none;
-      min-width: 180px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      min-width: 190px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
       background-repeat: no-repeat;
-      background-position: right 0.625rem center;
-      background-size: 13px;
-      transition: border-color 0.15s, box-shadow 0.15s;
+      background-position: right 0.75rem center;
     }
 
-    .cat-sel:focus { border-color: var(--blue); box-shadow: var(--focus); }
-
-    .ctrl-bot {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+    .cat-select:focus {
+      border-color: var(--red);
+      box-shadow: var(--focus-ring);
     }
 
-    .tabs {
+    /* Tab Pills */
+    .tab-pills-row {
       display: inline-flex;
-      gap: 0.2rem;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 0.2rem;
-    }
-
-    .tab {
-      font-family: var(--font-body);
-      font-size: 0.82rem;
-      font-weight: 500;
-      padding: 0.35rem 0.8rem;
-      border: none;
-      background: transparent;
-      color: var(--text-3);
-      border-radius: 6px;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: all 0.15s;
-    }
-
-    .tab:hover:not(.on) { color: var(--text); }
-
-    .tab.on {
-      background: var(--blue);
-      color: #fff;
-      font-weight: 600;
-    }
-
-    .tab:focus-visible { outline: none; box-shadow: var(--focus); }
-
-    .meta {
-      display: flex;
-      align-items: center;
-      gap: 0.625rem;
-    }
-
-    .result-txt {
-      font-size: 0.825rem;
-      font-weight: 600;
-      color: var(--text-3);
-    }
-
-    .reset-lnk {
-      font-size: 0.8rem;
-      font-family: var(--font-body);
-      color: var(--blue);
-      background: none;
-      border: none;
-      text-decoration: underline;
-      cursor: pointer;
-      padding: 0;
-      display: none;
-    }
-
-    .reset-lnk:hover { color: var(--blue-h); }
-    .reset-lnk:focus-visible { outline: none; box-shadow: var(--focus); border-radius: 3px; }
-
-    /* ============================================================
-       GRID KARTU
-    ============================================================ */
-    .main {
-      flex: 1;
-      max-width: 1100px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 1.25rem 1.5rem 3rem;
-    }
-
-    @keyframes fu {
-      from { opacity: 0; transform: translateY(10px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-      gap: 0.875rem;
-    }
-
-    .card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 1rem 1.125rem;
+      padding: 0.25rem;
+      gap: 0.25rem;
+    }
+
+    .tab-pill {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.825rem;
+      font-weight: 700;
+      padding: 0.4rem 0.95rem;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .tab-pill:hover:not(.active) { color: var(--text); }
+
+    .tab-pill.active {
+      background: var(--red);
+      color: #fff;
+    }
+
+    /* ============================================================
+       4. CARDS GRID ALA SANTRIKODING (CARD DENGAN THUMBNAIL)
+    ============================================================ */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .sk-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      box-shadow: var(--sh-card);
+      box-shadow: var(--card-shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
       position: relative;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-      animation: fu 0.3s ease both;
     }
 
-    .card:nth-child(1) { animation-delay: 0.00s; }
-    .card:nth-child(2) { animation-delay: 0.04s; }
-    .card:nth-child(3) { animation-delay: 0.08s; }
-    .card:nth-child(4) { animation-delay: 0.12s; }
-    .card:nth-child(5) { animation-delay: 0.16s; }
-    .card:nth-child(6) { animation-delay: 0.20s; }
-    .card:nth-child(n+7) { animation-delay: 0.22s; }
-
-    .card::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 12%; bottom: 12%;
-      width: 3px;
-      background: var(--blue);
-      border-radius: 0 3px 3px 0;
-      opacity: 0;
-      transform: scaleY(0.5);
-      transition: opacity 0.2s ease, transform 0.2s ease;
+    .sk-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--card-shadow-hover);
+      border-color: var(--red-border);
     }
 
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--sh-lift);
-      border-color: var(--blue-mid);
-    }
-
-    .card:hover::before { opacity: 1; transform: scaleY(1); }
-
-    .card-top {
+    /* Bagian Atas: Thumbnail ala SantriKoding */
+    .sk-thumb {
+      height: 180px;
+      background: #0d1017;
+      position: relative;
       display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 0.5rem;
-      margin-bottom: 0.625rem;
-    }
-
-    .badge {
-      display: inline-flex;
+      flex-direction: column;
       align-items: center;
-      gap: 0.25rem;
-      font-size: 0.66rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
+      justify-content: center;
+      overflow: hidden;
+      padding: 1.25rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+
+      /* Efek garis kode editor mockup di background */
+      background-image: 
+        radial-gradient(ellipse at center, rgba(30, 41, 59, 0.7) 0%, rgba(13, 16, 23, 0.95) 100%),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.015) 0px, rgba(255, 255, 255, 0.015) 1px, transparent 1px, transparent 12px);
+    }
+
+    /* Karakter Icon Kecil di Pojok Kiri Atas Thumbnail */
+    .sk-thumb-avatar {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(4px);
+      display: grid;
+      place-items: center;
+      font-size: 0.8rem;
+    }
+
+    /* Badge Kursus / Buku di Pojok Kanan Atas Thumbnail */
+    .sk-thumb-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.65rem;
+      font-weight: 800;
       text-transform: uppercase;
-      padding: 0.175rem 0.5rem;
-      border-radius: 5px;
-      border: 1px solid transparent;
-      user-select: none;
-      flex-shrink: 0;
+      letter-spacing: 0.06em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 9999px;
     }
 
-    .bc { background: var(--badge-c-bg); color: var(--badge-c-tx); border-color: var(--badge-c-bd); }
-    .bb { background: var(--badge-b-bg); color: var(--badge-b-tx); border-color: var(--badge-b-bd); }
-
-    .ext {
-      color: var(--text-4);
-      flex-shrink: 0;
-      transition: color 0.2s, transform 0.2s;
+    .badge-kursus {
+      background: var(--badge-kursus-bg);
+      color: var(--badge-kursus-tx);
+      border: 1px solid rgba(56, 189, 248, 0.25);
     }
 
-    .card:hover .ext { color: var(--blue); transform: translate(1px, -1px); }
+    .badge-buku {
+      background: var(--badge-buku-bg);
+      color: var(--badge-buku-tx);
+      border: 1px solid rgba(251, 191, 36, 0.25);
+    }
 
-    .ext svg { width: 13px; height: 13px; fill: none; stroke: currentColor;
-               stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; display: block; }
+    /* Circle Monogram di Tengah Thumbnail */
+    .sk-thumb-circle {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #0b0d11;
+      display: grid;
+      place-items: center;
+      font-size: 1.15rem;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      margin-bottom: 0.75rem;
+      transition: transform 0.25s ease;
+      letter-spacing: -0.02em;
+    }
 
-    .card-link {
-      font-size: 0.9rem;
-      font-weight: 600;
+    .sk-card:hover .sk-thumb-circle {
+      transform: scale(1.1);
+    }
+
+    /* Teks Judul Kategori Besar di Thumbnail */
+    .sk-thumb-cat {
+      font-size: 0.95rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .sk-thumb-sub {
+      font-size: 0.75rem;
+      font-style: italic;
+      color: #94a3b8;
+      margin-top: 0.2rem;
+    }
+
+    /* Bagian Bawah: Body Kartu */
+    .sk-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .sk-card-title {
+      font-size: 1rem;
+      font-weight: 700;
       line-height: 1.45;
       color: var(--text);
       text-decoration: none;
       display: block;
-      margin-bottom: 0.75rem;
-      transition: color 0.2s;
+      margin-bottom: 0.85rem;
+      transition: color 0.15s ease;
     }
 
-    .card-link::after { content: ''; position: absolute; inset: 0; }
-    .card:hover .card-link { color: var(--blue); }
+    .sk-card:hover .sk-card-title {
+      color: var(--red);
+    }
 
-    .card-meta {
-      margin-top: auto;
-      padding-top: 0.55rem;
+    .sk-card-title::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+
+    .sk-card-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
       border-top: 1px solid var(--border);
+      padding-top: 0.75rem;
       display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 0.25rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
       position: relative;
       z-index: 2;
     }
 
-    .m-cat { font-size: 0.75rem; font-weight: 600; color: var(--text-2); }
-    .m-sep { font-size: 0.75rem; color: var(--text-4); }
-    .m-ket { font-size: 0.75rem; color: var(--text-3); word-break: break-word; }
-
-    /* ============================================================
-       EMPTY STATE
-    ============================================================ */
-    .empty {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 4.5rem 1rem;
-      background: var(--surface);
-      border: 1px dashed var(--border-2);
-      border-radius: 12px;
+    .meta-tag {
+      font-weight: 700;
+      color: var(--red);
+      font-size: 0.75rem;
+      text-transform: uppercase;
     }
 
-    .empty-ico { width: 44px; height: 44px; margin: 0 auto 1rem; color: var(--text-4); }
-    .empty-ico svg { width: 44px; height: 44px; fill: none; stroke: currentColor;
-                     stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .meta-author {
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 190px;
+    }
 
-    .empty h3 { font-family: var(--font-head); font-size: 1.05rem; font-weight: 700;
-                color: var(--text); margin-bottom: 0.4rem; }
+    /* ============================================================
+       5. STATE KOSONG
+    ============================================================ */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 5rem 1.5rem;
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: 16px;
+    }
 
-    .empty p { font-size: 0.875rem; color: var(--text-3); margin-bottom: 1.125rem; }
+    .empty-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1.25rem;
+      color: var(--text-faint);
+    }
 
-    .btn-blue {
-      background: var(--blue);
+    .empty-icon svg { width: 48px; height: 48px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+
+    .empty-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .empty-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-reset {
+      background: var(--red);
       color: #fff;
       border: none;
-      font-family: var(--font-body);
+      font-family: inherit;
       font-size: 0.85rem;
-      font-weight: 600;
-      padding: 0.5rem 1.125rem;
-      border-radius: 8px;
+      font-weight: 700;
+      padding: 0.55rem 1.25rem;
+      border-radius: 9999px;
       cursor: pointer;
       transition: background 0.15s;
     }
 
-    .btn-blue:hover { background: var(--blue-h); }
-    .btn-blue:focus-visible { outline: none; box-shadow: var(--focus); }
+    .btn-reset:hover { background: var(--red-hover); }
 
     /* ============================================================
-       FOOTER
+       6. FOOTER
     ============================================================ */
-    .ftr {
+    .footer {
       background: var(--surface);
       border-top: 1px solid var(--border);
-      padding: 1.75rem 1.5rem;
+      padding: 2.5rem 1.5rem;
+      margin-top: auto;
     }
 
-    .ftr-in {
-      max-width: 1100px;
+    .footer-container {
+      max-width: 1200px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.7;
     }
 
-    .ftr p { font-size: 0.82rem; color: var(--text-3); line-height: 1.65; }
-    .ftr strong { color: var(--text-2); font-weight: 600; }
-
-    .ftr a {
-      color: var(--blue);
+    .footer a {
+      color: var(--red);
       text-decoration: underline;
       text-underline-offset: 2px;
-      transition: color 0.15s;
     }
 
-    .ftr a:hover { color: var(--blue-h); }
+    .footer a:hover { color: var(--red-hover); }
 
     /* ============================================================
-       RESPONSIVE
+       RESPONSIVE MOBILE
     ============================================================ */
-    @media (max-width: 860px) {
-      .hero-main {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      .hero-top-center {
-        display: none;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero   { padding: 1.25rem 1rem 1.5rem; }
-      .ctrl   { padding: 0.75rem 1rem; }
-      .main   { padding: 1rem 1rem 2.5rem; }
-      .ftr    { padding: 1.5rem 1rem; }
-      .logo-name { font-size: 1rem; }
-      .grid   { grid-template-columns: 1fr; gap: 0.75rem; }
-      .cat-sel { min-width: 0; width: 100%; }
-      .gh-btn .gh-text { display: none; }
-      .gh-btn { padding: 0.35rem 0.5rem; }
-      .showcase-stats { grid-template-columns: 1fr; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 1.85rem; }
+      .hero-avatar { width: 75px; height: 75px; }
+      .hero-avatar svg { width: 38px; height: 38px; }
+      .section-header-bar { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HERO DENGAN BRANDING, ACTIONS & SHOWCASE KREATIF -->
-  <header class="hero" aria-labelledby="heroH1">
-    <div class="hero-container">
-      <!-- TOPBAR: Logo + Status Badge + Actions -->
-      <div class="hero-topbar">
-        <a href="#" class="logo" aria-label="Pustaka Koding Indonesia, halaman utama">
-          <div class="logo-mark" aria-hidden="true">
-            <svg viewBox="0 0 20 20">
-              <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 1h10v1H5V6zm0 3h10v1H5V9zm0 3h6v1H5v-1z"/>
-            </svg>
-          </div>
-          <span class="logo-name">Pustaka <b>Koding</b></span>
-        </a>
+  <!-- NAVBAR PERSIS SANTRIKODING -->
+  <nav class="navbar" aria-label="Navigasi Utama">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" aria-label="Pustaka Koding">
+        <div class="brand-avatar" aria-hidden="true">&#128187;</div>
+        <span class="brand-text">Pustaka<span>Koding</span></span>
+      </a>
 
-        <div class="hero-top-center">
-          <span class="pill-badge">
-            <span class="pill-dot"></span>
-            344 Materi Terbuka &middot; Lisensi CC BY 4.0
-          </span>
-        </div>
-
-        <div class="hero-top-actions">
-          <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer" class="gh-btn" title="Kunjungi repositori sumber EbookFoundation di GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-            <span class="gh-text">GitHub</span>
+      <!-- Menu Tengah -->
+      <ul class="nav-links">
+        <li>
+          <a href="#materiSection" class="nav-item-btn" onclick="quickFilterTab('Kursus')">
+            Kursus
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </a>
+        </li>
+        <li>
+          <a href="#materiSection" class="nav-item-btn" onclick="quickFilterTab('Buku')">
+            Ebook
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#materiSection" class="nav-item-btn" onclick="focusSearch()">
+            Kategori
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer" class="nav-item-btn">
+            Sumber Data
+          </a>
+        </li>
+      </ul>
 
-          <button id="themeBtn" class="theme-btn" type="button" aria-label="Beralih ke tema gelap">
-            <svg id="icoSun" viewBox="0 0 24 24" style="display:none">
-              <circle cx="12" cy="12" r="5"/>
-              <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-              <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-            </svg>
-            <svg id="icoMoon" viewBox="0 0 24 24">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-            </svg>
-          </button>
-        </div>
+      <!-- Aksi Kanan -->
+      <div class="nav-actions">
+        <button id="navSearchBtn" class="nav-icon-btn" type="button" aria-label="Cari materi" title="Fokus ke kolom pencarian" onclick="focusSearch()">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <button id="themeToggleBtn" class="nav-icon-btn" type="button" aria-label="Ganti tema gelap atau terang" title="Ganti mode gelap/terang">
+          <svg id="themeSun" viewBox="0 0 24 24" style="display:none">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg id="themeMoon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <a href="https://github.com/muhikram96798-cyber/web-pelatihan" target="_blank" rel="noopener noreferrer" class="nav-cta-btn">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION ALA SANTRIKODING (GRID PATTERN + AVATAR BESAR + TITLE) -->
+  <header class="hero-banner">
+    <div class="hero-content">
+      <div class="hero-avatar" id="heroMonogramAvatar" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
       </div>
 
-      <!-- KONTEN HERO UTAMA -->
-      <div class="hero-main">
-        <div class="hero-copy">
-          <p class="eyebrow">Kurasi Pembelajaran Terbuka</p>
-          <h1 id="heroH1" class="hero-title">
-            Buku dan Kursus<br>
-            <em>Pemrograman Gratis</em><br>
-            Bahasa Indonesia
-          </h1>
-          <p class="hero-desc">
-            Koleksi terlengkap buku digital dan materi video pemrograman berbahasa Indonesia.
-            Tersusun dalam 58 kategori teknologi, siap dipelajari kapan saja tanpa biaya.
-          </p>
+      <h1 class="hero-title" id="heroDisplayTitle">Pustaka Koding</h1>
+      <p class="hero-subtitle" id="heroDisplaySub">Katalog Terbuka Buku &amp; Kursus Pemrograman Bahasa Indonesia</p>
 
-          <!-- Tombol Aksi Cepat -->
-          <div class="hero-actions-bar">
-            <button type="button" class="hero-cta-btn primary" onclick="quickNav('Kursus')">
-              <span>🎓</span> Jelajahi Kursus Video
-            </button>
-            <button type="button" class="hero-cta-btn secondary" onclick="quickNav('Buku')">
-              <span>📖</span> Baca Ebook Gratis
-            </button>
-            <button type="button" class="hero-cta-btn outline" onclick="pickRandom()" title="Pilih materi acak untuk dipelajari hari ini">
-              <span>🎲</span> Acak Materi
-            </button>
-          </div>
-
-          <!-- Topik Populer / Trending Tags -->
-          <div class="hero-topics">
-            <span class="topics-title">Topik Populer:</span>
-            <button type="button" class="topic-chip" onclick="searchTopic('Python')">Python</button>
-            <button type="button" class="topic-chip" onclick="searchTopic('JavaScript')">JavaScript</button>
-            <button type="button" class="topic-chip" onclick="searchTopic('HTML and CSS')">Web / CSS</button>
-            <button type="button" class="topic-chip" onclick="searchTopic('Laravel')">Laravel</button>
-            <button type="button" class="topic-chip" onclick="searchTopic('Flutter')">Flutter</button>
-            <button type="button" class="topic-chip" onclick="searchTopic('Go')">Golang</button>
-            <button type="button" class="topic-chip" onclick="searchTopic('React')">React</button>
-          </div>
-        </div>
-
-        <!-- SHOWCASE CARD KREATIF DI SEBELAH KANAN -->
-        <div class="hero-showcase">
-          <div class="showcase-card">
-            <div class="showcase-header">
-              <div class="showcase-title-row">
-                <span class="showcase-badge">IKHTISAR KATALOG</span>
-                <span class="showcase-status">● Live Data</span>
-              </div>
-              <p class="showcase-sub">Sinkronisasi repositori resmi EbookFoundation</p>
-            </div>
-
-            <!-- Stats 3 Kolom Interaktif -->
-            <div class="showcase-stats">
-              <div class="s-stat-box" onclick="quickNav('Semua')" title="Klik untuk lihat semua">
-                <span class="s-stat-n" id="sTotal">344</span>
-                <span class="s-stat-l">Total Materi</span>
-              </div>
-              <div class="s-stat-box" onclick="quickNav('Kursus')" title="Klik untuk saring kursus">
-                <span class="s-stat-n" id="sKursus">247</span>
-                <span class="s-stat-l">Kursus Video</span>
-              </div>
-              <div class="s-stat-box" onclick="quickNav('Buku')" title="Klik untuk saring buku">
-                <span class="s-stat-n" id="sBuku">97</span>
-                <span class="s-stat-l">Buku &amp; Ebook</span>
-              </div>
-            </div>
-
-            <!-- Fitur Unggulan -->
-            <ul class="showcase-features">
-              <li>
-                <span class="feat-ico">✓</span>
-                <span><strong>100% Bebas Biaya:</strong> Tanpa biaya langganan atau bayar di muka</span>
-              </li>
-              <li>
-                <span class="feat-ico">✓</span>
-                <span><strong>Lisensi CC BY 4.0:</strong> Konten legal, terbuka, dan terverifikasi</span>
-              </li>
-              <li>
-                <span class="feat-ico">✓</span>
-                <span><strong>58 Kategori:</strong> Dari Dasar Web, Mobile, hingga Machine Learning</span>
-              </li>
-            </ul>
-
-            <!-- Banner Rekomendasi Acak -->
-            <div class="showcase-highlight">
-              <div class="hl-content">
-                <span class="hl-label">💡 Butuh ide belajar hari ini?</span>
-                <p class="hl-title" id="hlTitle">Klik tombol untuk rekomendasi materi acak</p>
-              </div>
-              <button type="button" class="hl-btn" onclick="pickRandom()">
-                Pilihkan ➔
-              </button>
-            </div>
-          </div>
-        </div>
+      <!-- Quick Topic Chips -->
+      <div class="hero-tags" aria-label="Kategori Populer">
+        <button type="button" class="hero-tag active" onclick="selectHeroCategory('')">Semua Materi</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('Python')">Python</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('JavaScript')">JavaScript</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('PHP')">PHP</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('Laravel')">Laravel</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('Flutter')">Flutter</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('HTML and CSS')">HTML &amp; CSS</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('Go')">Golang</button>
+        <button type="button" class="hero-tag" onclick="selectHeroCategory('React')">React</button>
       </div>
     </div>
   </header>
 
-  <!-- KONTROL (STICKY DI ATAS SAAT SCROLL) -->
-  <section class="ctrl" id="ctrlSection" aria-label="Pencarian dan filter">
-    <div class="ctrl-in">
-      <div class="ctrl-top">
-        <div class="srch">
-          <span class="srch-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </span>
-          <input
-            type="search"
-            id="srchInput"
-            placeholder="Cari judul, penulis, atau topik... (misal: Python, Laravel)"
-            autocomplete="off"
-            spellcheck="false"
-            aria-label="Cari materi"
-          />
-          <button id="srchX" class="srch-x" type="button" aria-label="Hapus pencarian">&times;</button>
-        </div>
+  <!-- KONTEN UTAMA: SECTION TITLE + FILTER + GRID KARTU -->
+  <main class="content-wrapper" id="materiSection">
 
-        <select id="catSel" class="cat-sel" aria-label="Filter kategori">
-          <option value="">Semua Kategori</option>
-        </select>
+    <!-- Section Bar persis SantriKoding: ARTIKEL BERDASARKAN KATEGORI: NEXT JS -->
+    <div class="section-header-bar">
+      <h2 class="section-title">
+        Materi Berdasarkan Kategori:
+        <span id="activeCategoryTitle" class="cat-highlight">SEMUA MATERI</span>
+      </h2>
+      <span id="resultCountBadge" style="font-size:0.85rem; font-weight:700; color:var(--text-muted);">
+        Memuat...
+      </span>
+    </div>
+
+    <!-- Filter & Pencarian -->
+    <div class="filter-controls">
+      <div class="search-input-wrap">
+        <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="searchInput"
+          class="search-input"
+          placeholder="Cari judul, materi, atau topik... (misal: Next.js, API, Docker)"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="searchClearBtn" class="search-clear-btn" type="button" title="Hapus pencarian">&times;</button>
       </div>
 
-      <div class="ctrl-bot">
-        <div class="tabs" role="tablist" aria-label="Jenis materi">
-          <button type="button" class="tab on" data-t="Semua" role="tab" aria-selected="true">Semua</button>
-          <button type="button" class="tab" data-t="Kursus" role="tab" aria-selected="false">Kursus</button>
-          <button type="button" class="tab" data-t="Buku"   role="tab" aria-selected="false">Buku</button>
-        </div>
-        <div class="meta">
-          <span id="rLabel" class="result-txt" aria-live="polite" aria-atomic="true">Memuat...</span>
-          <button id="rstBtn" type="button" class="reset-lnk">Hapus Filter</button>
-        </div>
+      <select id="categorySelect" class="cat-select" aria-label="Pilih Kategori">
+        <option value="">Semua Kategori</option>
+      </select>
+
+      <div class="tab-pills-row" role="tablist">
+        <button type="button" class="tab-pill active" data-type="Semua" role="tab" aria-selected="true">Semua</button>
+        <button type="button" class="tab-pill" data-type="Kursus" role="tab" aria-selected="false">Kursus</button>
+        <button type="button" class="tab-pill" data-type="Buku" role="tab" aria-selected="false">Buku</button>
       </div>
     </div>
-  </section>
 
-  <!-- GRID MATERI -->
-  <main class="main">
-    <div id="grid" class="grid" aria-live="polite" aria-label="Daftar materi"></div>
+    <!-- Grid Kartu Materi SantriKoding Style -->
+    <div id="cardsGrid" class="cards-grid" aria-live="polite">
+    </div>
+
   </main>
 
-  <!-- FOOTER: atribusi CC BY 4.0 wajib -->
-  <footer class="ftr">
-    <div class="ftr-in">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
       <p>
-        <strong>Sumber Data:</strong> Dikurasi dari
+        <strong>Sumber Data &amp; Kurasi:</strong> Dikurasi dari repositori resmi
         <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer">EbookFoundation/free-programming-books</a>
         di bawah lisensi
-        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 (CC BY 4.0)</a>.
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>.
       </p>
       <p>
-        Halaman ini hanya menampilkan tautan ke sumber eksternal.
-        Hak cipta materi, video, dan buku dimiliki penulis dan penerbit masing-masing.
+        Desain antarmuka terinspirasi oleh platform edukasi <a href="https://santrikoding.com" target="_blank" rel="noopener noreferrer">SantriKoding</a>.
+        Seluruh hak cipta materi, video, tutorial, dan buku dimiliki oleh masing-masing pembuat dan penerbit aslinya.
       </p>
     </div>
   </footer>
 
   <script>
+    // DATA DARI data.json
     const D = [{"jenis": "Buku", "kategori": "Android", "judul": "Android Developers Fundamental Course Concepts and Practicals (Bahasa Indonesia)", "url": "https://yukcoding.id/download-ebook-android-gratis/", "ket": ""}, {"jenis": "Buku", "kategori": "Android", "judul": "Tutorial Membuat Aplikasi Galeri Foto Android", "url": "https://www.smashwords.com/books/view/533096", "ket": ""}, {"jenis": "Buku", "kategori": "C", "judul": "Belajar Pemrograman C untuk Pemula", "url": "https://www.petanikode.com/tutorial/c/", "ket": "Ahmad Muhardian *( :construction: in process)*"}, {"jenis": "Buku", "kategori": "C", "judul": "Tutorial Belajar Bahasa Pemrograman C Untuk Pemula", "url": "https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-c-bagi-pemula/", "ket": "Duniailkom"}, {"jenis": "Buku", "kategori": "C#", "judul": "Menguasai Pemrograman Berorientasi Objek Dengan Bahasa C#", "url": "https://mahirkoding.id/ebook-pemrograman-berorientasi-objek-c-pdf/", "ket": ""}, {"jenis": "Buku", "kategori": "C++", "judul": "Belajar C++ Dasar Bahasa Indonesia", "url": "https://github.com/kelasterbuka/CPP_dasar-dasar-programming", "ket": "Kelas Terbuka"}, {"jenis": "Buku", "kategori": "C++", "judul": "Buku Pintar C++ untuk Pemula", "url": "https://www.researchgate.net/publication/236687537_Buku_Pintar_C_untuk_Pemula", "ket": "Abdul Kadir"}, {"jenis": "Buku", "kategori": "Game Development", "judul": "AI dan Claude Code untuk Praktik Game Design", "url": "https://github.com/eremes81/game-design-ai-practice-id", "ket": "Minsoo Lee"}, {"jenis": "Buku", "kategori": "Git", "judul": "Belajar Git untuk Pemula", "url": "https://github.com/petanikode/belajar-git", "ket": "Ahmad Muhardian, Petani Kode (HTML)"}, {"jenis": "Buku", "kategori": "Git", "judul": "Pro Git 2nd Edition", "url": "https://git-scm.com/book/id/", "ket": "Scott Chacon, Ben Straub (HTML)"}, {"jenis": "Buku", "kategori": "Git", "judul": "Tutorial Belajar Git dan GitHub untuk Pemula", "url": "https://tutorial-git.readthedocs.io/_/downloads/id/latest/pdf/", "ket": "Hendy Irawan - (PDF)"}, {"jenis": "Buku", "kategori": "Go", "judul": "Belajar Dengan Jenius Golang", "url": "https://raw.githubusercontent.com/gungunfebrianza/Belajar-Dengan-Jenius-Golang/master/Belajar%20Dengan%20Jenius%20Golang.pdf", "ket": "Gun Gun Febrianza (PDF)"}, {"jenis": "Buku", "kategori": "Go", "judul": "Dasar Pemrograman Golang", "url": "https://dasarpemrogramangolang.novalagung.com", "ket": "Noval Agung Prayogo"}, {"jenis": "Buku", "kategori": "Go", "judul": "Mari Belajar Golang", "url": "https://www.smashwords.com/books/view/938003", "ket": "Risal (PDF)"}, {"jenis": "Buku", "kategori": "HTML and CSS", "judul": "Cara Cepat dan Mudah Menguasai CSS Rule", "url": "https://gilacoding.com/upload/file/Mahir-menguasai-CSS-Part%201.pdf", "ket": "Rudy Devianto (PDF)"}, {"jenis": "Buku", "kategori": "HTML and CSS", "judul": "Ebook Belajar HTML Dan CSS Dasar", "url": "https://www.malasngoding.com/download-ebook-belajar-html-dan-css-dasar-gratis/", "ket": ""}, {"jenis": "Buku", "kategori": "HTML and CSS", "judul": "Ebook HTML CSS Manual Dasar", "url": "https://github.com/LIGMATV/LIGMATV/wiki/Ebook-HTML-CSS-Manual-Dasar", "ket": "Muhammad Danish Naufal (PDF, DOCX)"}, {"jenis": "Buku", "kategori": "HTML and CSS", "judul": "Mahir Menguasai CSS - Tutorial & Praktek", "url": "https://gilacoding.com/upload/file/Mahir-menguasai-CSS-Part%202.pdf", "ket": "Rudy Devianto (PDF)"}, {"jenis": "Buku", "kategori": "HTML and CSS", "judul": "Tutorial Dasar CSS untuk Pemula", "url": "https://www.petanikode.com/tutorial/css/", "ket": "Ahmad Muhardian (Petani Kode) *( :construction: dalam proses)*"}, {"jenis": "Buku", "kategori": "HTML and CSS", "judul": "Tutorial HTML untuk Pemula", "url": "https://www.petanikode.com/tutorial/html/", "ket": "Ahmad Muhardian (Petani Kode)"}, {"jenis": "Buku", "kategori": "Bootstrap", "judul": "Bootstrap", "url": "https://www.malasngoding.com/category/bootstrap/", "ket": "Diki Alfarabi Hadi"}, {"jenis": "Buku", "kategori": "Bootstrap", "judul": "Daftar Tutorial Bootstrap 4 Bahasa Indonesia", "url": "https://www.bewoksatukosong.com/2019/02/tutorial-bootstrap-4-bahasa-indonesia.html", "ket": "Gerald Cahya Prambudi"}, {"jenis": "Buku", "kategori": "Bootstrap", "judul": "Tutorial Belajar Framework Bootstrap 5", "url": "https://www.duniailkom.com/tutorial-belajar-framework-bootstrap/", "ket": "Duniailkom"}, {"jenis": "Buku", "kategori": "IDE and editors", "judul": "Dokumentasi Emacs Bahasa Indonesia", "url": "https://github.com/kholidfu/emacs_doc", "ket": "Kholid Fuadi"}, {"jenis": "Buku", "kategori": "IDE and editors", "judul": "Pengantar Vi iMproved: Sebuah panduan praktikal Vim sebagai editor teks sehari-hari", "url": "https://github.com/nauvalazhar/pengantar-vi-improved", "ket": "Muhamad Nauval Azhar"}, {"jenis": "Buku", "kategori": "Java", "judul": "Algoritma dan Struktur Data dengan Java oleh Polinema SIB", "url": "https://polinema.gitbook.io/jti-modul-praktikum-algoritma-dan-struktur-data/", "ket": "Politeknik Negeri Malang"}, {"jenis": "Buku", "kategori": "Java", "judul": "Buku Pertama Belajar Pemrograman Java untuk Pemula", "url": "https://www.researchgate.net/publication/264422101_Buku_Pertama_Belajar_Pemrograman_Java_untuk_Pemula", "ket": "Abdul Kadir"}, {"jenis": "Buku", "kategori": "Java", "judul": "Java Desktop", "url": "https://github.com/ifnu/buku-java-desktop/raw/master/java-desktop-ifnu-bima.pdf", "ket": "Ifnu Bima (PDF)"}, {"jenis": "Buku", "kategori": "Java", "judul": "Memulai Java Enterprise dengan Spring Boot", "url": "https://raw.githubusercontent.com/teten-nugraha/free-ebook-springboot-basic/master/Memulai%20Java%20Enterprise%20dengan%20Spring%20Boot.pdf", "ket": "Teten Nugraha (PDF)"}, {"jenis": "Buku", "kategori": "Java", "judul": "Pemrograman Java", "url": "https://blog.rosihanari.net/download-tutorial-java-se-gratis/", "ket": "Rosihan Ari Yuana"}, {"jenis": "Buku", "kategori": "Java", "judul": "Tutorial Belajar Bahasa Pemrograman Java untuk Pemula", "url": "https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-java-untuk-pemula/", "ket": "Duniailkom"}, {"jenis": "Buku", "kategori": "JavaScript", "judul": "Javascript Guide", "url": "https://gilacoding.com/upload/file/Javascript%20Guide.pdf", "ket": "Desrizal (PDF)"}, {"jenis": "Buku", "kategori": "JavaScript", "judul": "Learn JavaScript", "url": "https://javascript.sumankunwar.com.np/id", "ket": "Suman Kumar, Github Contributors (HTML, PDF)"}, {"jenis": "Buku", "kategori": "JavaScript", "judul": "Mengenal JavaScript", "url": "http://masputih.com/2013/01/ebook-gratis-mengenal-javascript", "ket": ""}, {"jenis": "Buku", "kategori": "JavaScript", "judul": "Otomatisasi dengan gulp.js", "url": "https://kristories.gitbooks.io/otomatisasi-dengan-gulp-js/content/", "ket": ""}, {"jenis": "Buku", "kategori": "JavaScript", "judul": "Tutorial Dasar Javascript untuk Pemula", "url": "https://www.petanikode.com/tutorial/javascript/", "ket": "*( :construction: dalam proses)*"}, {"jenis": "Buku", "kategori": "JavaScript", "judul": "Tutorial JavaScript Modern", "url": "https://id.javascript.info", "ket": "Ilya Kantor"}, {"jenis": "Buku", "kategori": "Angular", "judul": "Tutorial Angular Indonesia", "url": "https://degananda.com/tutorial-angular-indonesia-daftar-isi-download-pdf/", "ket": "Degananda Ferdian Priyambada (HTML)"}, {"jenis": "Buku", "kategori": "Angular", "judul": "Tutorial Series Belajar Angular 2019", "url": "https://www.bewoksatukosong.com/2019/09/tutorial-series-belajar-angular-2019.html", "ket": "Bewok Satu Kosong (HTML)"}, {"jenis": "Buku", "kategori": "Deno", "judul": "Belajar Dengan Jenius Deno", "url": "https://raw.githubusercontent.com/gungunfebrianza/Belajar-Dengan-Jenius-DenoTheWKWKLand/master/Belajar%20Dengan%20Jenius%20Deno.pdf", "ket": "Gun Gun Febrianza (PDF)"}, {"jenis": "Buku", "kategori": "Next.js", "judul": "Tutorial Next Js", "url": "https://santrikoding.com/kategori/next-js", "ket": "SantriKoding.com"}, {"jenis": "Buku", "kategori": "React.js", "judul": "Dokumentasi React Bahasa Indonesia", "url": "https://id.reactjs.org", "ket": ""}, {"jenis": "Buku", "kategori": "React.js", "judul": "React JS Untuk Pemula", "url": "https://masputih.com/2021/05/ebook-gratis-reactjs-untuk-pemula", "ket": "*(Membutuhkan akun Leanpub atau email yang valid)*"}, {"jenis": "Buku", "kategori": "React.js", "judul": "React Redux Tutorial Untuk Pemula", "url": "https://medium.com/codeacademia/tutorial-redux-bagian-i-membuat-todo-list-c26a979d0a1f", "ket": "Yudi Krisnandi"}, {"jenis": "Buku", "kategori": "React.js", "judul": "Tutorial Belajar Library React JS", "url": "https://www.duniailkom.com/tutorial-belajar-library-react-js/", "ket": "Duniailkom"}, {"jenis": "Buku", "kategori": "React.js", "judul": "Tutorial React JS Untuk Pemula (React Hooks)", "url": "https://mfikri.com/artikel/reactjs-pemula", "ket": "Mfikri"}, {"jenis": "Buku", "kategori": "TypeScript", "judul": "TypeScript untuk Pemula, Bagian 1: Memulai", "url": "https://code.tutsplus.com/id/tutorials/typescript-for-beginners-getting-started--cms-29329", "ket": "Tutsplus (HTML)"}, {"jenis": "Buku", "kategori": "Vue.js", "judul": "Belajar Vue.js", "url": "https://variancode.com/belajar-vue-js/", "ket": "Varian Hermianto"}, {"jenis": "Buku", "kategori": "Vue.js", "judul": "Dokumentasi Vue Bahasa Indonesia", "url": "https://github.com/vuejs-id/docs", "ket": ""}, {"jenis": "Buku", "kategori": "MySQL", "judul": "3 Days With Mysql For Your Application: Mysql Untuk Pemula", "url": "https://play.google.com/store/books/details/Onesinus_Saut_Parulian_3_Days_With_Mysql_For_Your?id=MbdTDwAAQBAJ", "ket": "Onesinus Saut Parulian *(Membutuhkan akun Google Play Books atau email yang valid)*"}, {"jenis": "Buku", "kategori": "MySQL", "judul": "Tutorial MySQL untuk Pemula Hingga Mahir", "url": "https://umardanny.com/tutorial-mysql-untuk-pemula-hingga-mahir-ebook-download-pdf/", "ket": ""}, {"jenis": "Buku", "kategori": "Node.js", "judul": "Belajar Dengan Jenius Amazon Web Service & Node.js", "url": "https://github.com/gungunfebrianza/Belajar-Dengan-Jenius-Node.js/releases/download/1.2/Belajar.Dengan.Jenius.Javascript.Node.pdf", "ket": "Gun Gun Febrianza (PDF)"}, {"jenis": "Buku", "kategori": "Node.js", "judul": "Belajar Node.js", "url": "http://idjs.github.io/belajar-nodejs/", "ket": ""}, {"jenis": "Buku", "kategori": "Node.js", "judul": "Node.js Handbook: Berbahasa Indonesia", "url": "https://play.google.com/store/books/details/Bona_Tua_Node_js_Handbook?id=9WhZDwAAQBAJ", "ket": "Bona Tua *(Membutuhkan akun Google Play Books atau email yang valid)*"}, {"jenis": "Buku", "kategori": "Node.js", "judul": "Tutorial Node js untuk pemula Full Tutorial", "url": "https://mfikri.com/artikel/tutorial-nodejs", "ket": "Mfikri (HTML)"}, {"jenis": "Buku", "kategori": "NoSQL", "judul": "MongoDB Untuk Indonesia: Memahami Konsep dan Implementasi MongoDB", "url": "https://kristories.gumroad.com/l/mongodb-untuk-indonesia", "ket": "Wahyu Kristianto (PDF, email address *requested*, not required)"}, {"jenis": "Buku", "kategori": "Pascal", "judul": "Tutorial Belajar Bahasa Pemrograman Python Untuk Pemula", "url": "https://www.duniailkom.com/tutorial-belajar-bahasa-pemrograman-pascal-bagi-pemula/", "ket": "Duniailkom"}, {"jenis": "Buku", "kategori": "Pemrograman Fungsional", "judul": "Pemrograman Fungsional untuk Rakyat Jelata dengan Scalaz", "url": "https://leanpub.com/fpmortals-id/read", "ket": "(HTML)"}, {"jenis": "Buku", "kategori": "Pemrograman Kompetitif", "judul": "Pemrograman Kompetitif Dasar", "url": "https://osn.toki.id/data/pemrograman-kompetitif-dasar.pdf", "ket": "William Gozali, Alham Fikri Aji (PDF)"}, {"jenis": "Buku", "kategori": "Pemrograman Kompetitif", "judul": "Referensi Pemrograman Bahasa Pascal", "url": "https://toki.id/download/referensi-pemrograman-bahasa-pascal/", "ket": "Tim Pembina Toki (PDF)"}, {"jenis": "Buku", "kategori": "PHP", "judul": "Belajar PHP Dasar", "url": "https://www.malasngoding.com/belajar-php-dasar-pengenalan-dan-kegunaan-php/", "ket": "Malasngoding"}, {"jenis": "Buku", "kategori": "PHP", "judul": "Membuat Bot Telegram dengan PHP", "url": "https://www.slideshare.net/HasanudinHS/ebook-i-membuat-bot-telegram-dengan-php", "ket": "Hasanudin H Syafaat (PDF)"}, {"jenis": "Buku", "kategori": "PHP", "judul": "Panduan Lengkap PHP AJAX jQuery", "url": "https://gilacoding.com/upload/file/Panduan%20Lengkap%20PHP%20Ajax%20jQuery.pdf", "ket": "Desrizal (PDF)"}, {"jenis": "Buku", "kategori": "PHP", "judul": "Pemrograman Berbasis Objek Modern dengan PHP", "url": "https://arsiteknologi.com/wp-content/uploads/Pemrograman_Berbasis_Objek_Modern_dengan_PHP_Google_Play_Book.pdf", "ket": "Muhamad Surya Iksanudin (PDF)"}, {"jenis": "Buku", "kategori": "PHP", "judul": "Pemrograman Berorientasi Objek Dengan PHP5", "url": "https://endangcahyapermana.files.wordpress.com/2016/03/belajar-singkat-pemrograman-berorientasi-objek-dengan-php5.pdf", "ket": "Gerry Sabar (PDF)"}, {"jenis": "Buku", "kategori": "PHP", "judul": "Pemrograman Web dengan PHP dan MySQL", "url": "http://achmatim.net/2009/04/15/buku-gratis-pemrograman-web-dengan-php-dan-mysql/", "ket": ""}, {"jenis": "Buku", "kategori": "PHP", "judul": "PHP Dasar Tutorial", "url": "https://gilacoding.com/upload/file/PHP%20Dasar%20Tutorial.pdf", "ket": "Rosihan Ari Yuana (PDF)"}, {"jenis": "Buku", "kategori": "PHP", "judul": "PHP: The Right Way Bahasa Indonesia", "url": "http://id.phptherightway.com/#site-header/", "ket": ""}, {"jenis": "Buku", "kategori": "PHP", "judul": "Tutorial Belajar PHP Dasar Untuk Pemula", "url": "https://www.duniailkom.com/tutorial-belajar-php-dasar-untuk-pemula/", "ket": "Duniailkom"}, {"jenis": "Buku", "kategori": "PHP", "judul": "Tutorial Ebook PHP", "url": "http://www.ilmuwebsite.com/ebook-php-free-download", "ket": ""}, {"jenis": "Buku", "kategori": "PHP", "judul": "Tutorial Pemrograman PHP untuk Pemula", "url": "https://www.petanikode.com/tutorial/php", "ket": "Ahmad Muhardian (Petani Kode) *( :construction: dalam proses)*"}, {"jenis": "Buku", "kategori": "CodeIgniter", "judul": "Codeigniter - Pendekatan Praktis", "url": "https://leanpub.com/codeigniter-pendekatanpraktis", "ket": "Ibnu Daqiqil Id (HTML, PDF, EPUB, Kindle) *(Membutuhkan akun Leanpub atau email yang valid)*"}, {"jenis": "Buku", "kategori": "CodeIgniter", "judul": "Codeigniter Untuk Pemula", "url": "https://repository.bsi.ac.id/index.php/unduh/item/176695/Tutorial-Codeigniter-Untuk-Pemula.pdf", "ket": "M Fikri Setiadi (PDF)"}, {"jenis": "Buku", "kategori": "CodeIgniter", "judul": "Framework Codeigniter - Sebuah Panduan dan Best Practice", "url": "https://gilacoding.com/upload/file/Tutorial%20framework%20codeigniter.pdf", "ket": "Gila Coding (PDF)"}, {"jenis": "Buku", "kategori": "CodeIgniter", "judul": "Panduan Pengguna CodeIgniter Indonesia", "url": "https://codeigniter-id.github.io/user-guide/", "ket": "CodeIgniter Indonesia"}, {"jenis": "Buku", "kategori": "CodeIgniter", "judul": "Tutorial CodeIgniter 3 & 4", "url": "https://www.petanikode.com/tutorial/codeigniter/", "ket": "*( :construction: dalam proses)*"}, {"jenis": "Buku", "kategori": "CodeIgniter", "judul": "Tutorial CodeIgniter 4", "url": "http://mfikri.com/artikel/tutorial-codeigniter4", "ket": ""}, {"jenis": "Buku", "kategori": "Laravel", "judul": "Belajar Laravel Untuk Pemula", "url": "https://gilacoding.com/upload/file/Belajar%20Laravel%20Untuk%20Pemula.pdf", "ket": "Dadan Hamdani (PDF)"}, {"jenis": "Buku", "kategori": "Laravel", "judul": "Tutorial Belajar Framework Laravel 10", "url": "https://www.duniailkom.com/tutorial-belajar-framework-laravel/", "ket": "Duniailkom"}, {"jenis": "Buku", "kategori": "Yii", "judul": "Menjelajahi Yii Framework", "url": "https://gilacoding.com/upload/file/menjelajahyiiframework.pdf", "ket": "Sabit Huraira (PDF)"}, {"jenis": "Buku", "kategori": "Yii", "judul": "Panduan Definitif Untuk Yii 2.0", "url": "https://www.yiiframework.com/doc/download/yii-guide-2.0-id.pdf", "ket": "Yii Software (PDF)"}, {"jenis": "Buku", "kategori": "Python", "judul": "Belajar Python", "url": "http://www.belajarpython.com", "ket": ""}, {"jenis": "Buku", "kategori": "Python", "judul": "Cepat Mahir Python", "url": "https://gilacoding.com/upload/file/Python.pdf", "ket": "Hendri, `edt.:` Romi Satria Wahono (PDF)"}, {"jenis": "Buku", "kategori": "Python", "judul": "Dasar-Dasar Python: Panduan Cepat untuk Memahami Fondasi Pemrograman Python", "url": "https://www.researchgate.net/publication/361459389_Dasar-Dasar_Python_Panduan_Cepat_untuk_Memahami_Fondasi_Pemrograman_Python", "ket": "Abdul Kadir"}, {"jenis": "Buku", "kategori": "Python", "judul": "Dasar Pemrograman Python", "url": "https://dasarpemrogramanpython.novalagung.com", "ket": "Noval Agung Prayogo"}, {"jenis": "Buku", "kategori": "Python", "judul": "Dasar Pengenalan Pemrograman Python", "url": "https://play.google.com/store/books/details/Rolly_Maulana_Awangga_Dasar_dasar_Python?id=YpzDDwAAQBAJ", "ket": "Rolly Maulana AwanggaRayhan *(Membutuhkan akun Google Play Books atau email yang valid)*"}, {"jenis": "Buku", "kategori": "Python", "judul": "Kursus Singkat Machine Learning dengan TensorFlow API", "url": "https://developers.google.com/machine-learning/crash-course?hl=id", "ket": ""}, {"jenis": "Buku", "kategori": "Python", "judul": "Python Untuk Pemula", "url": "https://santrikoding.com/ebook/python-untuk-pemula", "ket": "Rizqi Maulana"}, {"jenis": "Buku", "kategori": "Python", "judul": "Tutorial Dasar Pemrograman Python", "url": "https://www.petanikode.com/tutorial/python/", "ket": "Petani Kode, Ahmad Muhardian"}, {"jenis": "Buku", "kategori": "Python", "judul": "Tutorial Python", "url": "https://docs.python.org/id/3.8/tutorial/", "ket": ""}, {"jenis": "Buku", "kategori": "Python", "judul": "Tutorial Python untuk Pemula", "url": "https://www.kevintekno.com/p/tutorial-python-untuk-pemula.html", "ket": "Kevin Tekno, Kevin Alfito"}, {"jenis": "Buku", "kategori": "Python", "judul": "Workshop Python 101", "url": "http://sakti.github.io/python101/", "ket": ""}, {"jenis": "Buku", "kategori": "Rust", "judul": "Belajar Rust", "url": "https://belajar-rust.vercel.app", "ket": "evilfactorylabs"}, {"jenis": "Buku", "kategori": "Rust", "judul": "Dasar Pemrograman Rust", "url": "https://dasarpemrogramanrust.novalagung.com", "ket": "Noval Agung Prayogo"}, {"jenis": "Buku", "kategori": "Rust", "judul": "Easy Rust Indonesia", "url": "https://github.com/ariandy/easy-rust-indonesia", "ket": "ariandy"}, {"jenis": "Buku", "kategori": "Solidity", "judul": "Smart Contract Blockchain pada E-Voting", "url": "https://www.researchgate.net/publication/337961765_Smart_Contract_Blockchain_pada_E-Voting", "ket": "Ajib Susanto (HTML, PDF)"}, {"jenis": "Buku", "kategori": "Swift", "judul": "Swift Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLH1gH0TmFBBhR8A_Xq7drrxC4OlUvNP7b", "ket": "Ipung DEV Academy"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Belajar Android Studio", "url": "https://www.malasngoding.com/category/android-studio/", "ket": "Muzanni (Malas Ngoding)"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Belajar Android Untuk Pemula", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDOP6M6q981yyEG0PDcVyGq", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Belajar Fundamental Aplikasi Android", "url": "https://www.dicoding.com/academies/14", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Belajar Membuat Aplikasi Android untuk Pemula", "url": "https://www.dicoding.com/academies/51", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Menjadi Android Developer Expert", "url": "https://www.dicoding.com/academies/165", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Tutorial Android (Java)", "url": "https://www.youtube.com/playlist?list=PLKPnl-eD7EA4rAzNeXikfCq5yiMuFI1zo", "ket": "Kopianan"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Tutorial Android (Kotlin)", "url": "https://www.youtube.com/playlist?list=PLaoF-xhnnrRUEbF6cvk4-CeBAEOSbp8sS", "ket": "EDMT Dev"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Tutorial Android Dasar (Bahasa Indonesia)", "url": "https://www.youtube.com/watch?v=pUTz5IOkBtE", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Android", "judul": "Tutorial Dasar Android Studio Bahasa Indonesia", "url": "https://www.udemy.com/course/tutorial-dasar-android-studio-bahasa-indonesia-gratis", "ket": "Udemy"}, {"jenis": "Kursus", "kategori": "Apache Kafka", "judul": "Belajar Apache Kafka untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "AR / VR", "judul": "Belajar Membuat Mixed Reality", "url": "https://www.dicoding.com/academies/155", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Bootstrap", "judul": "Belajar Framework Bootstrap 5", "url": "https://www.youtube.com/playlist?list=PL53uJBBtLf5ChsCZp26yEcDQu5ujfhsM8", "ket": "Ngoding Pintar"}, {"jenis": "Kursus", "kategori": "Bootstrap", "judul": "Belajar menggunakan bootstrap", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXC5wPjJGj1LvFaVK2cbN2GQ", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Bootstrap", "judul": "Tutorial Bootstrap 4 Lengkap dalam Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLce3Eyp7oY9-o3JavSawkXcazJSYx7KAf", "ket": "Framework Indonesia"}, {"jenis": "Kursus", "kategori": "Bootstrap", "judul": "Tutorial Bootstrap 5 untuk Pemula Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLnrs9DcLyeJTxqZ4lWgVHXBwFgZEkwp9r", "ket": "Cara Fajar"}, {"jenis": "Kursus", "kategori": "C / C++", "judul": "Bahasa C dengan Dev-C++", "url": "https://www.youtube.com/playlist?list=PLZNiz_sFO6tdZ_DcLhtbxLboLlpuqpzLC", "ket": "H.I Edukasi"}, {"jenis": "Kursus", "kategori": "C / C++", "judul": "Belajar Bahasa Pemrograman C++ Lengkap dari Awal untuk Pemula", "url": "https://kodedasar.com/belajar-cpp/", "ket": "DAMASDEV"}, {"jenis": "Kursus", "kategori": "C / C++", "judul": "Belajar C++", "url": "https://www.youtube.com/playlist?list=PLF82-I80PwDNKmeyYBe4CkEj7excOdy7f", "ket": "Guntur Budi"}, {"jenis": "Kursus", "kategori": "C / C++", "judul": "Belajar C++ - Object Oriented Programming Bahasa Indonesia (OOP)", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7-RC_-hkL9gu0_ofABw862", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "C / C++", "judul": "Belajar C++ Bahasa Indonesia (Dasar)", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "C / C++", "judul": "Memulai Pemrograman dengan C", "url": "https://www.dicoding.com/academies/120", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "C#", "judul": "Belajar C# C-Sharp Lengkap", "url": "https://www.youtube.com/playlist?list=PLYMJJHENUMwwiL91VnHhqV_Zy1LANgNVc", "ket": "Tech Tawar"}, {"jenis": "Kursus", "kategori": "C#", "judul": "Belajar Pemrograman C#", "url": "https://www.youtube.com/playlist?list=PLuGFxya63u253zhOzhxanaSBNJ_UiIhUb", "ket": "Galih Pratama"}, {"jenis": "Kursus", "kategori": "C#", "judul": "Tutorial Lengkap - Belajar Coding C# Programming untuk Pemula", "url": "https://www.youtube.com/playlist?list=PLa6D44cKrtoN9guvynhwiCIdUJ0CJkAMB", "ket": "Bimbingan Belajar Coding"}, {"jenis": "Kursus", "kategori": "Construct", "judul": "Belajar Membuat Game dengan Construct 2", "url": "https://www.dicoding.com/academies/65", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "Belajar Bahasa Pemgrograman Dart", "url": "https://www.youtube.com/playlist?list=PLsvN_QZnFWRBQRFBo46R9hAYcnmvLSIvF", "ket": "Kenari Studio"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "Dart Indonesia", "url": "https://www.youtube.com/playlist?list=PLoNv-2zK-dzEbZSFeGgSnpdp5i_Lwto-8", "ket": "CodeWithIhwan"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "Dart Programming Untuk Persiapan Belajar Flutter", "url": "https://buildwithangga.com/kelas/dart-programming-untuk-persiapan-belajar-flutter", "ket": "Rifqi Eka (BuildWithAngga) *(phone number and email address required)*"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "Pemrograman Berorientasi Objek - Dart", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1", "ket": "Erico Darmawan Handoyo"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "Pemrograman Dart Dasar", "url": "https://www.youtube.com/playlist?list=PLbLqbqNn7VYpWt6pC0C1fVNVSYrlJiX9p", "ket": "ID Networkers"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "Tutorial Dart", "url": "https://www.kevintekno.com/p/tutorial-dart.html", "ket": "Kevin Tekno"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "TUTORIAL DART DASAR (BAHASA INDONESIA)", "url": "https://www.youtube.com/watch?v=-mzXdI27tyk", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Dart", "judul": "Tutorial Dart OOP - Bahasa Indonesia", "url": "https://www.youtube.com/watch?v=k0ycD2aqPzU", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Desain dan Arsitektur", "judul": "Belajar Design Patterns untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Desain dan Arsitektur", "judul": "Belajar Microservices untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Desain dan Arsitektur", "judul": "Belajar Prinsip Pemrograman SOLID", "url": "https://www.dicoding.com/academies/169", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Docker", "judul": "Belajar Docker untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL4SGTPmSY0qkxCTe3Gd0wA-bQZChXhsNI", "ket": "Giri Kuncoro"}, {"jenis": "Kursus", "kategori": "Docker", "judul": "Mengenal Container dan Docker Sampai Jago Dalam 2 Jam", "url": "https://www.youtube.com/watch?v=26O6Ke03j3Y", "ket": "Imre Nagi"}, {"jenis": "Kursus", "kategori": "Docker", "judul": "Pengembangan Microservice Dengan Docker Compose", "url": "https://www.youtube.com/watch?v=ALGVV5cGUtc", "ket": "Imre Nagi"}, {"jenis": "Kursus", "kategori": "Docker", "judul": "Tutorial Docker", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6A7ODX8EWghd0r4HgKjJvy", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "Docker", "judul": "Tutorial Docker untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Elasticsearch", "judul": "Belajar Elasticsearch untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_tVTwrxVt0K5LmtVT2u8fh", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Belajar Fundamental Aplikasi Flutter", "url": "https://www.dicoding.com/academies/195", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Belajar Membuat Aplikasi Flutter untuk Pemula", "url": "https://www.dicoding.com/academies/159", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Fast Track Flutter Beginner", "url": "https://www.youtube.com/playlist?list=PL7jdfftn7HKup1bG852c13H6nxpJpmZzP", "ket": "Kuldii Project"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Flutter Developer: Basic State Management", "url": "https://buildwithangga.com/kelas/flutter-developer-basic-state-management", "ket": "Tasya Agnes (BuildWithAngga) *(phone number and email address required)*"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Flutter for Designer", "url": "https://buildwithangga.com/kelas/flutter-for-designer-design-to-code", "ket": "Rifqi Eka (BuildWithAngga) *(phone number and email address required)*"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Flutter Membangun Website", "url": "https://buildwithangga.com/kelas/flutter-membangun-website-sederhana", "ket": "Rifqi Eka (BuildWithAngga) *(phone number and email address required)*"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Flutter Mobile Apps", "url": "https://buildwithangga.com/kelas/flutter-mobile-apps", "ket": "Angga Risky (BuildWithAngga) *(phone number and email address required)*"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Flutter Tutorial (Flutter Fundamentals)", "url": "https://www.youtube.com/playlist?list=PLZQbl9Jhl-VACm40h5t6QMDB92WlopQmV", "ket": "Erico Darmawan Handoyo"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "STUDI KASUS FLUTTER + GETX + FIREBASE [ CHAT APPS 2021 ]", "url": "https://www.youtube.com/playlist?list=PL7jdfftn7HKt6wPnVXoXgserU14d_ACA-", "ket": "Sandikha Rahardi, Kuldii Project"}, {"jenis": "Kursus", "kategori": "Flutter", "judul": "Tutorial Flutter", "url": "https://www.youtube.com/playlist?list=PL0-7Xi0GB3teRqkuBusUEcVrP6OlYpD9w", "ket": "idr corner"}, {"jenis": "Kursus", "kategori": "Git", "judul": "ALL Basic Pemul", "url": "https://www.youtube.com/playlist?list=PLc6SEcJkQ6DxurcQDUkY_t8cIgXya5Blj", "ket": "Dea Afrizal"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Apa itu GitHub", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCtwnagWsUzZum1CFZYqrB5", "ket": "Hilman Ramadhan, Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Belajar Git", "url": "https://www.youtube.com/playlist?list=PLuGFxya63u24bmP-ILRaiGeMwZh3PGxW4", "ket": "Galih Pratama"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Belajar GIT (Source Code Management)", "url": "https://www.youtube.com/playlist?list=PL8bBYpHH3RI6BlCzFTMQvt7sGSycUj7S-", "ket": "Eka Putra, UpKoding"}, {"jenis": "Kursus", "kategori": "Git", "judul": "GIT & GITHUB", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf", "ket": "Sandhika Galih, Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Git Tutorial - Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_lYGV8hxqjtKmFA_xeLupq", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Jago Git Dalam 2 Jam", "url": "https://www.youtube.com/watch?v=KGSfUgaiVNI", "ket": "Imre Nagi"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Source Code Management untuk Pemula", "url": "https://www.dicoding.com/academies/116", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Tutorial GIT Bahasa Indonesia Lengkap", "url": "https://www.youtube.com/playlist?list=PL1aMeb5UP_PHXTV_Xpt-19x_rVPXrymOM", "ket": "IDStack"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Tutorial Git Dasar", "url": "https://www.youtube.com/watch?v=fQbTeNX1mvM", "ket": "Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Git", "judul": "Upload Code di Github", "url": "https://app.sko.dev/kelas/upload-kode-di-github", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Belajar Go-Lang untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_t5_dtCQZgWJqWF45WRgZw", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Belajar Golang Basic Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDztO-BFc9R5afhP26Dhsgm", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Golang Fundamental", "url": "https://buildwithangga.com/kelas/golang-fundamental?thumbnail=nk4neM2UyG.54&main_leads=browse", "ket": "BuildWithAngga"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Golang Tutorial - Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-0i9dzMzLw6FKVrFWv3QvQ", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Mahir Golang Dari Dasar", "url": "https://youtube.com/playlist?list=PL1aMeb5UP_PHPHEBNrZ3L1V4qpyuC6Aa8", "ket": "IDStack"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Pemograman Go", "url": "https://www.youtube.com/playlist?list=PLlENf46K9qTlOjTZ0cJWcSCb-7gCQXVH5", "ket": "Koding Aja Dulu"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Tutorial Golang Fundamental Bahasa Indonesia", "url": "https://www.youtube.com/watch?v=xzNT4JywW0A", "ket": "Agung Setiawan"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Tutorial Golang Web API Bahasa Indonesia - Full Course", "url": "https://www.youtube.com/watch?v=GjI0GSvmcSU", "ket": "Agung Setiawan"}, {"jenis": "Kursus", "kategori": "Go", "judul": "Tutorial Golang Website Development Bahasa Indonesia", "url": "https://www.youtube.com/watch?v=K76y2_ZQYwY", "ket": "Agung Setiawan"}, {"jenis": "Kursus", "kategori": "Gradle", "judul": "Belajar Gradle", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8yGJzfU_gners0ybO4MlrV", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "Belajar CSS", "url": "https://alwaysngoding.com/belajar-css/teori", "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "Belajar CSS Layout", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo5iBPtg3ovrj25C1Wsu4O3I", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "Belajar FLEXBOX", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIU1lWlM34j6E9fMlrrSGZ1k", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "Belajar HTML", "url": "https://alwaysngoding.com/belajar-html/teori", "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "Belajar HTML 5", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIX-K5eeHRImnZhPUMhsw9A7", "ket": "Sandhika Galih, Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "Belajar TAILWINDCSS", "url": "https://youtube.com/playlist?list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "CSS Dasar", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUBrbm6Gdh6k7ZUvPIAZm7p", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "CSS Grid", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIXmbwX0dEsoRVX-PC16vmuw", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "CSS Layouting", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVCmrSWbZPKCccCkfFw-Naa", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "CSS Tailwind", "url": "https://buildwithangga.com/kelas/css-tailwind-web-design?thumbnail=nk4neM2UyG.46&main_leads=browse", "ket": "BuildWithAngga"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "CSS Website Design", "url": "https://www.buildwithangga.com/kelas/css-website-design", "ket": "BuildWithAngga"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "CSS3", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVCmrSWbZPKCccCkfFw-Naa", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "HTML Dasar", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "HTML Dasar", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7FTCFuVfsbpllsoAs53xDn", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "HTML5 Canvas", "url": "https://www.youtube.com/playlist?list=PL0-7Xi0GB3teW5TsBQmD2MzLU5ryjXkVE", "ket": "Idr Corner"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "HTML5 Dasar", "url": "https://www.buildwithangga.com/kelas/html5-dasar", "ket": "BuildWithAngga"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "HTML5 Pemula Dasar", "url": "https://www.petanikode.com/html-dasar/", "ket": "petanikode"}, {"jenis": "Kursus", "kategori": "HTML and CSS", "judul": "Mulai Belajar Website dengan HTML", "url": "https://www.udemy.com/course/mulai-belajar-website-dengan-html/", "ket": "Arkademy Tech Academy (Udemy)"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Belajar Java - Dasar Java", "url": "https://www.youtube.com/playlist?list=PLFfUPa9IV8LrtXVMBVcqpjxYeya1j-yiq", "ket": "Mastahcode"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Belajar Java - Object Oriented Programming", "url": "https://www.youtube.com/playlist?list=PLFfUPa9IV8LpbRH5-TzphcZj6tpoxdr-p", "ket": "Mastahcode"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Belajar Java - Object Oriented Programming Bahasa Indonesia (Lanjut)", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6V4_vk1s1NcM2HoW5KFG7i", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Belajar Java Bahasa Indonesia (Dasar)", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Belajar Java OOP Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882bBLmmli1ly06MWZY-EOqX8", "ket": "Imam Farisi"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Belajar Java Untuk Pemula", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDUvrO3Bc_VUvIjWKnYIRJ1", "ket": "Hilman Ramadhan, Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Belajar Pemrograman Java dengan VSCode", "url": "https://www.youtube.com/playlist?list=PL53uJBBtLf5CsXG4Sx77dNMsrTser-ppH", "ket": "Ngoding Pintar"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Java Dasar", "url": "https://www.malasngoding.com/category/java/", "ket": "Muzanni (Malas Ngoding)"}, {"jenis": "Kursus", "kategori": "Java", "judul": "JAVA TUTORIAL - BAHASA INDONESIA", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-p_Q2GyK4K3ORoAT0Yt7CX", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Java", "judul": "Memulai Pemrograman dengan Java", "url": "https://www.dicoding.com/academies/60", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Spring", "judul": "Belajar Spring Dasar Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882aeiESAgna5eVa_cOpFnxQm", "ket": "Imam Farisi"}, {"jenis": "Kursus", "kategori": "Spring", "judul": "Spring Framework and Spring Boot Tutorial (Project CRUD)", "url": "https://www.youtube.com/playlist?list=PLFfUPa9IV8Lp-Uognr1ALuqlKyxANO77x", "ket": "Wafiq Subhi, Mastahcode"}, {"jenis": "Kursus", "kategori": "Spring", "judul": "SpringBoot", "url": "https://www.youtube.com/playlist?list=PLRjWo99hnirwyafPfaxfu0psMR0hUmdQc", "ket": "Hendro Steven Tampake, Kelas Koding"}, {"jenis": "Kursus", "kategori": "Spring", "judul": "Tutorial Spring Framework & Spring Boot Dasar - Bahasa Indonesia", "url": "https://www.youtube.com/watch?v=VM3rwdMBORY", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar Angular JS", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXBD2nko3bXRs-JSDNA8tNvq", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar es6 - javacsript gaya baru", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXBWhs2AwMdPyKtMG2cF4YSR", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar Full-stack JavaScript Dengan Next.js Dalam 6 Jam", "url": "https://www.youtube.com/watch?v=kproo1ezjH0&t=2s", "ket": "Nauval, Array Id"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar Java Bahasa Indonesia (Dasar)", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar JavaScript", "url": "https://alwaysngoding.com/belajar-javascript/teori", "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar JavaScript Async", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-I4CD6km3BcXqrhWAkY4et", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar JavaScript Dasar", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6rAu3mYVNs2_y-fbJaOH5R", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Belajar JavaScript Untuk Website", "url": "https://app.sko.dev/kelas/belajar-javascript-untuk-website", "ket": "sko.dev"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Dasar Pemrograman dengan JavaScriipt", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWXagluzROrA-iBY9eeUt4w", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "ExpressJS Tutorial Indonesia", "url": "https://www.youtube.com/playlist?list=PL9At9z2rvOC-sgzJx7rM_wMDONnEM4E0A", "ket": "Ekky Ridyanto (Balademy)"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "JavaScript dan DOM (Document Object Model)", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "JavaScript Dasar", "url": "https://www.malasngoding.com/category/javascript/", "ket": "Diki Alfarabi Hadi (Malas Ngoding)"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "JavaScript Lanjutan", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "JavaScript Module", "url": "https://devsaurus.com/javascript-module", "ket": "Devsaurus"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "JavaScript Tutorial Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8SS0Gsj9_a0cC0jypFEoSg", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Main Main JavaScript", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCyd70hT8jYl24bLuPpH9iR", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Nest JS Tutorial Indonesia", "url": "https://youtube.com/playlist?list=PL9At9z2rvOC8phs2qV4Fysy8cejzg6pU0", "ket": "Ekky Ridyanto (Balademy)"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Tutorial AngularJS Indonesia", "url": "https://www.youtube.com/playlist?list=PLohWNsc-n1L-3ffIaGRAjbTQm7bh9F9FG", "ket": "Windu Purnomo"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Tutorial JavaScript Pemrograman Berorientasi Objek", "url": "https://www.youtube.com/watch?v=SDROba_M42g", "ket": "Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Tutorial NextJS Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ3-zouYHHknPq1G5VTB8PRf", "ket": "Prawito Hudoro"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Tutorial programming dari nol (Javascript)", "url": "https://www.youtube.com/playlist?list=PLwF5TtGsdsBdTJdjzZp1Wdog1DNcHZdDu", "ket": "Pintar Programming"}, {"jenis": "Kursus", "kategori": "JavaScript", "judul": "Tutorial Svelte Indonesia", "url": "https://youtube.com/playlist?list=PLH1gH0TmFBBhWp2pn6vRhUVVC1txQuTZE", "ket": "Ipung Purwono, Ipung Dev Academy"}, {"jenis": "Kursus", "kategori": "Node", "judul": "Belajar NodeJS", "url": "https://youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "Node", "judul": "Node.js Dasar", "url": "https://buildwithangga.com/kelas/node-javascript-dasar?thumbnail=nk4neM2UyG.36&main_leads=browse", "ket": "BuildWithAngga"}, {"jenis": "Kursus", "kategori": "Node", "judul": "Pelajaran Node.js Sederhana", "url": "https://easy-to-learn5.teachable.com/p/nodejs", "ket": "Easy To Learn 5"}, {"jenis": "Kursus", "kategori": "Node", "judul": "RESTFul API dengan Express.js dan MongoDB", "url": "https://www.youtube.com/watch?v=4X0MFuE8ebs", "ket": "IDStack"}, {"jenis": "Kursus", "kategori": "Node", "judul": "Tutorial NodeJS Dasar - Bahasa Indonesia", "url": "https://www.youtube.com/watch?v=b39Xqf5iyjo", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "React", "judul": "Belajar React JS Dari Awal Buat Yang Nggak Jago JavaScript", "url": "https://www.youtube.com/watch?v=JS5w4rUbjQE", "ket": "array id"}, {"jenis": "Kursus", "kategori": "React", "judul": "Belajar React untuk PEMULA", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUu3X2zYNqomEWs3sYd-fV1", "ket": "Sandhika Galih"}, {"jenis": "Kursus", "kategori": "React", "judul": "Belajar ReactJS Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXALZIcEe2t3XVuQ50JYbsbA", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "React", "judul": "Belajar Testing Pada React Dengan Jest dan RTL", "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ1e5H4bX6rCTwBvSl2cll6a", "ket": "Prawito Hudoro"}, {"jenis": "Kursus", "kategori": "React", "judul": "Mari Kita Belajar Basic React JS", "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5MwXT8zMPbezhDnTM3cTA5cZ", "ket": "Irsyad A. Panjaitan, Parsinta"}, {"jenis": "Kursus", "kategori": "React", "judul": "React JS Dasar Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj0XtJjWW04hN24fWXrCpLkY", "ket": "Wahidev Academy"}, {"jenis": "Kursus", "kategori": "React", "judul": "ReactJS-Firebase Tutorial", "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ2CnIvj7tI0zoijDSgR1m9j", "ket": "Prawito Hudoro"}, {"jenis": "Kursus", "kategori": "React", "judul": "ReactJS Tutorial", "url": "https://www.youtube.com/playlist?list=PLU4DS8KR-LJ03qEsHn9zV4qdhcWtusBqb", "ket": "Prawito Hudoro"}, {"jenis": "Kursus", "kategori": "React", "judul": "ReactJS Untuk Pemula", "url": "https://www.petanikode.com/reactjs-untuk-pemula/", "ket": "Petani Kode"}, {"jenis": "Kursus", "kategori": "React", "judul": "Tutorial Project React.js 2022", "url": "https://youtube.com/playlist?list=PL1aMeb5UP_PHUa0RxQDYJYZZNc_h-jE67", "ket": "IDStack"}, {"jenis": "Kursus", "kategori": "React", "judul": "Tutorial React JS Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLp6BJq2fT_g91yCNCWi_bIe-ng7S7rt6V", "ket": "Lampung JS"}, {"jenis": "Kursus", "kategori": "React", "judul": "Tutorial React Native Bahasa Indonesia (Futsal App)", "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj2NeWJew3o86bSptVPXOppa", "ket": "Wahidev Academy"}, {"jenis": "Kursus", "kategori": "React", "judul": "Tutorial React Native Indonesia", "url": "https://youtube.com/playlist?list=PLU4DS8KR-LJ3SP3PpRb870UoT_0_rjLpV", "ket": "Prawito Hudoro"}, {"jenis": "Kursus", "kategori": "Vue.js", "judul": "Tutorial Vue JS Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCFeOD_wBc9GrYF9pA8loLQ", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Vue.js", "judul": "Tutorial Vuejs Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PL9At9z2rvOC-Z6Gt8uO1XMp4oyMlE3gml", "ket": "Baledemy"}, {"jenis": "Kursus", "kategori": "Vue.js", "judul": "Tutorial VueJs dengan API Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu", "ket": "Wahidev Academy"}, {"jenis": "Kursus", "kategori": "Vue.js", "judul": "Vue 3 - Pinia", "url": "https://youtube.com/playlist?list=PLnQvfeVegcJYV7uSax0W8z3peCyiOxr6W", "ket": "Nusendra Hanggarawan (Nusendra.com)"}, {"jenis": "Kursus", "kategori": "Vue.js", "judul": "Vue 3 Advance", "url": "https://youtube.com/playlist?list=PLnQvfeVegcJbbmFmN5ZMnkylQXp6mb7gP", "ket": "Nusendra Hanggarawan (Nusendra.com)"}, {"jenis": "Kursus", "kategori": "Vue.js", "judul": "Vue 3 Composition API", "url": "https://youtube.com/playlist?list=PLnQvfeVegcJbn7ZDOUNbRN25obY4htSlB", "ket": "Nusendra Hanggarawan (Nusendra.com)"}, {"jenis": "Kursus", "kategori": "Vue.js", "judul": "Vue 3 Dasar", "url": "https://youtube.com/playlist?list=PLnQvfeVegcJbV2NGXpay7ulU6ybASzAlG", "ket": "Nusendra Hanggarawan (Nusendra.com)"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Belajar Kotlin Collection", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-aC-35fw5qrr6DZ-qMzmRr", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Belajar Kotlin Dasar untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_hja5vRJgQOXylCiQud7Qa", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Belajar Kotlin Generic", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8MW630XLcNKsBDWCCdh2mR", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Belajar Kotlin Object Oriented Programming", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8lHOsi7kIDxK57WWLmzVog", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Belajar Kotlin Unit Test", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8HoTBUpYgQ-Q45U54Tn_up", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Fungsi pada Kotlin", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCqFIOudYt5icvdCnkA8FVe", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Kotlin Collection", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCZWnGxjnZwAsnDthoas1O1", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Kotlin Object Oriented Programming Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLe8n__MJ2In54a_2j-Yh_Oz-ZGTauziwf", "ket": "Kelas Coding"}, {"jenis": "Kursus", "kategori": "Kotlin", "judul": "Tutorial Kotlin Android Studio 2020 Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLFVTikutopLZe6N6wHrrNDizfnxwoeg92", "ket": "Lazday Indonesia"}, {"jenis": "Kursus", "kategori": "Kubernetes", "judul": "Belajar Kubernetes untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8XrWyQAyRd6d_CKwxD8Ime", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Linux", "judul": "Belajar linux fundamentals", "url": "https://youtube.com/playlist?list=PLbLqbqNn7VYpnd7FggSeq18AgE4gdsy2F", "ket": "ID-Networkers"}, {"jenis": "Kursus", "kategori": "Linux", "judul": "Instalasi & Review Linux", "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voEclcVMPqHoS6GSgcVNGIjy", "ket": "Indonesia Belajar"}, {"jenis": "Kursus", "kategori": "Linux", "judul": "Linux Pemula", "url": "https://www.youtube.com/playlist?list=PLACzo3mGgHK_D2wkGu4AvUAQiqLC30PTz", "ket": "LINUXcare"}, {"jenis": "Kursus", "kategori": "Linux", "judul": "Tutorial Terminal Linux Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLy1BHEa_Wr-cpjWY5uOqsMxQwiQrRnC8B", "ket": "ArtAway"}, {"jenis": "Kursus", "kategori": "Machine Learning", "judul": "Belajar Dasar Visualisasi Data", "url": "https://www.dicoding.com/academies/177", "ket": "Dicoding, membutuhkan registrasi"}, {"jenis": "Kursus", "kategori": "Machine Learning", "judul": "Belajar Machine Learning Dari Awal Buat Yang Ga Jago Matematika", "url": "https://www.youtube.com/watch?v=WH1SduDRL_Y&t=2s", "ket": "array id"}, {"jenis": "Kursus", "kategori": "Machine Learning", "judul": "Classic Time Series Forecasting | Indonesia", "url": "https://www.youtube.com/playlist?list=PLGn1wRmlR3Ms7wr2zgtcC4LaE_NHQAEjx", "ket": "Wira DKP, JCOp Untuk Indonesia"}, {"jenis": "Kursus", "kategori": "Machine Learning", "judul": "Nusantech Webinar - Introduction to Machine Learning", "url": "https://www.youtube.com/watch?v=SezDD2ULQ1o", "ket": "Nusantech, Galuh Sahid"}, {"jenis": "Kursus", "kategori": "Machine Learning", "judul": "Tutorial Belajar Machine Learning Dasar | Python Scikit-Learn", "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E", "ket": "Setia Budi, Indonesia Belajar"}, {"jenis": "Kursus", "kategori": "Microservices", "judul": "Belajar Microservices untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs", "ket": "Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Microservices", "judul": "Microservice Architecture Web Development", "url": "https://buildwithangga.com/kelas/microservice-architecture-web-development?thumbnail=nk4neM2UyG.49&main_leads=browse", "ket": "BuildWithAngga"}, {"jenis": "Kursus", "kategori": "Microservices", "judul": "Training Microservices 2020", "url": "https://www.youtube.com/playlist?list=PL9oC_cq7OYbywbzkB_2tSr3DQqNfXiM7R", "ket": "Artivisi"}, {"jenis": "Kursus", "kategori": "MongoDB", "judul": "Belajar MongoDB", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-eFFdPeS5e16o3THdmvxvz", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "MongoDB", "judul": "MongoDB Tutorial Indonesia", "url": "https://www.youtube.com/playlist?list=PLhzwHCJWMbnu830iJ8xLcXgbnklmXpSK5", "ket": "Pojok Code"}, {"jenis": "Kursus", "kategori": "MySQL", "judul": "Belajar MySQL", "url": "https://alwaysngoding.com/belajar-mysql/teori", "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"}, {"jenis": "Kursus", "kategori": "MySQL", "judul": "Belajar MySQL", "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voGs6CiEUPXwt1fhLLqu30E_", "ket": "Indonesia Belajar"}, {"jenis": "Kursus", "kategori": "MySQL", "judul": "Belajar MySQL/MariaDB", "url": "https://www.youtube.com/playlist?list=PLF82-I80PwDN7KSzsJOmd8mwHYe4aAqfF", "ket": "Guntur Budi"}, {"jenis": "Kursus", "kategori": "MySQL", "judul": "MYSQL Tutorial Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_P2_2zR6pvDublvpD3fF6W", "ket": "Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "Belajar PHP", "url": "https://alwaysngoding.com/belajar-php/teori", "ket": "Muhammad Saleh Solahudin, Always Ngoding (account *required*)"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "Belajar PHP Dasar", "url": "https://www.youtube.com/playlist?list=PL53uJBBtLf5AiyMU-LMqIx7uz3-ozRTlb", "ket": "Ngoding Pintar"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "Belajar PHP untuk PEMULA", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUqXfmEIBE3-uzERZPh3vp6", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "Membuat Aplikasi MVC dengan PHP", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVEh_d-h5wAjsdv2W4SAtkx", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "OOP Dasar pada PHP", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWvxxll-6wLXrC_16h_Bl_p", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "PHP Dasar", "url": "https://www.malasngoding.com/category/php/", "ket": "Diki Alfarabi Hadi, Muzanni (Malas Ngoding)"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "PHP The Right Way", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIVcKOrB2tFKi4eWYXHvS3CU", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "PHP Tutorial Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH9EmZy4zYfW1ATIJ-qMXxGt", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "PHP", "judul": "Tutorial CodeIgniter untuk pemula", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCYh65VSFR2yzC7CuPBcAjt", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Codeigniter", "judul": "Tutorial Codeigniter", "url": "https://www.youtube.com/playlist?list=PLce3Eyp7oY9_5lzhkUtrV6ygriYcttMlg", "ket": "Framework Indonesia"}, {"jenis": "Kursus", "kategori": "Codeigniter", "judul": "TUTORIAL CODEIGNITER 4", "url": "https://youtube.com/playlist?list=PLFIM0718LjIUkkIq1Ub6B5dYNb6IlMvtc", "ket": "Sandhika Galih (Web Programming UNPAS)"}, {"jenis": "Kursus", "kategori": "Codeigniter", "judul": "Tutorial Codeigniter 4 Indonesia", "url": "https://youtube.com/playlist?list=PL1aMeb5UP_PFkC4mY3prujavZBehsWAC3", "ket": "IDStack"}, {"jenis": "Kursus", "kategori": "Codeigniter", "judul": "Tutorial Membuat CRUD CodeIgniter 4 & Bootstrap", "url": "https://santrikoding.com/tutorial-set/crud-codeigniter-4", "ket": "Fika Ridaul Maulayya (Santri Koding)"}, {"jenis": "Kursus", "kategori": "Codeigniter", "judul": "Tutorial Sistem Informasi Akademik dengan Codeigniter", "url": "https://www.youtube.com/playlist?list=PLce3Eyp7oY9_hXzGACf988F1ojvQlYmB0", "ket": "Framework Indonesia"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Belajar CRUD Laravel 8 + Livewire", "url": "https://www.youtube.com/playlist?list=PLEgI20pG1DqzAa8npy9C_NDUvYwhslUb4", "ket": "Muhammad Amirul Ihsan (Kawan Koding)"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Belajar Laravel 5", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXDlNd0Flz20xksNtJQZWywz", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Belajar Laravel 7 Dari Awal", "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5MxfIKTn_wZ49XlplwHtz1AV", "ket": "Irsyad A. Panjaitan (Parsinta)"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Belajar Laravel 8", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIWiihbBIq-SWPU6b6x21Q_2", "ket": "Sandhika Galih, Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Belajar Laravel 8 Dari Awal", "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5MwADhthqRaewl-7e7AhjpP8", "ket": "Irsyad A. Panjaitan (Parsinta)"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Belajar Laravel Pemula", "url": "https://www.youtube.com/playlist?list=PLIan8aHxsPj2c9ZA7Rrnciir2OydWTdbn", "ket": "Wahidev Academy"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Fitur Baru Laravel 8", "url": "https://www.youtube.com/playlist?list=PLEgI20pG1DqyTqCPiHnuWrBZtVFs5z95p", "ket": "Muhammad Amirul Ihsan (Kawan Koding)"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Membangun Web Profil Band dan Lirik dengan Laravel 8", "url": "https://www.youtube.com/playlist?list=PLRKMmwY3-5Mzoti-pT2MGuQERTd1_sm21", "ket": "Irsyad A. Panjaitan (Parsinta)"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Membuat Tabel Post Tampilan", "url": "https://youtu.be/sYTin40_Ukw", "ket": "Muhammad Amirul Ihsan (Kawan Koding)"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Tutorial Laravel", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8AoW8KgbHM9q_gXKsXyyht", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Tutorial Laravel 5.7 Dasar bahasa Indonesia", "url": "https://www.malasngoding.com/category/laravel/", "ket": "Diki Alfarabi Hadi (Malas Ngoding)"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Tutorial Laravel 7.x Dasar", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXBucXejxeeqCe_NWZS-67q_", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Tutorial Laravel Bahasa Indonesia", "url": "https://id-laravel.com", "ket": "ID Laravel"}, {"jenis": "Kursus", "kategori": "Laravel", "judul": "Tutorial Restful API Laravel 10", "url": "https://santrikoding.com/tutorial-set/tutorial-restful-api-laravel-10", "ket": "Santrikoding"}, {"jenis": "Kursus", "kategori": "Python", "judul": "#LiveSeminggu (Python Dasar)", "url": "https://www.youtube.com/playlist?list=PLl-Zj2iuqlwviXEWkyT08NbK54kpa5cvu", "ket": "NgodingPython"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Belajar Bahasa Pemrograman Python Dasar", "url": "https://www.udemy.com/course/belajar-bahasa-pemrograman-python-dasar/", "ket": "Cahyo Adhi (Udemy)"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Belajar Pemrograman Python untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_HY6bL3JER8WJOxz1nb3_H", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Belajar python bahasa Indonesia", "url": "https://sekolahkoding.com/track/belajar-python-bahasa-indonesia", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Belajar Python Bahasa Indonesia [Dasar]", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Belajar Python Bahasa Indonesia [Versi Baru]", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo59lUBwU-XHH7Ymmb04ffOY", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Intro to Python", "url": "https://www.youtube.com/playlist?list=PLM4Qh7PEStOmBHR6Ey0BzPf3XNsPuSXL-", "ket": "Tensaitech Academy"}, {"jenis": "Kursus", "kategori": "Python", "judul": "OpenCV untuk Pemula", "url": "https://www.youtube.com/playlist?list=PLl-Zj2iuqlwt4cBsBy_Ej7gNlXdQ7blCB", "ket": "NgodingPython"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Python", "url": "https://codesaya.com/python/", "ket": "CodeSaya"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Python (dasar)", "url": "https://www.youtube.com/playlist?list=PLT2AwM1dOOUe27iCPe68Z0qwwDeNyJawN", "ket": "beecoder id *(Dalam Proses)*"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Tutorial Belajar Machine Learning Dasar | Python Scikit-Learn", "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E", "ket": "Indonesia Belajar"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Tutorial Belajar Python Pandas", "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voGdD_9xhVCTBoDTDNHpajm5", "ket": "Indonesia Belajar"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Tutorial Python Beginner Bahasa Indonesia", "url": "https://www.youtube.com/watch?v=rWC2iFlN3TM", "ket": "Agung Setiawan"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Tutorial Python GUI dengan TKinter", "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHjX09IpdsiSBNnLRaR-CbJ", "ket": "Indonesia Belajar"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Tutorial Python OOP Object Oriented Programming Bahasa Indonesia - Full Course", "url": "https://www.youtube.com/watch?v=b6Y5CzFM0Oc", "ket": "Agung Setiawan"}, {"jenis": "Kursus", "kategori": "Python", "judul": "Visualisasi Data dalam Pemrograman Python (Matplotlib)", "url": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHrfoMFvkDeblmjarDN8nC8", "ket": "Indonesia Belajar"}, {"jenis": "Kursus", "kategori": "Django", "judul": "Belajar Django 2.2", "url": "https://www.youtube.com/playlist?list=PLSCLBARdXrOz4SM3GKyKuqQp7eXWAH1u1", "ket": "Zul Himli"}, {"jenis": "Kursus", "kategori": "Django", "judul": "Pengenalan Django Web Framework Python untuk Pemula", "url": "https://www.udemy.com/course/django-web-framework-python/", "ket": "Udemy"}, {"jenis": "Kursus", "kategori": "Django", "judul": "Tutorial Django 1.11 LTS Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6p_RwsWntxMO5QAqIHHHld", "ket": "Kelas Terbuka"}, {"jenis": "Kursus", "kategori": "Flask", "judul": "Belajar Membuat Website Dengan Flask Python", "url": "https://www.youtube.com/playlist?list=PL8q4s70ndvwfD1Nbrl5iYsgSWVStCXo5h", "ket": "Riffa Media"}, {"jenis": "Kursus", "kategori": "Flask", "judul": "Membuat website dengan Flask", "url": "https://www.youtube.com/playlist?list=PLCZlgfAG0GXCZwaY3F4bHikozOBzrFD_R", "ket": "Sekolah Koding"}, {"jenis": "Kursus", "kategori": "Flask", "judul": "Tutorial web dengan flask sampai mahir", "url": "https://www.youtube.com/playlist?list=PL5vG7_Y90KtxXH4YhDcb5m4n82ShAPnPc", "ket": "Toufan RA"}, {"jenis": "Kursus", "kategori": "PyTorch", "judul": "Course 5 | Pengantar Deep Learning | Tutorial Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLGn1wRmlR3Mtz5i4k4qyd5qQjOtm9JSC6", "ket": "JCOp Untuk Indonesia"}, {"jenis": "Kursus", "kategori": "PyTorch", "judul": "PyTorch untuk Pemula", "url": "https://www.youtube.com/playlist?list=PLl-Zj2iuqlwvMCvaX_4POywGiw4TFuHp1", "ket": "NgodingPython"}, {"jenis": "Kursus", "kategori": "Redis", "judul": "Belajar Redis", "url": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-7hBhz1Q-4rKIQntJoBNX3", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "Rust", "judul": "Belajar bahasa pemrograman Rust!", "url": "https://www.youtube.com/watch?v=1gRIAVwDlb4&pp=ygUMYmVsYWphciBydXN0", "ket": "Ngooding"}, {"jenis": "Kursus", "kategori": "Rust", "judul": "Belajar Rust", "url": "https://www.youtube.com/playlist?list=PLIfsrcorUur10nUSHVq9Mb4yWu87_5lZn", "ket": "Dev Activity"}, {"jenis": "Kursus", "kategori": "SASS / SCSS", "judul": "Belajar Menggunakan SASS", "url": "https://youtube.com/playlist?list=PLRKMmwY3-5Mxzx31JO3V9JJ8GLdUXYqt0", "ket": "Irsyad A. Panjaitan (Parsinta)"}, {"jenis": "Kursus", "kategori": "SASS / SCSS", "judul": "Belajar Sass Biar Nulis Kode CSS Jadi \"Absurd\"", "url": "https://www.youtube.com/watch?v=kNA_wWbBCLc", "ket": "array id"}, {"jenis": "Kursus", "kategori": "SASS / SCSS", "judul": "Tutorial SASS", "url": "https://www.youtube.com/playlist?list=PLFIM0718LjIUqemgG97MAOK0J_berlQM5", "ket": "Web Programming UNPAS"}, {"jenis": "Kursus", "kategori": "Solidity", "judul": "Ethereum Blockchain Tutorial Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLNl8QwXqW_lvWSc3n3geFSbBtmJvEl4nz", "ket": "Odoo Indonesia vITraining"}, {"jenis": "Kursus", "kategori": "Solidity", "judul": "Tutorial Blockchain Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLH1gH0TmFBBhvZi4kEqU6kCjyv_y8qBae", "ket": "Ipung DEV Academy"}, {"jenis": "Kursus", "kategori": "Terraform", "judul": "Belajar Terraform untuk Pemula", "url": "https://www.youtube.com/playlist?list=PL4SGTPmSY0qngs44Ssc0RHO9h4fmZ9JUb", "ket": "Giri Kuncoro"}, {"jenis": "Kursus", "kategori": "Terraform", "judul": "DevOps 101", "url": "https://www.youtube.com/playlist?list=PLvhu7dkzS_I3T1WlDMJjS85L4In-WYLN_", "ket": "Iqbal Syamil"}, {"jenis": "Kursus", "kategori": "TypeScript", "judul": "Belajar Typescript Dasar Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882Z4NSJGNq0eB9Fz6tIx-CgO", "ket": "Imam Farisi"}, {"jenis": "Kursus", "kategori": "TypeScript", "judul": "Belajar Typescript OOP Bahasa Indonesia", "url": "https://www.youtube.com/playlist?list=PLiuHSY2x882a-sLbdqZTtraO3cl0Clwg0", "ket": "Imam Farisi"}, {"jenis": "Kursus", "kategori": "TypeScript", "judul": "OOP TypeScript", "url": "https://www.youtube.com/playlist?list=PLnQvfeVegcJZRieebeIp0xj1NeC5L633Y", "ket": "Nusendra Hanggarawan"}, {"jenis": "Kursus", "kategori": "TypeScript", "judul": "Tutorial TypeScript Dasar", "url": "https://www.youtube.com/watch?v=C_C64faSO4c", "ket": "Eko Kurniawan Khannedy, Programmer Zaman Now"}, {"jenis": "Kursus", "kategori": "TypeScript", "judul": "TypeScript Dasar", "url": "https://www.youtube.com/playlist?list=PLnQvfeVegcJbjCnML6FdusK-rl-oDRMXJ", "ket": "Nusendra Hanggarawan"}];
 
-    function esc(t) {
-      if (!t) return '';
-      return String(t)
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+    // FUNGSI ESCAPE HTML (XSS SAFETY)
+    function escapeHtml(text) {
+      if (!text) return '';
+      return String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
     }
 
-    let st = { q: '', cat: '', jenis: 'Semua' };
+    // MONOGRAM GENERATOR UNTUK THUMBNAIL
+    function getCategoryMonogram(cat) {
+      if (!cat) return '</>';
+      const clean = cat.replace(/[^a-zA-Z0-9+#]/g, ' ').trim();
+      const parts = clean.split(/\s+/).filter(Boolean);
+      if (parts.length >= 2) {
+        return (parts[0][0] + parts[1][0]).toUpperCase();
+      }
+      if (cat.length <= 4) return cat.toUpperCase();
+      return cat.substring(0, 2).toUpperCase();
+    }
 
-    const Q  = id => document.getElementById(id);
-    const si = Q('srchInput'), sx = Q('srchX'), cs = Q('catSel');
-    const tabs = document.querySelectorAll('.tab');
-    const rl = Q('rLabel'), rb = Q('rstBtn'), grid = Q('grid');
-    const tb = Q('themeBtn'), sun = Q('icoSun'), moon = Q('icoMoon');
+    // STATE
+    let state = {
+      q: '',
+      cat: '',
+      jenis: 'Semua'
+    };
 
+    const $ = id => document.getElementById(id);
+    const searchInput = $('searchInput');
+    const searchClearBtn = $('searchClearBtn');
+    const categorySelect = $('categorySelect');
+    const tabPills = document.querySelectorAll('.tab-pill');
+    const activeCategoryTitle = $('activeCategoryTitle');
+    const resultCountBadge = $('resultCountBadge');
+    const cardsGrid = $('cardsGrid');
+    const heroDisplayTitle = $('heroDisplayTitle');
+    const heroDisplaySub = $('heroDisplaySub');
+
+    // INISIALISASI DROPDOWN
     function initDropdown() {
-      const cats = [...new Set(D.map(x => x.kategori).filter(Boolean))]
-        .sort((a, b) => a.localeCompare(b, 'id', { sensitivity: 'base' }));
-      cs.innerHTML = `<option value="">Semua Kategori (${cats.length})</option>`;
+      const cats = [...new Set(D.map(x => x.kategori).filter(Boolean))].sort((a, b) =>
+        a.localeCompare(b, 'id', { sensitivity: 'base' })
+      );
+
+      categorySelect.innerHTML = `<option value="">Semua Kategori (${cats.length})</option>`;
       cats.forEach(c => {
-        const n = D.filter(x => x.kategori === c).length;
-        const o = document.createElement('option');
-        o.value = c; o.textContent = `${c} (${n})`;
-        cs.appendChild(o);
+        const count = D.filter(x => x.kategori === c).length;
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = `${c} (${count})`;
+        categorySelect.appendChild(opt);
       });
     }
 
-    function initStats() {
+    function initTabCounts() {
       const nK = D.filter(x => x.jenis === 'Kursus').length;
       const nB = D.filter(x => x.jenis === 'Buku').length;
-      Q('sTotal').textContent  = D.length;
-      Q('sKursus').textContent = nK;
-      Q('sBuku').textContent   = nB;
-      tabs.forEach(t => {
-        const ty = t.getAttribute('data-t');
-        if (ty === 'Semua')  t.textContent = `Semua (${D.length})`;
-        if (ty === 'Kursus') t.textContent = `Kursus (${nK})`;
-        if (ty === 'Buku')   t.textContent = `Buku (${nB})`;
+      tabPills.forEach(pill => {
+        const type = pill.getAttribute('data-type');
+        if (type === 'Semua') pill.textContent = `Semua (${D.length})`;
+        if (type === 'Kursus') pill.textContent = `Kursus (${nK})`;
+        if (type === 'Buku') pill.textContent = `Buku (${nB})`;
       });
     }
 
+    // RENDER GRID KARTU SANTRIKODING STYLE
     function render() {
-      const q = st.q.trim().toLowerCase();
-      const f = D.filter(item => {
-        if (st.jenis !== 'Semua' && item.jenis !== st.jenis) return false;
-        if (st.cat && item.kategori !== st.cat) return false;
+      const q = state.q.trim().toLowerCase();
+
+      const filtered = D.filter(item => {
+        if (state.jenis !== 'Semua' && item.jenis !== state.jenis) return false;
+        if (state.cat && item.kategori !== state.cat) return false;
         if (q) {
-          const ok = item.judul.toLowerCase().includes(q)
-            || (item.ket || '').toLowerCase().includes(q)
-            || (item.kategori || '').toLowerCase().includes(q);
-          if (!ok) return false;
+          const matchJudul = item.judul.toLowerCase().includes(q);
+          const matchKet   = (item.ket || '').toLowerCase().includes(q);
+          const matchCat   = (item.kategori || '').toLowerCase().includes(q);
+          if (!matchJudul && !matchKet && !matchCat) return false;
         }
         return true;
       });
 
-      rl.textContent      = `${f.length} materi ditemukan`;
-      const filt          = Boolean(q || st.cat || st.jenis !== 'Semua');
-      rb.style.display    = filt ? 'inline' : 'none';
-      sx.style.display    = q    ? 'block'  : 'none';
+      // Update Section Header Title (SantriKoding style)
+      if (state.cat) {
+        activeCategoryTitle.textContent = state.cat.toUpperCase();
+        heroDisplayTitle.textContent = state.cat;
+        heroDisplaySub.textContent = `Koleksi Materi Pembelajaran ${state.cat} Bahasa Indonesia`;
+      } else if (q) {
+        activeCategoryTitle.textContent = `PENCARIAN: "${q.toUpperCase()}"`;
+        heroDisplayTitle.textContent = 'Pustaka Koding';
+        heroDisplaySub.textContent = 'Katalog Terbuka Buku & Kursus Pemrograman Bahasa Indonesia';
+      } else {
+        activeCategoryTitle.textContent = 'SEMUA MATERI';
+        heroDisplayTitle.textContent = 'Pustaka Koding';
+        heroDisplaySub.textContent = 'Katalog Terbuka Buku & Kursus Pemrograman Bahasa Indonesia';
+      }
 
-      if (f.length === 0) {
-        grid.innerHTML = `
-          <div class="empty" role="status">
-            <div class="empty-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="8"/>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                <line x1="8" y1="11" x2="14" y2="11"/>
-              </svg>
+      resultCountBadge.textContent = `${filtered.length} MATERI DITEMUKAN`;
+      searchClearBtn.style.display = q ? 'block' : 'none';
+
+      // Update active tag di hero
+      document.querySelectorAll('.hero-tag').forEach(tag => {
+        const tagText = tag.textContent.trim();
+        if (!state.cat && tagText === 'Semua Materi') {
+          tag.classList.add('active');
+        } else if (state.cat && (tagText === state.cat || (tagText === 'Golang' && state.cat === 'Go') || (tagText === 'HTML & CSS' && state.cat === 'HTML and CSS'))) {
+          tag.classList.add('active');
+        } else {
+          tag.classList.remove('active');
+        }
+      });
+
+      if (filtered.length === 0) {
+        cardsGrid.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </div>
-            <h3>Materi tidak ditemukan</h3>
-            <p>Coba kata kunci lain atau ubah pilihan filter.</p>
-            <button type="button" class="btn-blue" onclick="resetAll()">Hapus Semua Filter</button>
-          </div>`;
+            <div class="empty-title">Tidak ada materi yang ditemukan</div>
+            <p class="empty-desc">Coba sesuaikan kata kunci pencarian atau reset filter kategori.</p>
+            <button type="button" class="btn-reset" onclick="resetFilters()">Reset Semua Filter</button>
+          </div>
+        `;
         return;
       }
 
       let html = '';
-      f.forEach(item => {
-        const iB   = item.jenis === 'Buku';
-        const bc   = iB ? 'bb' : 'bc';
-        const em   = iB ? '📖' : '🎓';
+      filtered.forEach(item => {
+        const isBuku = item.jenis === 'Buku';
+        const badgeClass = isBuku ? 'badge-buku' : 'badge-kursus';
+        const badgeLabel = isBuku ? 'Buku' : 'Kursus';
+        const monogram = getCategoryMonogram(item.kategori);
+        const safeJudul = escapeHtml(item.judul);
+        const safeUrl = escapeHtml(item.url);
+        const safeCat = escapeHtml(item.kategori);
+        const safeKet = escapeHtml(item.ket);
+
         html += `
-        <article class="card">
-          <div class="card-top">
-            <span class="badge ${bc}">${em} ${esc(item.jenis)}</span>
-            <span class="ext" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </span>
-          </div>
-          <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer" class="card-link">
-            ${esc(item.judul)}
-          </a>
-          <div class="card-meta">
-            <span class="m-cat">${esc(item.kategori)}</span>
-            ${item.ket ? `<span class="m-sep" aria-hidden="true">·</span><span class="m-ket">${esc(item.ket)}</span>` : ''}
-          </div>
-        </article>`;
+          <article class="sk-card">
+            <!-- Thumbnail SantriKoding Style -->
+            <div class="sk-thumb">
+              <div class="sk-thumb-avatar" title="Pustaka Koding">&#128187;</div>
+              <span class="sk-thumb-badge ${badgeClass}">${badgeLabel}</span>
+              <div class="sk-thumb-circle">${monogram}</div>
+              <div class="sk-thumb-cat">${safeCat}</div>
+              <div class="sk-thumb-sub">${isBuku ? 'Ebook &amp; Referensi' : 'Video Pembelajaran'}</div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="sk-card-body">
+              <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="sk-card-title">
+                ${safeJudul}
+              </a>
+              <div class="sk-card-meta">
+                <span class="meta-tag">${safeCat}</span>
+                <span class="meta-author" title="${safeKet}">${safeKet || 'Komunitas Terbuka'}</span>
+              </div>
+            </div>
+          </article>
+        `;
       });
-      grid.innerHTML = html;
+
+      cardsGrid.innerHTML = html;
     }
 
-    function resetAll() {
-      si.value = ''; cs.value = '';
-      st = { q: '', cat: '', jenis: 'Semua' };
-      tabs.forEach(t => {
-        const on = t.getAttribute('data-t') === 'Semua';
-        t.classList.toggle('on', on);
-        t.setAttribute('aria-selected', on ? 'true' : 'false');
+    // FILTER HANDLERS
+    function selectHeroCategory(cat) {
+      state.cat = cat;
+      categorySelect.value = cat;
+      render();
+      $('materiSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function quickFilterTab(jenis) {
+      state.jenis = jenis;
+      tabPills.forEach(pill => {
+        const isTarget = pill.getAttribute('data-type') === jenis;
+        pill.classList.toggle('active', isTarget);
+        pill.setAttribute('aria-selected', isTarget ? 'true' : 'false');
       });
       render();
-      si.focus();
+      $('materiSection').scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Aksi Cepat Navigasi Jenis Materi
-    function quickNav(type) {
-      st.jenis = type;
-      tabs.forEach(t => {
-        const on = t.getAttribute('data-t') === type;
-        t.classList.toggle('on', on);
-        t.setAttribute('aria-selected', on ? 'true' : 'false');
+    function focusSearch() {
+      searchInput.focus();
+      $('materiSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetFilters() {
+      searchInput.value = '';
+      categorySelect.value = '';
+      state.q = '';
+      state.cat = '';
+      state.jenis = 'Semua';
+      tabPills.forEach(pill => {
+        const isSemua = pill.getAttribute('data-type') === 'Semua';
+        pill.classList.toggle('active', isSemua);
+        pill.setAttribute('aria-selected', isSemua ? 'true' : 'false');
       });
       render();
-      const ctrl = document.getElementById('ctrlSection');
-      if (ctrl) ctrl.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Aksi Cepat Filter Topik Populer
-    function searchTopic(topic) {
-      si.value = topic;
-      st.q = topic;
+    // LISTENERS
+    searchInput.addEventListener('input', e => {
+      state.q = e.target.value;
       render();
-      const ctrl = document.getElementById('ctrlSection');
-      if (ctrl) ctrl.scrollIntoView({ behavior: 'smooth' });
-    }
+    });
 
-    // Aksi Acak Materi (Lucky Pick)
-    function pickRandom() {
-      if (!D || D.length === 0) return;
-      const idx = Math.floor(Math.random() * D.length);
-      const item = D[idx];
-      const hl = document.getElementById('hlTitle');
-      if (hl) {
-        hl.textContent = `[${item.kategori}] ${item.judul}`;
-      }
-      si.value = item.judul;
-      st.q = item.judul;
+    searchClearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      state.q = '';
       render();
-      const ctrl = document.getElementById('ctrlSection');
-      if (ctrl) ctrl.scrollIntoView({ behavior: 'smooth' });
-    }
+      searchInput.focus();
+    });
 
-    si.addEventListener('input', e  => { st.q   = e.target.value; render(); });
-    sx.addEventListener('click', () => { si.value = ''; st.q = ''; render(); si.focus(); });
-    cs.addEventListener('change', e => { st.cat  = e.target.value; render(); });
-    rb.addEventListener('click', resetAll);
+    categorySelect.addEventListener('change', e => {
+      state.cat = e.target.value;
+      render();
+    });
 
-    tabs.forEach(t => {
-      t.addEventListener('click', () => {
-        tabs.forEach(x => { x.classList.remove('on'); x.setAttribute('aria-selected','false'); });
-        t.classList.add('on'); t.setAttribute('aria-selected','true');
-        st.jenis = t.getAttribute('data-t');
+    tabPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        tabPills.forEach(p => {
+          p.classList.remove('active');
+          p.setAttribute('aria-selected', 'false');
+        });
+        pill.classList.add('active');
+        pill.setAttribute('aria-selected', 'true');
+        state.jenis = pill.getAttribute('data-type');
         render();
       });
     });
 
-    /* Tema terang/gelap: localStorage + prefers-color-scheme */
-    const TK = 'pk_theme';
-    const sys = () => window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    // THEME TOGGLE
+    const THEME_KEY = 'santrikoding_theme';
+    const themeBtn = $('themeToggleBtn');
+    const themeSun = $('themeSun');
+    const themeMoon = $('themeMoon');
 
-    function applyTheme(t) {
-      document.documentElement.setAttribute('data-theme', t);
-      const d = t === 'dark';
-      sun.style.display  = d ? 'block' : 'none';
-      moon.style.display = d ? 'none'  : 'block';
-      tb.setAttribute('aria-label', d ? 'Beralih ke tema terang' : 'Beralih ke tema gelap');
+    function applyTheme(theme) {
+      if (theme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeSun.style.display = 'none';
+        themeMoon.style.display = 'block';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        themeSun.style.display = 'block';
+        themeMoon.style.display = 'none';
+      }
     }
 
-    tb.addEventListener('click', () => {
-      const cur  = document.documentElement.getAttribute('data-theme') || sys();
-      const next = cur === 'dark' ? 'light' : 'dark';
-      localStorage.setItem(TK, next);
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem(THEME_KEY, next);
       applyTheme(next);
     });
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-      if (!localStorage.getItem(TK)) applyTheme(e.matches ? 'dark' : 'light');
-    });
-
-    applyTheme(localStorage.getItem(TK) || sys());
+    // INIT
+    applyTheme(localStorage.getItem(THEME_KEY) || 'dark');
     initDropdown();
-    initStats();
+    initTabCounts();
     render();
   </script>
 </body>
