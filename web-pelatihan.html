@@ -42,7 +42,7 @@
       --badge-b-bd:  #FDE68A;
 
       --sh-card:     0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
-      --sh-lift:     0 6px 18px -3px rgba(30,64,175,0.15), 0 3px 8px -2px rgba(0,0,0,0.07);
+      --sh-lift:     0 8px 24px -4px rgba(30,64,175,0.16), 0 4px 10px -2px rgba(0,0,0,0.07);
       --sh-ctrl:     0 1px 4px rgba(0,0,0,0.08);
       --focus:       0 0 0 3px rgba(30,64,175,0.22);
     }
@@ -74,7 +74,7 @@
         --badge-b-bd:  #92400E;
 
         --sh-card:     0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2);
-        --sh-lift:     0 6px 20px -3px rgba(96,165,250,0.18), 0 3px 10px -2px rgba(0,0,0,0.3);
+        --sh-lift:     0 8px 26px -4px rgba(96,165,250,0.2), 0 4px 12px -2px rgba(0,0,0,0.3);
         --sh-ctrl:     0 1px 4px rgba(0,0,0,0.35);
         --focus:       0 0 0 3px rgba(96,165,250,0.28);
       }
@@ -106,7 +106,7 @@
       --badge-b-bd:  #92400E;
 
       --sh-card:     0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2);
-      --sh-lift:     0 6px 20px -3px rgba(96,165,250,0.18), 0 3px 10px -2px rgba(0,0,0,0.3);
+      --sh-lift:     0 8px 26px -4px rgba(96,165,250,0.2), 0 4px 12px -2px rgba(0,0,0,0.3);
       --sh-ctrl:     0 1px 4px rgba(0,0,0,0.35);
       --focus:       0 0 0 3px rgba(96,165,250,0.28);
     }
@@ -137,7 +137,7 @@
       --badge-b-bd:  #FDE68A;
 
       --sh-card:     0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
-      --sh-lift:     0 6px 18px -3px rgba(30,64,175,0.15), 0 3px 8px -2px rgba(0,0,0,0.07);
+      --sh-lift:     0 8px 24px -4px rgba(30,64,175,0.16), 0 4px 10px -2px rgba(0,0,0,0.07);
       --sh-ctrl:     0 1px 4px rgba(0,0,0,0.08);
       --focus:       0 0 0 3px rgba(30,64,175,0.22);
     }
@@ -157,13 +157,12 @@
     }
 
     /* ============================================================
-       HERO (HEADER UTAMA)
-       Tanpa navbar terpisah: logo & theme toggle berada di baris atas hero.
+       HERO (HEADER UTAMA & SHOWCASE)
     ============================================================ */
     .hero {
       background: var(--surface);
       border-bottom: 3px solid var(--blue);
-      padding: 1.75rem 1.5rem 2rem;
+      padding: 1.5rem 1.5rem 2.25rem;
     }
 
     .hero-container {
@@ -174,6 +173,7 @@
       gap: 1.5rem;
     }
 
+    /* Baris Atas Hero */
     .hero-topbar {
       display: flex;
       align-items: center;
@@ -212,6 +212,33 @@
 
     .logo-name b { color: var(--blue); font-weight: 700; }
 
+    /* Badge Tengah di Topbar: Mengisi ruang kosong secara elegan */
+    .hero-top-center {
+      display: flex;
+      align-items: center;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: var(--text-2);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+    }
+
+    .pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10B981;
+      display: inline-block;
+    }
+
     .hero-top-actions {
       display: flex;
       align-items: center;
@@ -239,16 +266,8 @@
       background: var(--blue-lt);
     }
 
-    .gh-btn:focus-visible {
-      outline: none;
-      box-shadow: var(--focus);
-    }
-
-    .gh-btn svg {
-      width: 15px;
-      height: 15px;
-      fill: currentColor;
-    }
+    .gh-btn:focus-visible { outline: none; box-shadow: var(--focus); }
+    .gh-btn svg { width: 15px; height: 15px; fill: currentColor; }
 
     .theme-btn {
       width: 34px;
@@ -268,35 +287,37 @@
     .theme-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor;
                      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
+    /* Konten Utama Hero: 2 Kolom Seimbang */
     .hero-main {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 2rem;
-      align-items: center;
+      align-items: start;
     }
 
     .hero-copy {
       border-left: 4px solid var(--blue);
       padding-left: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
     }
 
     .eyebrow {
-      font-size: 0.7rem;
+      font-size: 0.725rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.09em;
+      letter-spacing: 0.08em;
       color: var(--blue);
-      margin-bottom: 0.5rem;
     }
 
     .hero-title {
       font-family: var(--font-head);
-      font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+      font-size: clamp(1.6rem, 3.2vw, 2.25rem);
       font-weight: 700;
-      line-height: 1.25;
+      line-height: 1.22;
       color: var(--text);
       letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
     }
 
     .hero-title em { font-style: normal; color: var(--blue); }
@@ -304,64 +325,273 @@
     .hero-desc {
       font-size: 0.925rem;
       color: var(--text-3);
-      max-width: 480px;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
-    .stats {
+    /* Tombol Aksi Cepat di Hero */
+    .hero-actions-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .hero-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-body);
+      font-size: 0.825rem;
+      font-weight: 600;
+      padding: 0.5rem 0.875rem;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+
+    .hero-cta-btn.primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .hero-cta-btn.primary:hover {
+      background: var(--blue-h);
+      box-shadow: var(--sh-card);
+    }
+
+    .hero-cta-btn.secondary {
+      background: var(--blue-lt);
+      color: var(--blue);
+      border-color: var(--blue-mid);
+    }
+    .hero-cta-btn.secondary:hover {
+      background: var(--blue-dim);
+    }
+
+    .hero-cta-btn.outline {
+      background: var(--surface-2);
+      color: var(--text-2);
+      border-color: var(--border-2);
+    }
+    .hero-cta-btn.outline:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .hero-cta-btn:focus-visible { outline: none; box-shadow: var(--focus); }
+
+    /* Baris Topik Populer / Trending Chips */
+    .hero-topics {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.25rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+    }
+
+    .topics-title {
+      font-size: 0.775rem;
+      font-weight: 700;
+      color: var(--text-3);
+      margin-right: 0.2rem;
+    }
+
+    .topic-chip {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      background: var(--surface-2);
+      color: var(--text-2);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .topic-chip:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: var(--blue-lt);
+    }
+
+    .topic-chip:focus-visible { outline: none; box-shadow: var(--focus); }
+
+    /* ============================================================
+       SHOWCASE CARD (KOLOM KANAN HERO)
+    ============================================================ */
+    .hero-showcase {
       display: flex;
       flex-direction: column;
+    }
+
+    .showcase-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      box-shadow: var(--sh-card);
+      position: relative;
+    }
+
+    .showcase-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .showcase-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .showcase-badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue);
+    }
+
+    .showcase-status {
+      font-size: 0.725rem;
+      font-weight: 600;
+      color: #10B981;
+    }
+
+    .showcase-sub {
+      font-size: 0.8rem;
+      color: var(--text-3);
+    }
+
+    /* Grid Statistik Interaktif di Dalam Showcase */
+    .showcase-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 0.5rem;
-      flex-shrink: 0;
     }
 
-    .stat {
-      background: var(--blue-lt);
-      border: 1px solid var(--blue-mid);
-      border-radius: 10px;
-      padding: 0.75rem 1.125rem;
+    .s-stat-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.625rem 0.4rem;
       text-align: center;
-      min-width: 105px;
+      cursor: pointer;
+      transition: all 0.15s ease;
     }
 
-    .stat-n {
+    .s-stat-box:hover {
+      border-color: var(--blue);
+      transform: translateY(-2px);
+      box-shadow: var(--sh-card);
+    }
+
+    .s-stat-n {
       font-family: var(--font-head);
-      font-size: 1.6rem;
+      font-size: 1.35rem;
       font-weight: 700;
       color: var(--blue);
       line-height: 1;
       display: block;
     }
 
-    .stat-l {
-      font-size: 0.68rem;
+    .s-stat-l {
+      font-size: 0.65rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
+      letter-spacing: 0.05em;
       color: var(--text-3);
       display: block;
-      margin-top: 0.2rem;
+      margin-top: 0.25rem;
     }
 
-    @media (max-width: 680px) {
-      .hero-main {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
-      }
-      .stats {
-        flex-direction: row;
-        gap: 0.625rem;
-      }
-      .stat {
-        flex: 1;
-        min-width: 0;
-        padding: 0.625rem 0.5rem;
-      }
-      .stat-n { font-size: 1.35rem; }
+    /* Checklist Manfaat */
+    .showcase-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      padding: 0;
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--text-2);
     }
+
+    .showcase-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      line-height: 1.4;
+    }
+
+    .feat-ico {
+      color: #10B981;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* Rekomendasi Acak / Lucky Pick Banner */
+    .showcase-highlight {
+      background: var(--blue-lt);
+      border: 1px solid var(--blue-mid);
+      border-radius: 8px;
+      padding: 0.625rem 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .hl-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      min-width: 0;
+    }
+
+    .hl-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .hl-title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
+
+    .hl-btn {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.15s ease;
+    }
+
+    .hl-btn:hover { background: var(--blue-h); }
 
     /* ============================================================
-       KONTROL (STICKY DI PALING ATAS SAAT SCROLL)
+       KONTROL (STICKY DI ATAS SAAT SCROLL)
     ============================================================ */
     .ctrl {
       background: var(--surface);
@@ -729,6 +959,16 @@
     /* ============================================================
        RESPONSIVE
     ============================================================ */
+    @media (max-width: 860px) {
+      .hero-main {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .hero-top-center {
+        display: none;
+      }
+    }
+
     @media (max-width: 480px) {
       .hero   { padding: 1.25rem 1rem 1.5rem; }
       .ctrl   { padding: 0.75rem 1rem; }
@@ -739,14 +979,16 @@
       .cat-sel { min-width: 0; width: 100%; }
       .gh-btn .gh-text { display: none; }
       .gh-btn { padding: 0.35rem 0.5rem; }
+      .showcase-stats { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HERO DENGAN BRANDING & ACTIONS (TANPA NAVBAR TERPISAH) -->
+  <!-- HERO DENGAN BRANDING, ACTIONS & SHOWCASE KREATIF -->
   <header class="hero" aria-labelledby="heroH1">
     <div class="hero-container">
+      <!-- TOPBAR: Logo + Status Badge + Actions -->
       <div class="hero-topbar">
         <a href="#" class="logo" aria-label="Pustaka Koding Indonesia, halaman utama">
           <div class="logo-mark" aria-hidden="true">
@@ -756,6 +998,13 @@
           </div>
           <span class="logo-name">Pustaka <b>Koding</b></span>
         </a>
+
+        <div class="hero-top-center">
+          <span class="pill-badge">
+            <span class="pill-dot"></span>
+            344 Materi Terbuka &middot; Lisensi CC BY 4.0
+          </span>
+        </div>
 
         <div class="hero-top-actions">
           <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer" class="gh-btn" title="Kunjungi repositori sumber EbookFoundation di GitHub">
@@ -782,40 +1031,107 @@
         </div>
       </div>
 
+      <!-- KONTEN HERO UTAMA -->
       <div class="hero-main">
         <div class="hero-copy">
-          <p class="eyebrow">Sumber Belajar Terbuka</p>
+          <p class="eyebrow">Kurasi Pembelajaran Terbuka</p>
           <h1 id="heroH1" class="hero-title">
             Buku dan Kursus<br>
             <em>Pemrograman Gratis</em><br>
             Bahasa Indonesia
           </h1>
           <p class="hero-desc">
-            Katalog lengkap materi belajar pemrograman dari sumber terbuka.
-            Cari, filter, dan mulai belajar tanpa biaya.
+            Koleksi terlengkap buku digital dan materi video pemrograman berbahasa Indonesia.
+            Tersusun dalam 58 kategori teknologi, siap dipelajari kapan saja tanpa biaya.
           </p>
+
+          <!-- Tombol Aksi Cepat -->
+          <div class="hero-actions-bar">
+            <button type="button" class="hero-cta-btn primary" onclick="quickNav('Kursus')">
+              <span>🎓</span> Jelajahi Kursus Video
+            </button>
+            <button type="button" class="hero-cta-btn secondary" onclick="quickNav('Buku')">
+              <span>📖</span> Baca Ebook Gratis
+            </button>
+            <button type="button" class="hero-cta-btn outline" onclick="pickRandom()" title="Pilih materi acak untuk dipelajari hari ini">
+              <span>🎲</span> Acak Materi
+            </button>
+          </div>
+
+          <!-- Topik Populer / Trending Tags -->
+          <div class="hero-topics">
+            <span class="topics-title">Topik Populer:</span>
+            <button type="button" class="topic-chip" onclick="searchTopic('Python')">Python</button>
+            <button type="button" class="topic-chip" onclick="searchTopic('JavaScript')">JavaScript</button>
+            <button type="button" class="topic-chip" onclick="searchTopic('HTML and CSS')">Web / CSS</button>
+            <button type="button" class="topic-chip" onclick="searchTopic('Laravel')">Laravel</button>
+            <button type="button" class="topic-chip" onclick="searchTopic('Flutter')">Flutter</button>
+            <button type="button" class="topic-chip" onclick="searchTopic('Go')">Golang</button>
+            <button type="button" class="topic-chip" onclick="searchTopic('React')">React</button>
+          </div>
         </div>
 
-        <div class="stats" aria-label="Statistik koleksi">
-          <div class="stat">
-            <span class="stat-n" id="sTotal">0</span>
-            <span class="stat-l">Total Materi</span>
-          </div>
-          <div class="stat">
-            <span class="stat-n" id="sKursus">0</span>
-            <span class="stat-l">Kursus Video</span>
-          </div>
-          <div class="stat">
-            <span class="stat-n" id="sBuku">0</span>
-            <span class="stat-l">Buku Gratis</span>
+        <!-- SHOWCASE CARD KREATIF DI SEBELAH KANAN -->
+        <div class="hero-showcase">
+          <div class="showcase-card">
+            <div class="showcase-header">
+              <div class="showcase-title-row">
+                <span class="showcase-badge">IKHTISAR KATALOG</span>
+                <span class="showcase-status">● Live Data</span>
+              </div>
+              <p class="showcase-sub">Sinkronisasi repositori resmi EbookFoundation</p>
+            </div>
+
+            <!-- Stats 3 Kolom Interaktif -->
+            <div class="showcase-stats">
+              <div class="s-stat-box" onclick="quickNav('Semua')" title="Klik untuk lihat semua">
+                <span class="s-stat-n" id="sTotal">344</span>
+                <span class="s-stat-l">Total Materi</span>
+              </div>
+              <div class="s-stat-box" onclick="quickNav('Kursus')" title="Klik untuk saring kursus">
+                <span class="s-stat-n" id="sKursus">247</span>
+                <span class="s-stat-l">Kursus Video</span>
+              </div>
+              <div class="s-stat-box" onclick="quickNav('Buku')" title="Klik untuk saring buku">
+                <span class="s-stat-n" id="sBuku">97</span>
+                <span class="s-stat-l">Buku &amp; Ebook</span>
+              </div>
+            </div>
+
+            <!-- Fitur Unggulan -->
+            <ul class="showcase-features">
+              <li>
+                <span class="feat-ico">✓</span>
+                <span><strong>100% Bebas Biaya:</strong> Tanpa biaya langganan atau bayar di muka</span>
+              </li>
+              <li>
+                <span class="feat-ico">✓</span>
+                <span><strong>Lisensi CC BY 4.0:</strong> Konten legal, terbuka, dan terverifikasi</span>
+              </li>
+              <li>
+                <span class="feat-ico">✓</span>
+                <span><strong>58 Kategori:</strong> Dari Dasar Web, Mobile, hingga Machine Learning</span>
+              </li>
+            </ul>
+
+            <!-- Banner Rekomendasi Acak -->
+            <div class="showcase-highlight">
+              <div class="hl-content">
+                <span class="hl-label">💡 Butuh ide belajar hari ini?</span>
+                <p class="hl-title" id="hlTitle">Klik tombol untuk rekomendasi materi acak</p>
+              </div>
+              <button type="button" class="hl-btn" onclick="pickRandom()">
+                Pilihkan ➔
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
   <!-- KONTROL (STICKY DI ATAS SAAT SCROLL) -->
-  <section class="ctrl" aria-label="Pencarian dan filter">
+  <section class="ctrl" id="ctrlSection" aria-label="Pencarian dan filter">
     <div class="ctrl-in">
       <div class="ctrl-top">
         <div class="srch">
@@ -994,6 +1310,44 @@
       });
       render();
       si.focus();
+    }
+
+    // Aksi Cepat Navigasi Jenis Materi
+    function quickNav(type) {
+      st.jenis = type;
+      tabs.forEach(t => {
+        const on = t.getAttribute('data-t') === type;
+        t.classList.toggle('on', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      render();
+      const ctrl = document.getElementById('ctrlSection');
+      if (ctrl) ctrl.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Aksi Cepat Filter Topik Populer
+    function searchTopic(topic) {
+      si.value = topic;
+      st.q = topic;
+      render();
+      const ctrl = document.getElementById('ctrlSection');
+      if (ctrl) ctrl.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Aksi Acak Materi (Lucky Pick)
+    function pickRandom() {
+      if (!D || D.length === 0) return;
+      const idx = Math.floor(Math.random() * D.length);
+      const item = D[idx];
+      const hl = document.getElementById('hlTitle');
+      if (hl) {
+        hl.textContent = `[${item.kategori}] ${item.judul}`;
+      }
+      si.value = item.judul;
+      st.q = item.judul;
+      render();
+      const ctrl = document.getElementById('ctrlSection');
+      if (ctrl) ctrl.scrollIntoView({ behavior: 'smooth' });
     }
 
     si.addEventListener('input', e  => { st.q   = e.target.value; render(); });
