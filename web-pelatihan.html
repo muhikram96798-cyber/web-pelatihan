@@ -51,7 +51,7 @@
       :root:not([data-theme="light"]) {
         --blue:        #60A5FA;
         --blue-h:      #93C5FD;
-        --blue-lt:     rgba(96,165,250,0.1);
+        --blue-lt:     rgba(96,165,250,0.12);
         --blue-mid:    #1E3A8A;
         --blue-dim:    #1E3272;
 
@@ -83,7 +83,7 @@
     [data-theme="dark"] {
       --blue:        #60A5FA;
       --blue-h:      #93C5FD;
-      --blue-lt:     rgba(96,165,250,0.1);
+      --blue-lt:     rgba(96,165,250,0.12);
       --blue-mid:    #1E3A8A;
       --blue-dim:    #1E3272;
 
@@ -158,8 +158,6 @@
 
     /* ============================================================
        HEADER
-       Garis bawah biru 3px = identitas utama, bukan dekorasi:
-       menandakan bahwa ini platform referensi belajar yang serius.
     ============================================================ */
     .hdr {
       background: var(--surface);
@@ -178,6 +176,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .hdr-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
     }
 
     .logo {
@@ -209,6 +215,87 @@
 
     .logo-name b { color: var(--blue); font-weight: 700; }
 
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 9999px;
+      background: var(--blue-lt);
+      color: var(--blue);
+      border: 1px solid var(--blue-mid);
+    }
+
+    /* NAVIGASI HEADER DI TENGAH */
+    .hdr-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .hdr-nav-link {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-3);
+      text-decoration: none;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      transition: color 0.15s, background-color 0.15s;
+    }
+
+    .hdr-nav-link:hover {
+      color: var(--blue);
+      background: var(--blue-lt);
+    }
+
+    .hdr-nav-link:focus-visible {
+      outline: none;
+      box-shadow: var(--focus);
+    }
+
+    /* AKSI HEADER KANAN */
+    .hdr-right {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      flex-shrink: 0;
+    }
+
+    .gh-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--text-2);
+      text-decoration: none;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+
+    .gh-btn:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: var(--blue-lt);
+    }
+
+    .gh-btn:focus-visible {
+      outline: none;
+      box-shadow: var(--focus);
+    }
+
+    .gh-btn svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
     .theme-btn {
       width: 34px;
       height: 34px;
@@ -229,9 +316,6 @@
 
     /* ============================================================
        HERO
-       Layout: 2 kolom di desktop (teks kiri, stat kanan).
-       Stat mendatar di mobile. Compact height.
-       Motif identitas: border-left biru pada blok teks.
     ============================================================ */
     .hero {
       background: var(--surface);
@@ -248,7 +332,6 @@
       align-items: center;
     }
 
-    /* Motif identitas: border kiri biru = penanda hierarki, bukan dekorasi */
     .hero-copy {
       border-left: 4px solid var(--blue);
       padding-left: 1.25rem;
@@ -282,7 +365,6 @@
       line-height: 1.6;
     }
 
-    /* Stat: 3 blok vertikal di desktop, horizontal di mobile */
     .stats {
       display: flex;
       flex-direction: column;
@@ -336,8 +418,7 @@
     }
 
     /* ============================================================
-       KONTROL: search + filter + tabs
-       Sticky di bawah header. Tidak pakai shadow besar.
+       KONTROL
     ============================================================ */
     .ctrl {
       background: var(--surface);
@@ -446,7 +527,6 @@
       gap: 0.5rem;
     }
 
-    /* Tab pills */
     .tabs {
       display: inline-flex;
       gap: 0.2rem;
@@ -509,11 +589,6 @@
 
     /* ============================================================
        GRID KARTU
-       auto-fill minmax(270px) agar 3 kolom di desktop,
-       2 kolom di tablet, 1 di mobile.
-       Variasi visual: kartu buku sedikit lebih compact (less padding).
-       Hover: lift + border biru + garis kiri muncul.
-       Motion: fade-up stagger di 6 kartu pertama.
     ============================================================ */
     .main {
       flex: 1;
@@ -555,8 +630,6 @@
     .card:nth-child(6) { animation-delay: 0.20s; }
     .card:nth-child(n+7) { animation-delay: 0.22s; }
 
-    /* Motif: garis biru kiri muncul saat hover.
-       Menghubungkan visual header (garis biru 3px) ke level kartu. */
     .card::before {
       content: '';
       position: absolute;
@@ -614,7 +687,6 @@
     .ext svg { width: 13px; height: 13px; fill: none; stroke: currentColor;
                stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; display: block; }
 
-    /* Link judul: overlay seluruh kartu agar klik area maksimal */
     .card-link {
       font-size: 0.9rem;
       font-weight: 600;
@@ -683,7 +755,7 @@
     .btn-blue:focus-visible { outline: none; box-shadow: var(--focus); }
 
     /* ============================================================
-       FOOTER: atribusi CC BY 4.0 wajib
+       FOOTER
     ============================================================ */
     .ftr {
       background: var(--surface);
@@ -712,8 +784,23 @@
     .ftr a:hover { color: var(--blue-h); }
 
     /* ============================================================
-       RESPONSIVE: tidak ada overflow di mobile
+       RESPONSIVE
     ============================================================ */
+    @media (max-width: 768px) {
+      .hdr-nav {
+        display: none;
+      }
+      .logo-badge {
+        display: none;
+      }
+      .gh-btn .gh-text {
+        display: none;
+      }
+      .gh-btn {
+        padding: 0.42rem;
+      }
+    }
+
     @media (max-width: 480px) {
       .hdr-in { padding: 0 1rem; }
       .hero   { padding: 1.75rem 1rem; }
@@ -732,33 +819,54 @@
   <!-- HEADER -->
   <header class="hdr">
     <div class="hdr-in">
-      <a href="#" class="logo" aria-label="Pustaka Koding Indonesia, halaman utama">
-        <div class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 20 20">
-            <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 1h10v1H5V6zm0 3h10v1H5V9zm0 3h6v1H5v-1z"/>
-          </svg>
-        </div>
-        <span class="logo-name">Pustaka <b>Koding</b></span>
-      </a>
+      <div class="hdr-left">
+        <a href="#" class="logo" aria-label="Pustaka Koding Indonesia, halaman utama">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 20 20">
+              <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 1h10v1H5V6zm0 3h10v1H5V9zm0 3h6v1H5v-1z"/>
+            </svg>
+          </div>
+          <span class="logo-name">Pustaka <b>Koding</b></span>
+        </a>
+        <span class="logo-badge">Koleksi Terbuka</span>
+      </div>
 
-      <button id="themeBtn" class="theme-btn" type="button" aria-label="Beralih ke tema gelap">
-        <svg id="icoSun" viewBox="0 0 24 24" style="display:none">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <svg id="icoMoon" viewBox="0 0 24 24">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <!-- Navigasi Tautan di Header -->
+      <nav class="hdr-nav" aria-label="Navigasi Utama">
+        <a href="#grid" class="hdr-nav-link" onclick="quickNav('Semua')">Semua Materi</a>
+        <a href="#grid" class="hdr-nav-link" onclick="quickNav('Kursus')">Kursus Video</a>
+        <a href="#grid" class="hdr-nav-link" onclick="quickNav('Buku')">Buku Bacaan</a>
+        <a href="#tentang" class="hdr-nav-link">Tentang</a>
+      </nav>
+
+      <!-- Aksi Kanan: Tombol GitHub & Tema -->
+      <div class="hdr-right">
+        <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer" class="gh-btn" title="Kunjungi repositori sumber EbookFoundation di GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span class="gh-text">GitHub</span>
+        </a>
+
+        <button id="themeBtn" class="theme-btn" type="button" aria-label="Beralih ke tema gelap">
+          <svg id="icoSun" viewBox="0 0 24 24" style="display:none">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg id="icoMoon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- HERO: teks kiri, stat kanan. Stat dari data riil (R-17). -->
+  <!-- HERO: teks kiri, stat kanan. Stat dari data riil. -->
   <section class="hero" aria-labelledby="heroH1">
     <div class="hero-in">
       <div class="hero-copy">
@@ -774,7 +882,7 @@
         </p>
       </div>
 
-      <!-- Angka dari data.json, bukan fiktif -->
+      <!-- Angka dari data.json -->
       <div class="stats" aria-label="Statistik koleksi">
         <div class="stat">
           <span class="stat-n" id="sTotal">0</span>
@@ -836,8 +944,8 @@
     <div id="grid" class="grid" aria-live="polite" aria-label="Daftar materi"></div>
   </main>
 
-  <!-- FOOTER: atribusi CC BY 4.0 wajib (lisensi sumber data) -->
-  <footer class="ftr">
+  <!-- FOOTER: atribusi CC BY 4.0 wajib -->
+  <footer id="tentang" class="ftr">
     <div class="ftr-in">
       <p>
         <strong>Sumber Data:</strong> Dikurasi dari
@@ -972,6 +1080,17 @@
       });
       render();
       si.focus();
+    }
+
+    // Fungsi navigasi cepat dari header
+    function quickNav(type) {
+      st.jenis = type;
+      tabs.forEach(t => {
+        const on = t.getAttribute('data-t') === type;
+        t.classList.toggle('on', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      render();
     }
 
     si.addEventListener('input', e  => { st.q   = e.target.value; render(); });
