@@ -89,12 +89,12 @@ Total Materi : 344 Entri
 
 ```mermaid
 flowchart LR
-    A["EbookFoundation Repo (GitHub Raw)"] -->|urllib.request| B["parse_fpb.py (Python Parser)"]
-    B -->|Regex Extraction| C[("data.json (344 entri)")]
-    B -->|Embedded const D=[...]| D["index.html (Single Page App)"]
-    B -->|Backup Copy| E["web-pelatihan.html"]
-    D -->|Git Push| F["GitHub Repository"]
-    F -->|Auto Deploy| G["Vercel Production Edge"]
+    A["EbookFoundation Repo (GitHub Raw)"] -->|"urllib.request"| B["parse_fpb.py (Python Parser)"]
+    B -->|"Regex Extraction"| C[("data.json (344 entri)")]
+    B -->|"Injeksi Data Statis"| D["index.html (Single Page App)"]
+    B -->|"Salinan Cadangan"| E["web-pelatihan.html"]
+    D -->|"Git Push"| F["GitHub Repository"]
+    F -->|"Auto Deploy"| G["Vercel Production Edge"]
 ```
 
 1. **Pengunduhan Mentah:** `parse_fpb.py` mengunduh `free-programming-books-id.md` dan `free-courses-id.md` menggunakan library bawaan Python `urllib` (tanpa dependensi eksternal).
