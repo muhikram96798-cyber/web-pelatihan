@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0d11"/>
+      <stop offset="100%" stop-color="#12151c"/>
+    </linearGradient>
+
+    <!-- Red / Orange Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+
+    <!-- Card Dark Gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181c26"/>
+      <stop offset="100%" stop-color="#141720"/>
+    </linearGradient>
+
+    <!-- Thumbnail radial glow -->
+    <radialGradient id="thumbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0d1017" stop-opacity="0.95"/>
+    </radialGradient>
+
+    <!-- Card Shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glowShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#ef4444" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .font-sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Browser Frame Wrapper -->
+  <rect width="1200" height="640" rx="16" fill="#0b0d11" stroke="#212735" stroke-width="2"/>
+
+  <!-- Window Header / Titlebar -->
+  <rect width="1200" height="42" rx="16" fill="#141720"/>
+  <rect y="30" width="1200" height="12" fill="#141720"/>
+  <line x1="0" y1="42" x2="1200" y2="42" stroke="#212735" stroke-width="1"/>
+
+  <!-- Window Dots -->
+  <circle cx="24" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="21" r="6" fill="#10b981"/>
+
+  <!-- URL Bar -->
+  <rect x="360" y="9" width="480" height="24" rx="6" fill="#0b0d11" stroke="#212735" stroke-width="1"/>
+  <text x="600" y="25" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600" class="font-sans">🔒 web-pelatihan.vercel.app</text>
+
+  <!-- ================= NAVBAR ================= -->
+  <g transform="translate(0, 42)">
+    <rect width="1200" height="60" fill="#12151c"/>
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#212735" stroke-width="1"/>
+
+    <!-- Brand Logo -->
+    <g transform="translate(48, 14)">
+      <rect width="32" height="32" rx="8" fill="url(#accentGrad)"/>
+      <!-- Book / Code Icon -->
+      <path d="M9 11 L14 8 L14 24 L9 21 Z" fill="#ffffff" fill-opacity="0.2"/>
+      <path d="M11 13 L8 16 L11 19 M21 13 L24 16 L21 19 M17 10 L15 22" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="42" y="22" fill="#ffffff" font-size="16" font-weight="900" letter-spacing="1" class="font-sans">PUSTAKA<tspan fill="#ef4444">KODING</tspan></text>
+    </g>
+
+    <!-- Nav Links -->
+    <g transform="translate(440, 24)" fill="#94a3b8" font-size="12" font-weight="700" letter-spacing="0.5" class="font-sans">
+      <text x="0" y="11" fill="#f8fafc">KURSUS ▾</text>
+      <text x="100" y="11">EBOOK ▾</text>
+      <text x="190" y="11">KATEGORI ▾</text>
+      <text x="300" y="11">SUMBER DATA</text>
+    </g>
+
+    <!-- Right Actions -->
+    <g transform="translate(1030, 14)">
+      <!-- Search Icon Button -->
+      <rect width="32" height="32" rx="8" fill="#171b24" stroke="#212735"/>
+      <circle cx="15" cy="15" r="5" fill="none" stroke="#94a3b8" stroke-width="1.8"/>
+      <line x1="18.5" y1="18.5" x2="22" y2="22" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/>
+
+      <!-- GitHub Pill -->
+      <rect x="42" y="0" width="80" height="32" rx="16" fill="#ef4444"/>
+      <text x="82" y="21" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800" letter-spacing="0.5" class="font-sans">GITHUB</text>
+    </g>
+  </g>
+
+  <!-- ================= HERO WITH GRID PATTERN ================= -->
+  <g transform="translate(0, 102)">
+    <rect width="1200" height="210" fill="#0b0d11"/>
+    <rect width="1200" height="210" fill="url(#gridPattern)"/>
+    <line x1="0" y1="210" x2="1200" y2="210" stroke="#212735" stroke-width="1"/>
+
+    <!-- Center Avatar -->
+    <g transform="translate(564, 20)">
+      <circle cx="36" cy="36" r="36" fill="#ffffff" filter="url(#glowShadow)"/>
+      <circle cx="36" cy="36" r="30" fill="url(#accentGrad)"/>
+      <!-- Code bracket symbol inside -->
+      <path d="M26 30 L20 36 L26 42 M46 30 L52 36 L46 42 M39 26 L33 46" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Hero Title -->
+    <text x="600" y="125" text-anchor="middle" fill="#f8fafc" font-size="28" font-weight="900" letter-spacing="-0.5" class="font-sans">Pustaka Koding</text>
+    <text x="600" y="148" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic" class="font-sans">Katalog Terbuka 344+ Buku &amp; Kursus Pemrograman Bahasa Indonesia</text>
+
+    <!-- Chips Row -->
+    <g transform="translate(600, 175)" class="font-sans" font-size="11" font-weight="700">
+      <g transform="translate(-320, 0)">
+        <rect x="0" y="0" width="100" height="24" rx="12" fill="#ef4444"/>
+        <text x="50" y="16" text-anchor="middle" fill="#ffffff">Semua Materi</text>
+      </g>
+      <g transform="translate(-210, 0)">
+        <rect x="0" y="0" width="75" height="24" rx="12" fill="#171b24" stroke="#212735"/>
+        <text x="37" y="16" text-anchor="middle" fill="#94a3b8">Laravel</text>
+      </g>
+      <g transform="translate(-125, 0)">
+        <rect x="0" y="0" width="75" height="24" rx="12" fill="#171b24" stroke="#212735"/>
+        <text x="37" y="16" text-anchor="middle" fill="#94a3b8">Python</text>
+      </g>
+      <g transform="translate(-40, 0)">
+        <rect x="0" y="0" width="90" height="24" rx="12" fill="#171b24" stroke="#212735"/>
+        <text x="45" y="16" text-anchor="middle" fill="#94a3b8">JavaScript</text>
+      </g>
+      <g transform="translate(60, 0)">
+        <rect x="0" y="0" width="75" height="24" rx="12" fill="#171b24" stroke="#212735"/>
+        <text x="37" y="16" text-anchor="middle" fill="#94a3b8">React</text>
+      </g>
+      <g transform="translate(145, 0)">
+        <rect x="0" y="0" width="70" height="24" rx="12" fill="#171b24" stroke="#212735"/>
+        <text x="35" y="16" text-anchor="middle" fill="#94a3b8">Flutter</text>
+      </g>
+      <g transform="translate(225, 0)">
+        <rect x="0" y="0" width="80" height="24" rx="12" fill="#171b24" stroke="#212735"/>
+        <text x="40" y="16" text-anchor="middle" fill="#94a3b8">Golang</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= SECTION HEADER ================= -->
+  <g transform="translate(48, 328)">
+    <text x="0" y="18" fill="#f8fafc" font-size="14" font-weight="900" letter-spacing="1" class="font-sans">
+      MATERI BERDASARKAN KATEGORI: <tspan fill="#ef4444">SEMUA MATERI</tspan>
+    </text>
+    <text x="1104" y="18" text-anchor="end" fill="#64748b" font-size="12" font-weight="800" class="font-sans">344 MATERI DITEMUKAN</text>
+    <line x1="0" y1="28" x2="1104" y2="28" stroke="#212735" stroke-width="1"/>
+  </g>
+
+  <!-- ================= CARDS SHOWCASE (3 CARDS) ================= -->
+  <g transform="translate(48, 372)">
+
+    <!-- CARD 1: LARAVEL -->
+    <g transform="translate(0, 0)">
+      <rect width="350" height="236" rx="14" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1.5" filter="url(#cardShadow)"/>
+      
+      <!-- Card Thumb Header -->
+      <rect width="350" height="130" rx="14" fill="#0d1017"/>
+      <rect y="118" width="350" height="12" fill="#0d1017"/>
+      <line x1="0" y1="130" x2="350" y2="130" stroke="#212735" stroke-width="1"/>
+      
+      <!-- Top badges -->
+      <rect x="14" y="12" width="22" height="22" rx="6" fill="#ef4444"/>
+      <text x="25" y="27" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="900" class="font-sans">💻</text>
+      
+      <rect x="272" y="12" width="64" height="20" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.3"/>
+      <text x="304" y="26" text-anchor="middle" fill="#38bdf8" font-size="9" font-weight="800" class="font-sans">KURSUS</text>
+      
+      <!-- Logo Circle -->
+      <circle cx="175" cy="58" r="26" fill="#ffffff" filter="url(#glowShadow)"/>
+      <!-- Laravel Logo SVG representation -->
+      <g transform="translate(162, 45) scale(1.1)">
+        <path fill="#FF2D20" d="M12 2L2 7.5v9L12 22l10-5.5v-9L12 2zm7.9 6.2l-3.4 1.9-4.5-2.5 3.4-1.9 4.5 2.5zm-5.6 3.1l-3.4 1.9-4.5-2.5 3.4-1.9 4.5 2.5zm-9.3-3.1l4.5 2.5-3.4 1.9-4.5-2.5 3.4-1.9zm1.1 4.4l3.4 1.9v4.5l-3.4-1.9v-4.5zm5.6 3.1l3.4 1.9v4.5l-3.4-1.9v-4.5zm2.3-5l3.4-1.9v4.5l-3.4 1.9v-4.5z"/>
+      </g>
+      
+      <text x="175" y="104" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="900" letter-spacing="1" class="font-sans">LARAVEL</text>
+      <text x="175" y="119" text-anchor="middle" fill="#94a3b8" font-size="10" font-style="italic" class="font-sans">Video Pembelajaran</text>
+      
+      <!-- Card Body -->
+      <text x="16" y="156" fill="#f8fafc" font-size="13" font-weight="800" class="font-sans">Tutorial Laravel 11 untuk Pemula</text>
+      <line x1="16" y1="196" x2="334" y2="196" stroke="#212735" stroke-width="1"/>
+      <text x="16" y="218" fill="#ef4444" font-size="10" font-weight="800" class="font-sans">LARAVEL</text>
+      <text x="334" y="218" text-anchor="end" fill="#94a3b8" font-size="10" class="font-sans">YouTube · SantriKoding</text>
+    </g>
+
+    <!-- CARD 2: PYTHON -->
+    <g transform="translate(377, 0)">
+      <rect width="350" height="236" rx="14" fill="url(#cardGrad)" stroke="#212735" stroke-width="1" filter="url(#cardShadow)"/>
+      
+      <!-- Card Thumb Header -->
+      <rect width="350" height="130" rx="14" fill="#0d1017"/>
+      <rect y="118" width="350" height="12" fill="#0d1017"/>
+      <line x1="0" y1="130" x2="350" y2="130" stroke="#212735" stroke-width="1"/>
+      
+      <!-- Top badges -->
+      <rect x="14" y="12" width="22" height="22" rx="6" fill="#ef4444"/>
+      <text x="25" y="27" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="900" class="font-sans">💻</text>
+      
+      <rect x="282" y="12" width="54" height="20" rx="10" fill="#292524" stroke="#fbbf24" stroke-opacity="0.3"/>
+      <text x="309" y="26" text-anchor="middle" fill="#fbbf24" font-size="9" font-weight="800" class="font-sans">BUKU</text>
+      
+      <!-- Logo Circle -->
+      <circle cx="175" cy="58" r="26" fill="#ffffff"/>
+      <!-- Python Logo SVG representation -->
+      <g transform="translate(162, 45) scale(1.1)">
+        <path fill="#3776AB" d="M11.9 2c-3.1 0-5 1.4-5 3.6v2.7h5.1v.7H4.4C2.3 9 1 10.9 1 13.9c0 3.2 1.7 4.9 4.4 4.9h2v-2.8c0-2.3 2-4.1 4.5-4.1h5.1c1.3 0 2.2-.9 2.2-2.2V5.6c0-2.2-2.1-3.6-5.3-3.6h-2zm-1.8 1.9c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1z"/>
+        <path fill="#FFD438" d="M12.1 22c3.1 0 5-1.4 5-3.6v-2.7h-5.1v-.7h7.6c2.1 0 3.4-1.9 3.4-4.9 0-3.2-1.7-4.9-4.4-4.9h-2v2.8c0 2.3-2 4.1-4.5 4.1H7c-1.3 0-2.2.9-2.2 2.2v4.1c0 2.2 2.1 3.6 5.3 3.6h2zm1.8-1.9c-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1z"/>
+      </g>
+      
+      <text x="175" y="104" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="900" letter-spacing="1" class="font-sans">PYTHON</text>
+      <text x="175" y="119" text-anchor="middle" fill="#94a3b8" font-size="10" font-style="italic" class="font-sans">Ebook &amp; Referensi</text>
+      
+      <!-- Card Body -->
+      <text x="16" y="156" fill="#f8fafc" font-size="13" font-weight="800" class="font-sans">Belajar Pemrograman Python Dasar</text>
+      <line x1="16" y1="196" x2="334" y2="196" stroke="#212735" stroke-width="1"/>
+      <text x="16" y="218" fill="#ef4444" font-size="10" font-weight="800" class="font-sans">PYTHON</text>
+      <text x="334" y="218" text-anchor="end" fill="#94a3b8" font-size="10" class="font-sans">Ebook Gratis Indonesia</text>
+    </g>
+
+    <!-- CARD 3: REACT -->
+    <g transform="translate(754, 0)">
+      <rect width="350" height="236" rx="14" fill="url(#cardGrad)" stroke="#212735" stroke-width="1" filter="url(#cardShadow)"/>
+      
+      <!-- Card Thumb Header -->
+      <rect width="350" height="130" rx="14" fill="#0d1017"/>
+      <rect y="118" width="350" height="12" fill="#0d1017"/>
+      <line x1="0" y1="130" x2="350" y2="130" stroke="#212735" stroke-width="1"/>
+      
+      <!-- Top badges -->
+      <rect x="14" y="12" width="22" height="22" rx="6" fill="#ef4444"/>
+      <text x="25" y="27" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="900" class="font-sans">💻</text>
+      
+      <rect x="272" y="12" width="64" height="20" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.3"/>
+      <text x="304" y="26" text-anchor="middle" fill="#38bdf8" font-size="9" font-weight="800" class="font-sans">KURSUS</text>
+      
+      <!-- Logo Circle -->
+      <circle cx="175" cy="58" r="26" fill="#ffffff"/>
+      <!-- React Logo SVG representation -->
+      <g transform="translate(162, 45) scale(1.1)">
+        <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.6" transform="rotate(30 12 12)"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.6" transform="rotate(90 12 12)"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="#61DAFB" stroke-width="1.6" transform="rotate(150 12 12)"/>
+        <circle cx="12" cy="12" r="2" fill="#61DAFB"/>
+      </g>
+      
+      <text x="175" y="104" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="900" letter-spacing="1" class="font-sans">REACT</text>
+      <text x="175" y="119" text-anchor="middle" fill="#94a3b8" font-size="10" font-style="italic" class="font-sans">Video Pembelajaran</text>
+      
+      <!-- Card Body -->
+      <text x="16" y="156" fill="#f8fafc" font-size="13" font-weight="800" class="font-sans">Membangun Web Modern dengan React</text>
+      <line x1="16" y1="196" x2="334" y2="196" stroke="#212735" stroke-width="1"/>
+      <text x="16" y="218" fill="#ef4444" font-size="10" font-weight="800" class="font-sans">REACT</text>
+      <text x="334" y="218" text-anchor="end" fill="#94a3b8" font-size="10" class="font-sans">Video Tutorial ID</text>
+    </g>
+  </g>
+</svg>

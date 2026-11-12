@@ -47,6 +47,7 @@ COURSES_URL = "https://raw.githubusercontent.com/EbookFoundation/free-programmin
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_JSON_PATH = os.path.join(BASE_DIR, "data.json")
 HTML_PATH = os.path.join(BASE_DIR, "web-pelatihan.html")
+INDEX_PATH = os.path.join(BASE_DIR, "index.html")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -1140,8 +1141,9 @@ def main():
     with open(DATA_JSON_PATH, "w", encoding="utf-8") as f:
         f.write(json_output)
 
-    # 4. Tulis / Perbarui web-pelatihan.html
+    # 4. Tulis / Perbarui web-pelatihan.html dan index.html
     save_or_update_html(HTML_PATH, total_data)
+    save_or_update_html(INDEX_PATH, total_data)
 
     # 5. Cetak ringkasan
     print("-" * 60)
@@ -1150,6 +1152,7 @@ def main():
     print(f"  • Kursus : {len(courses_data)} entri")
     print(f"File JSON: {DATA_JSON_PATH}")
     print(f"File Web : {HTML_PATH}")
+    print(f"File Vercel: {INDEX_PATH}")
     print("-" * 60)
 
 
